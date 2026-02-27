@@ -108,16 +108,33 @@ used in the NICAR presentation. The `.claude/skills/` and `.codex/skills/` direc
 
 ### Enabling repo-local skills
 
-Claude Code picks up `.claude/skills/` automatically when you open the project.
+**Claude Code** picks up `.claude/skills/` automatically when you open the project — no setup
+needed.
 
-For Codex, set `CODEX_HOME` to point at this repo's `.codex/` directory:
-
-```bash
-CODEX_HOME=/path/to/this/repo/.codex codex
-```
-
-Or symlink individual skills into your global Codex skills folder:
+**Codex** requires a one-time step to tell it where to find the skills. Open your terminal,
+`cd` into this repo's root directory, and launch Codex like this:
 
 ```bash
-ln -s /path/to/this/repo/.codex/skills/fecfile ~/.codex/skills/fecfile
+cd /path/to/nicar2026_skills_in_codex_claude
+CODEX_HOME=$(pwd)/.codex codex
 ```
+
+The `$(pwd)` part inserts your current directory path automatically, so you don't have to type
+the full path yourself. You need to run this from the repo root every time you start a Codex
+session in this project.
+
+If you want the skills available globally in all your Codex sessions (not just this project),
+you can instead copy or symlink them into your personal Codex skills folder — which Codex
+always loads regardless of where you run it. For example, to add the fecfile skill globally:
+
+```bash
+# Create your global skills folder if it doesn't exist yet
+mkdir -p ~/.codex/skills
+
+# Symlink the skill from this repo into your global folder
+ln -s /path/to/nicar2026_skills_in_codex_claude/.codex/skills/fecfile ~/.codex/skills/fecfile
+```
+
+Replace `/path/to/nicar2026_skills_in_codex_claude` with the actual path where you cloned this
+repo. On a Mac you can find it by running `pwd` from inside the repo directory in your
+terminal.
