@@ -123,6 +123,28 @@ The `$(pwd)` part inserts your current directory path automatically, so you don'
 the full path yourself. You need to run this from the repo root every time you start a Codex
 session in this project.
 
+To avoid retyping this each session, you have two options:
+
+**Option 1: direnv (recommended)** — If you have [`direnv`](https://direnv.net) installed,
+create a `.envrc` file in the repo root containing:
+
+```
+export CODEX_HOME="$(pwd)/.codex"
+```
+
+Then run `direnv allow` once from the repo root. After that, `CODEX_HOME` is set automatically
+whenever you `cd` into the project directory, so you can launch Codex with just `codex`.
+
+**Option 2: Wrapper script (no extra tools)** — Create a small script in the repo root:
+
+```bash
+#!/bin/bash
+CODEX_HOME="$(dirname "$0")/.codex" codex "$@"
+```
+
+Save it as `codex.sh` and make it executable with `chmod +x codex.sh`. Then run `./codex.sh`
+instead of `codex`. This requires no extra tools and works for anyone who clones the repo.
+
 If you want the skills available globally in all your Codex sessions (not just this project),
 you can instead copy or symlink them into your personal Codex skills folder — which Codex
 always loads regardless of where you run it. For example, to add the fecfile skill globally:
