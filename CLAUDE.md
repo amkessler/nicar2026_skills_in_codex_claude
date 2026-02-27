@@ -37,13 +37,15 @@ Jupyter isolated inside `.venv`. This file is gitignored — do not commit it.
 ## Skills Architecture
 
 Skills are directories containing a `SKILL.md` (with YAML frontmatter) and optional bundled
-resources (`scripts/`, `references/`, `assets/`). They live in two locations:
+resources (`scripts/`, `references/`, `assets/`). This repo has three skill locations:
 
-- `skills/` — example skills included in this repo (image-rotator, weather-forecast, skill-creator)
-- `.codex/skills/` — skills active for the Codex CLI (currently: `fecfile`)
+- `skills/` — teaching copy used in the NICAR presentation (canonical source)
+- `.claude/skills/` — active skills for Claude Code (auto-loaded when you open the project)
+- `.codex/skills/` — active skills for the Codex CLI
 
-To enable repo-local skills with Codex: set `CODEX_HOME` to the repo root's `.codex/` directory
-or symlink `.codex/skills/<skill-name>` into `~/.codex/skills/`.
+All four skills (`fecfile`, `weather-forecast`, `image-rotator`, `skill-creator`) are present
+in all three locations. Claude Code reads from `.claude/skills/` automatically. For Codex, set
+`CODEX_HOME` to the repo root's `.codex/` directory or symlink skills into `~/.codex/skills/`.
 
 ### SKILL.md structure
 
@@ -74,19 +76,19 @@ Use the `skill-creator` helper scripts:
 
 ```bash
 # Initialize a new skill directory with template
-uv run skills/skill-creator/scripts/init_skill.py <skill-name> --path <output-dir>
+uv run .claude/skills/skill-creator/scripts/init_skill.py <skill-name> --path <output-dir>
 
 # Validate and package a skill into a distributable zip
-uv run skills/skill-creator/scripts/package_skill.py <path/to/skill-folder>
-uv run skills/skill-creator/scripts/package_skill.py <path/to/skill-folder> ./dist
+uv run .claude/skills/skill-creator/scripts/package_skill.py <path/to/skill-folder>
+uv run .claude/skills/skill-creator/scripts/package_skill.py <path/to/skill-folder> ./dist
 ```
 
-See `skills/skill-creator/SKILL.md` for the full 6-step skill creation workflow.
+See `.claude/skills/skill-creator/SKILL.md` for the full 6-step skill creation workflow.
 
 ## FEC Filing Analysis (fecfile skill)
 
-The `.codex/skills/fecfile` skill uses the `fecfile` Python library (auto-installed by `uv run`)
-to analyze FEC campaign finance filings.
+The `fecfile` skill (at `.claude/skills/fecfile/`) uses the `fecfile` Python library
+(auto-installed by `uv run`) to analyze FEC campaign finance filings.
 
 ### Finding filing IDs
 
@@ -101,16 +103,16 @@ Requires `FEC_API_KEY` or `DATA_GOV_API_KEY` env var (defaults to `DEMO_KEY` if 
 ### Fetching filing data
 
 ```bash
-uv run .codex/skills/fecfile/scripts/fetch_filing.py <FILING_ID> --summary-only
-uv run .codex/skills/fecfile/scripts/fetch_filing.py <FILING_ID> --schedule A
-uv run .codex/skills/fecfile/scripts/fetch_filing.py <FILING_ID> --schedules A,B
-uv run .codex/skills/fecfile/scripts/fetch_filing.py <FILING_ID> --stream --schedule A
+uv run .claude/skills/fecfile/scripts/fetch_filing.py <FILING_ID> --summary-only
+uv run .claude/skills/fecfile/scripts/fetch_filing.py <FILING_ID> --schedule A
+uv run .claude/skills/fecfile/scripts/fetch_filing.py <FILING_ID> --schedules A,B
+uv run .claude/skills/fecfile/scripts/fetch_filing.py <FILING_ID> --stream --schedule A
 ```
 
 Always check `--summary-only` first before fetching full schedules. Large filings (ActBlue,
 WinRed, presidential campaigns) must use `--stream` or schedule pre-filtering to avoid loading
 hundreds of thousands of rows into context. Field names are documented in
-`.codex/skills/fecfile/references/FORMS.md` and `SCHEDULES.md` — do not guess field names.
+`.claude/skills/fecfile/references/FORMS.md` and `SCHEDULES.md` — do not guess field names.
 
 ## Data Directory Layout
 
