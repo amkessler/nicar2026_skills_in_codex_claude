@@ -19,3 +19,14 @@ packrat/src/
 .Rproj.user
 .RData
 .Rhistory
+
+# Codex runtime files symlinked into .codex/ by codex.sh — not for committing
+.codex/auth.json
+.codex/config.toml
+.codex/history.jsonl
+.codex/state_*.sqlite
+.codex/state_*.sqlite-shm
+.codex/state_*.sqlite-wal
+.codex/sessions/
+.codex/rules/
+.codex/shell_snapshots/
