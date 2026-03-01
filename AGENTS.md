@@ -22,6 +22,8 @@ This repo is a Python/Jupyter demo for NICAR 2026 focused on reusable AI skills.
 - `quarto render`: build reports configured in `_quarto.yml` to `data/html_reports/`.
 - `uv run python set_jupyter_kernel.py`: configure the project kernel (run intentionally; it performs setup actions).
 - `CODEX_HOME=/path/to/repo/.codex codex`: launch Codex with repo-local active skills.
+- `uv run skills/fecfile/scripts/fetch_filing.py 1896830 --summary-only`: smoke test the FEC skill script from repo root.
+- `Rscript skills/state-county-rankings/scripts/get_state_county_rankings.R --input skills/state-county-rankings/data/county_demographics_acs5_2023.csv --state GA --top-n 5`: smoke test a bundled R skill script.
 
 ## Coding Style & Naming Conventions
 - Target Python `>=3.12` (see `pyproject.toml`), 4-space indentation, PEP 8 naming.
@@ -35,7 +37,15 @@ No formal `tests/` suite is present yet. Use script-level validation:
 - Run `uv run python fec_find_filings.py ...` with small limits (`--limit 1` or `5`).
 - Validate output modes you touch (`table`, `json`, `ndjson`, `csv`).
 - For notebook/report changes, run `quarto render` and confirm output in `data/html_reports/`.
-- For skill changes, verify mirrored updates in both `.claude/skills/` and `.codex/skills/` and run the touched script with `uv run`.
+- For skill changes, verify mirrored updates in both `.claude/skills/` and `.codex/skills/` and run the touched script (`uv run ...` for Python skills, `Rscript ...` for R skills).
+- For `weather-forecast`, ensure `--json` output is machine-parseable JSON with no non-JSON preamble.
+- For `skill-creator` packaging changes, ensure zip outputs exclude transient files like `__pycache__/` and `*.pyc`.
+
+## Recent Skill Updates (March 2026)
+- Prefer repo-root script paths in docs and examples (for example, `skills/<skill-name>/scripts/...`) so commands are copy/paste-safe without changing directories.
+- `skills/weather-forecast/scripts/get_forecast.py` now emits clean JSON on stdout for `--json`; status/error text goes to stderr or table mode only.
+- `skills/weather-forecast/scripts/get_coordinates.py` now exits immediately on invalid state input with a single clear error.
+- `skills/skill-creator/scripts/package_skill.py` now filters transient files (`__pycache__/`, `.pyc`, `.pyo`, `.DS_Store`, `.git`) from packaged zips.
 
 ## Commit & Pull Request Guidelines
 - Recent history uses short, direct subjects (for example: `tweak readme`, `migrate over skills files`).
@@ -53,11 +63,14 @@ No formal `tests/` suite is present yet. Use script-level validation:
 ## Skills
 A skill is a set of local instructions to follow that is stored in a `SKILL.md` file. Below is the list of skills that can be used. Each entry includes a name, description, and file path so you can open the source for full instructions when using a specific skill.
 ### Available skills
+- census-demographics: This skill should be used when users need ACS demographics for a U.S. state or county, including population, age, income, poverty, home value, and rent metrics. (file: /Users/akessler/GITREPOS/github_kessler/nicar2026_skills_in_codex_claude/.codex/skills/census-demographics/SKILL.md)
 - fecfile: Analyze FEC (Federal Election Commission) campaign finance filings. Use when working with FEC filing IDs, campaign finance data, contributions, disbursements, or political committee financial reports. (file: /Users/akessler/GITREPOS/github_kessler/nicar2026_skills_in_codex_claude/.codex/skills/fecfile/SKILL.md)
 - image-rotator: This skill should be used when users need to rotate images by 90 degrees. It handles image rotation tasks for common formats (PNG, JPG, JPEG, GIF, BMP, TIFF) using a reliable Python script that preserves image quality and supports both clockwise and counter-clockwise rotation. (file: /Users/akessler/GITREPOS/github_kessler/nicar2026_skills_in_codex_claude/.codex/skills/image-rotator/SKILL.md)
+- majority-minority-change: This skill should be used when users need to analyze county-level racial composition change between two Census snapshots and identify where places crossed a majority-minority threshold. (file: /Users/akessler/GITREPOS/github_kessler/nicar2026_skills_in_codex_claude/.codex/skills/majority-minority-change/SKILL.md)
+- peer-county-finder: This skill should be used when users need to find counties that are demographically similar to a target county using local numeric indicators. (file: /Users/akessler/GITREPOS/github_kessler/nicar2026_skills_in_codex_claude/.codex/skills/peer-county-finder/SKILL.md)
 - skill-creator: Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations. (file: /Users/akessler/GITREPOS/github_kessler/nicar2026_skills_in_codex_claude/.codex/skills/skill-creator/SKILL.md)
+- state-county-rankings: This skill should be used when users need ranked county-level demographic metrics within a state from a local CSV file, such as income, population, poverty, or rent. (file: /Users/akessler/GITREPOS/github_kessler/nicar2026_skills_in_codex_claude/.codex/skills/state-county-rankings/SKILL.md)
 - weather-forecast: Fetch 7-day weather forecasts from Open-Meteo API. ALWAYS use get_coordinates.py first when given city names to look up coordinates, then use get_forecast.py with those coordinates. Use for weather forecasts, weather data, or temperature trends. (file: /Users/akessler/GITREPOS/github_kessler/nicar2026_skills_in_codex_claude/.codex/skills/weather-forecast/SKILL.md)
-- skill-installer: Install Codex skills into $CODEX_HOME/skills from a curated list or a GitHub repo path. Use when a user asks to list installable skills, install a curated skill, or install a skill from another repo (including private repos). (file: /Users/akessler/.codex/skills/.system/skill-installer/SKILL.md)
 ### How to use skills
 - Discovery: The list above is the skills available in this session (name + description + file path). Skill bodies live on disk at the listed paths.
 - Trigger rules: If the user names a skill (with `$SkillName` or plain text) OR the task clearly matches a skill's description shown above, you must use that skill for that turn. Multiple mentions mean use them all. Do not carry skills across turns unless re-mentioned.
