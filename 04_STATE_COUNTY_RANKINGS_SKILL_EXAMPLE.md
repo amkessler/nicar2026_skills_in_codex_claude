@@ -1,4 +1,4 @@
-# 05: Real-World Skill Example (State County Rankings From Local Census CSV)
+# 04: Real-World Skill Example (State County Rankings From Local Census CSV)
 
 This tutorial demonstrates a reporter-friendly skill that ranks counties within a state for one or more demographic metrics, using a local CSV file and no credentials.
 

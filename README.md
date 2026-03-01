@@ -2,10 +2,12 @@
 
 Demo project for NICAR 2026 showing how to use AI "skills" — modular, self-contained instruction
 packages that extend Claude/Codex's capabilities for domain-specific tasks. This repo includes
-four skills: `fecfile` for analyzing FEC campaign finance filings, `weather-forecast` for
-fetching 7-day forecasts, `image-rotator` for rotating images, and `skill-creator` for building
-new skills. Together they demonstrate the range of what skills can do — from domain-specific
-data analysis to simple utilities to meta-tooling for the skill system itself.
+six skills: `fecfile` for analyzing FEC campaign finance filings, `weather-forecast` for
+fetching 7-day forecasts, `image-rotator` for rotating images, `skill-creator` for building
+new skills, `state-county-rankings` for ranked county demographics from local CSVs, and
+`majority-minority-change` for threshold-crossing analysis between Census snapshots. Together
+they demonstrate the range of what skills can do — from domain-specific data analysis to simple
+utilities to meta-tooling for the skill system itself.
 
 ## Student Quickstart
 
@@ -14,10 +16,8 @@ For a step-by-step tutorial with copy/paste commands, see:
 - `01_QUICKSTART_TUTORIALS.md`
 - `02_SKILLS_TEACHING_NOTES.md` (teaching notes, exercises, and troubleshooting)
 - `03_BUILD_A_SKILL_FROM_YOUR_CODE.md` (build a skill from existing R/Python scripts)
-- `04_TIDYCENSUS_DEMOGRAPHICS_SKILL_EXAMPLE.md` (real-world R tidycensus skill example)
-- `05_STATE_COUNTY_RANKINGS_SKILL_EXAMPLE.md` (rank counties within a state from local demographics CSVs)
-- `06_MAJORITY_MINORITY_CHANGE_SKILL_EXAMPLE.md` (analyze threshold crossings between two Census snapshots)
-- `07_PEER_COUNTY_FINDER_SKILL_EXAMPLE.md` (find most similar counties from local indicator data)
+- `04_STATE_COUNTY_RANKINGS_SKILL_EXAMPLE.md` (rank counties within a state from local demographics CSVs)
+- `05_MAJORITY_MINORITY_CHANGE_SKILL_EXAMPLE.md` (analyze threshold crossings between two Census snapshots)
 
 ## What is a skill?
 

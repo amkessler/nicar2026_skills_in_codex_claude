@@ -1,4 +1,4 @@
-# 06: Real-World Skill Example (Majority-Minority Change Between Two Census Snapshots)
+# 05: Real-World Skill Example (Majority-Minority Change Between Two Census Snapshots)
 
 This tutorial shows how to build a skill that compares county-level racial composition across two local files and flags places that crossed the majority-minority threshold.
 
