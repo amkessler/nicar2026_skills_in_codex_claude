@@ -4,6 +4,10 @@
 This repo is a Python/Jupyter demo for NICAR 2026 focused on reusable AI skills.
 - `fec_find_filings.py`: CLI to query OpenFEC filings by committee ID.
 - `set_jupyter_kernel.py`: one-time local Jupyter kernel setup for this repo.
+- `01_QUICKSTART_TUTORIALS.md`: student quickstart commands and first-run workflows.
+- `02_SKILLS_TEACHING_NOTES.md`: teaching notes, exercises, and troubleshooting.
+- `03_BUILD_A_SKILL_FROM_YOUR_CODE.md`: tutorial for turning existing R/Python scripts into a skill.
+- `04_TIDYCENSUS_DEMOGRAPHICS_SKILL_EXAMPLE.md`: concrete R `tidycensus` skill build example.
 - `analysis/`: notebook work area; keep reusable templates in `analysis/notebook_templates/`.
 - `data/`: project data buckets (`source/`, `processed/`, `public/`, `documentation/`, `html_reports/`).
 - `skills/`: canonical teaching copy of all skills for workshop content.
@@ -24,6 +28,7 @@ This repo is a Python/Jupyter demo for NICAR 2026 focused on reusable AI skills.
 - Use `snake_case` for functions/variables and descriptive CLI flags.
 - Prefer small, composable scripts with explicit `argparse` options and clear help text.
 - Keep paths repo-relative and avoid hard-coded user-specific directories.
+- For top-level tutorial docs, use numeric ordering prefixes (for example: `01_...`, `02_...`) so reading order is explicit.
 
 ## Testing Guidelines
 No formal `tests/` suite is present yet. Use script-level validation:
@@ -41,6 +46,7 @@ No formal `tests/` suite is present yet. Use script-level validation:
 
 ## Security & Configuration Tips
 - Set `FEC_API_KEY` or `DATA_GOV_API_KEY` in local environment only; never commit secrets.
+- For `tidycensus` workflows, set `CENSUS_API_KEY` locally and never commit it.
 - `.env`, `.venv`, and generated notebooks are ignored; keep large/raw data in the existing `data/` subfolders.
 
 
@@ -51,8 +57,6 @@ A skill is a set of local instructions to follow that is stored in a `SKILL.md` 
 - image-rotator: This skill should be used when users need to rotate images by 90 degrees. It handles image rotation tasks for common formats (PNG, JPG, JPEG, GIF, BMP, TIFF) using a reliable Python script that preserves image quality and supports both clockwise and counter-clockwise rotation. (file: /Users/akessler/GITREPOS/github_kessler/nicar2026_skills_in_codex_claude/.codex/skills/image-rotator/SKILL.md)
 - skill-creator: Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations. (file: /Users/akessler/GITREPOS/github_kessler/nicar2026_skills_in_codex_claude/.codex/skills/skill-creator/SKILL.md)
 - weather-forecast: Fetch 7-day weather forecasts from Open-Meteo API. ALWAYS use get_coordinates.py first when given city names to look up coordinates, then use get_forecast.py with those coordinates. Use for weather forecasts, weather data, or temperature trends. (file: /Users/akessler/GITREPOS/github_kessler/nicar2026_skills_in_codex_claude/.codex/skills/weather-forecast/SKILL.md)
-- fecfile: Analyze FEC (Federal Election Commission) campaign finance filings. Use when working with FEC filing IDs, campaign finance data, contributions, disbursements, or political committee financial reports. (file: /Users/akessler/.codex/skills/fecfile/SKILL.md)
-- skill-creator: Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Codex's capabilities with specialized knowledge, workflows, or tool integrations. (file: /Users/akessler/.codex/skills/.system/skill-creator/SKILL.md)
 - skill-installer: Install Codex skills into $CODEX_HOME/skills from a curated list or a GitHub repo path. Use when a user asks to list installable skills, install a curated skill, or install a skill from another repo (including private repos). (file: /Users/akessler/.codex/skills/.system/skill-installer/SKILL.md)
 ### How to use skills
 - Discovery: The list above is the skills available in this session (name + description + file path). Skill bodies live on disk at the listed paths.
