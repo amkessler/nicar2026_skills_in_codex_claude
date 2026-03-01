@@ -3,7 +3,7 @@
 This guide is an attendee-friendly companion to `01_QUICKSTART_TUTORIALS.md`.
 Use it in session to explain how skills work, when to use each one, and how to avoid common mistakes.
 
-## 1) Skill Mental Model (1 page)
+## 1) Skill Mental Model
 
 A skill is a reusable instruction package for the assistant.
 It helps the assistant choose better steps and use stable scripts instead of improvising every time.
