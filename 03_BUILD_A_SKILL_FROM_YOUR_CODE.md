@@ -3,8 +3,6 @@
 This tutorial walks attendees through turning existing code into a reusable skill.
 Use this when you already have working scripts and want the assistant to run them reliably.
 
-Estimated time: 20-30 minutes.
-
 ## What You Are Building
 
 By the end, you will have:

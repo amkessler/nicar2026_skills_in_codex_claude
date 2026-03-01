@@ -107,7 +107,7 @@ Why this matters:
 | Ranking/change scripts fail on columns | Input file schema mismatch | Check required columns in each skill `references/` doc |
 | Skill validation fails | Missing/invalid frontmatter | Fix `name` and `description` in `SKILL.md` |
 
-## 7) Mini Exercises (10-15 minutes each)
+## 7) Mini Exercises 
 
 ### Exercise A: FEC Basics
 1. Find 5 filings for a committee using `fec_find_filings.py`.

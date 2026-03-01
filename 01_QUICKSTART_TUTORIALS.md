@@ -1,11 +1,9 @@
-# Quickstart Tutorials (NICAR 2026 Skills Demo)
+# Quickstart Tutorials For Underlying Code
 
 This guide gives attendees three fast, hands-on paths through this repo:
 1. FEC filing analysis
 2. Weather forecast workflow
 3. Creating a new skill
-
-Each section is designed to take about 5 minutes.
 
 ## Before You Start
 

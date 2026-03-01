@@ -2,8 +2,6 @@
 
 This tutorial shows how to build a skill that compares county-level racial composition across two local files and flags places that crossed the majority-minority threshold.
 
-Estimated time: 30-40 minutes.
-
 ## Reporting Use Case
 
 Prompts this skill should handle:

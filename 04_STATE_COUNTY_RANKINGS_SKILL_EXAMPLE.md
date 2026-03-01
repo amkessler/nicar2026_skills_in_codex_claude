@@ -2,8 +2,6 @@
 
 This tutorial demonstrates a reporter-friendly skill that ranks counties within a state for one or more demographic metrics, using a local CSV file and no credentials.
 
-Estimated time: 25-35 minutes.
-
 ## Reporting Use Case
 
 Prompts this skill should handle:
