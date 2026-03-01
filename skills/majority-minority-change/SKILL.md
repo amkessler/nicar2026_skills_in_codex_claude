@@ -11,6 +11,9 @@ Use this skill to compare county demographics across two years and flag threshol
 
 - R with `dplyr`, `readr`, `stringr`, and `jsonlite`
 - Two local CSV files with county identifiers and required race/population fields
+- Bundled Census CSV snapshots for immediate use:
+  - `skills/majority-minority-change/data/county_race_acs5_2010.csv`
+  - `skills/majority-minority-change/data/county_race_acs5_2020.csv`
 - No API key required
 
 ## Required Input Columns
@@ -25,7 +28,12 @@ Use this skill to compare county demographics across two years and flag threshol
 ## Standard Workflow
 
 1. Confirm start/end files and year labels.
+   - Default bundled files:
+     - start: `skills/majority-minority-change/data/county_race_acs5_2010.csv`
+     - end: `skills/majority-minority-change/data/county_race_acs5_2020.csv`
 2. Run script with optional state filter.
+   - Example:
+     `Rscript skills/majority-minority-change/scripts/analyze_majority_minority_change.R --input-start skills/majority-minority-change/data/county_race_acs5_2010.csv --input-end skills/majority-minority-change/data/county_race_acs5_2020.csv --start-label 2010 --end-label 2020`
 3. Review counties with largest percentage-point shifts and threshold crossings.
 
 ## Output

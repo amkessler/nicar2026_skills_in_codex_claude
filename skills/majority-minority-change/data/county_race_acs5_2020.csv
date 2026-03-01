@@ -1,0 +1,3222 @@
+"county_fips","state","county","total_population","non_hispanic_white"
+"01001","Alabama","Autauga",55639,41160
+"01003","Alabama","Baldwin",218289,180955
+"01005","Alabama","Barbour",25026,11332
+"01007","Alabama","Bibb",22374,16650
+"01009","Alabama","Blount",57755,50065
+"01011","Alabama","Bullock",10173,2162
+"01013","Alabama","Butler",19726,10125
+"01015","Alabama","Calhoun",114324,82049
+"21135","Kentucky","Lewis",13345,13030
+"21137","Kentucky","Lincoln",24493,23027
+"21139","Kentucky","Livingston",9172,8727
+"21141","Kentucky","Logan",27049,23969
+"21143","Kentucky","Lyon",8226,7380
+"21145","Kentucky","McCracken",65485,54250
+"21147","Kentucky","McCreary",17333,15416
+"21151","Kentucky","Madison",92090,82311
+"21155","Kentucky","Marion",19257,16908
+"21157","Kentucky","Marshall",31225,30071
+"21161","Kentucky","Mason",17122,15164
+"21163","Kentucky","Meade",28379,25325
+"21167","Kentucky","Mercer",21690,19678
+"21169","Kentucky","Metcalfe",10062,9534
+"21173","Kentucky","Montgomery",28042,26012
+"21175","Kentucky","Morgan",13270,12188
+"21179","Kentucky","Nelson",45915,41482
+"21181","Kentucky","Nicholas",7189,6883
+"21185","Kentucky","Oldham",66508,58456
+"21187","Kentucky","Owen",10847,10283
+"21191","Kentucky","Pendleton",14587,13828
+"21195","Kentucky","Pike",58595,56766
+"21197","Kentucky","Powell",12283,11737
+"21201","Kentucky","Robertson",2139,2076
+"21203","Kentucky","Rockcastle",16795,16275
+"21207","Kentucky","Russell",17846,16708
+"21209","Kentucky","Scott",55961,48541
+"21213","Kentucky","Simpson",18319,15607
+"21215","Kentucky","Spencer",18945,17767
+"21219","Kentucky","Todd",12334,10599
+"21223","Kentucky","Trimble",8528,7842
+"21225","Kentucky","Union",14582,11994
+"21229","Kentucky","Washington",12044,10579
+"21231","Kentucky","Wayne",20447,19044
+"21235","Kentucky","Whitley",36252,34752
+"21237","Kentucky","Wolfe",7188,7019
+"23001","Maine","Androscoggin",107958,97338
+"23003","Maine","Aroostook",67431,63194
+"23007","Maine","Franklin",29933,28548
+"23009","Maine","Hancock",54832,51809
+"23013","Maine","Knox",39809,37807
+"23015","Maine","Lincoln",34415,32583
+"23019","Maine","Penobscot",151696,141678
+"23021","Maine","Piscataquis",16864,15887
+"23025","Maine","Somerset",50573,48340
+"23029","Maine","Washington",31378,28007
+"23031","Maine","York",206074,192520
+"27003","Minnesota","Anoka",353775,283436
+"27005","Minnesota","Becker",34227,29290
+"27007","Minnesota","Beltrami",46784,33506
+"27009","Minnesota","Benton",40476,35979
+"27011","Minnesota","Big Stone",4974,4787
+"27013","Minnesota","Blue Earth",67368,58852
+"27015","Minnesota","Brown",25076,23354
+"27017","Minnesota","Carlton",35709,31459
+"27019","Minnesota","Carver",103561,91429
+"27021","Minnesota","Cass",29462,23697
+"27023","Minnesota","Chippewa",11876,10285
+"27025","Minnesota","Chisago",55844,51758
+"47121","Tennessee","Meigs",12237,11381
+"47125","Tennessee","Montgomery",204992,128270
+"47127","Tennessee","Moore",6396,5926
+"47131","Tennessee","Obion",30343,24691
+"47133","Tennessee","Overton",22171,21266
+"47137","Tennessee","Pickett",5068,4882
+"47139","Tennessee","Polk",16807,15592
+"47143","Tennessee","Rhea",32964,29564
+"47145","Tennessee","Roane",53331,49376
+"47149","Tennessee","Rutherford",324139,225604
+"47151","Tennessee","Scott",22020,21366
+"47153","Tennessee","Sequatchie",14936,13905
+"47157","Tennessee","Shelby",936611,329976
+"47159","Tennessee","Smith",19926,18258
+"47163","Tennessee","Sullivan",157707,146987
+"47165","Tennessee","Sumner",187680,155517
+"47169","Tennessee","Trousdale",10910,9007
+"47171","Tennessee","Unicoi",17821,16463
+"47175","Tennessee","Van Buren",5813,5557
+"47177","Tennessee","Warren",40971,34744
+"47181","Tennessee","Wayne",16638,14898
+"47183","Tennessee","Weakley",33377,28884
+"47187","Tennessee","Williamson",232380,194587
+"47189","Tennessee","Wilson",140604,117685
+"49003","Utah","Box Elder",54953,47657
+"49005","Utah","Cache",126336,105632
+"49009","Utah","Daggett",590,573
+"49011","Utah","Davis",350761,291999
+"49015","Utah","Emery",10099,9188
+"49017","Utah","Garfield",5000,4431
+"49019","Utah","Grand",9698,7944
+"49021","Utah","Iron",53148,45396
+"49023","Utah","Juab",11623,10651
+"49025","Utah","Kane",7658,6949
+"49027","Utah","Millard",12963,10783
+"49029","Utah","Morgan",11950,11248
+"49031","Utah","Piute",1870,1792
+"49033","Utah","Rich",2415,2158
+"49035","Utah","Salt Lake",1146215,808106
+"49037","Utah","San Juan",15295,6772
+"49039","Utah","Sanpete",30421,26149
+"49041","Utah","Sevier",21475,19708
+"49043","Utah","Summit",41680,35194
+"49045","Utah","Tooele",69740,57134
+"49047","Utah","Uintah",35736,28922
+"49049","Utah","Utah",621506,509139
+"49051","Utah","Wasatch",33053,27512
+"49053","Utah","Washington",172127,144595
+"49055","Utah","Wayne",2698,2473
+"49057","Utah","Weber",255284,193651
+"50003","Vermont","Bennington",35649,33393
+"50005","Vermont","Caledonia",30027,28268
+"50009","Vermont","Essex",6179,5869
+"50011","Vermont","Franklin",49275,46162
+"50015","Vermont","Lamoille",25376,23912
+"50017","Vermont","Orange",28873,27496
+"50021","Vermont","Rutland",58527,55432
+"50023","Vermont","Washington",58336,54664
+"50027","Vermont","Windsor",55191,52146
+"51001","Virginia","Accomack",32560,19505
+"27165","Minnesota","Watonwan",10903,7782
+"29037","Missouri","Cass",104687,91451
+"29043","Missouri","Christian",87324,80998
+"29049","Missouri","Clinton",20503,19165
+"29055","Missouri","Crawford",23984,22747
+"29061","Missouri","Daviess",8294,7943
+"29067","Missouri","Douglas",13335,12638
+"29073","Missouri","Gasconade",14673,14039
+"29079","Missouri","Grundy",9885,9277
+"29085","Missouri","Hickory",9452,8946
+"29091","Missouri","Howell",40130,37763
+"29097","Missouri","Jasper",120528,100935
+"29101","Missouri","Johnson",53948,46003
+"29107","Missouri","Lafayette",32697,29987
+"29113","Missouri","Lincoln",57590,53519
+"29119","Missouri","McDonald",22882,16577
+"29125","Missouri","Maries",8791,8379
+"29131","Missouri","Miller",25369,24038
+"29137","Missouri","Monroe",8630,7980
+"29143","Missouri","New Madrid",17275,13675
+"29149","Missouri","Oregon",10561,9932
+"29155","Missouri","Pemiscot",16330,11129
+"29203","Missouri","Shannon",8207,7693
+"29209","Missouri","Stone",31875,30155
+"29215","Missouri","Texas",25518,23144
+"29221","Missouri","Washington",24819,23254
+"29227","Missouri","Worth",2001,1921
+"29510","Missouri","St. Louis",304709,133869
+"12005","Florida","Bay",180076,136521
+"12011","Florida","Broward",1942273,689773
+"12017","Florida","Citrus",147938,129540
+"12023","Florida","Columbia",70898,50813
+"12031","Florida","Duval",948651,491340
+"12037","Florida","Franklin",11914,9090
+"12043","Florida","Glades",13777,8255
+"12049","Florida","Hardee",27027,12598
+"12055","Florida","Highlands",104574,69153
+"12061","Florida","Indian River",156964,117635
+"12067","Florida","Lafayette",8576,5649
+"12073","Florida","Leon",291863,163405
+"12077","Florida","Liberty",8333,6251
+"12083","Florida","Marion",360210,250938
+"12087","Florida","Monroe",75137,49109
+"12093","Florida","Okeechobee",41611,26036
+"31005","Nebraska","Arthur",439,418
+"31011","Nebraska","Boone",5228,5036
+"31017","Nebraska","Brown",2887,2725
+"31023","Nebraska","Butler",7997,7498
+"27159","Minnesota","Wadena",13681,12699
+"31029","Nebraska","Chase",3707,3099
+"31035","Nebraska","Clay",6193,5496
+"31039","Nebraska","Cuming",8882,7824
+"31045","Nebraska","Dawes",8685,7393
+"31051","Nebraska","Dixon",5682,4758
+"31057","Nebraska","Dundy",1928,1753
+"31063","Nebraska","Frontier",2636,2500
+"31069","Nebraska","Garden",1916,1794
+"31075","Nebraska","Grant",691,671
+"31081","Nebraska","Hamilton",9219,8710
+"01019","Alabama","Cherokee",26035,23779
+"01021","Alabama","Chilton",44147,35283
+"01023","Alabama","Choctaw",12755,7200
+"01025","Alabama","Clarke",23866,12471
+"01027","Alabama","Clay",13285,10683
+"01029","Alabama","Cleburne",14952,13845
+"01031","Alabama","Coffee",52238,36368
+"01033","Alabama","Colbert",54957,42876
+"01035","Alabama","Conecuh",12219,6117
+"01037","Alabama","Coosa",10696,6924
+"01041","Alabama","Crenshaw",13826,9774
+"01043","Alabama","Cullman",83345,76163
+"01047","Alabama","Dallas",38184,10334
+"01049","Alabama","DeKalb",71430,57324
+"01053","Alabama","Escambia",36775,22091
+"01055","Alabama","Etowah",102721,79697
+"01059","Alabama","Franklin",31587,24112
+"01063","Alabama","Greene",8221,1418
+"01065","Alabama","Hale",14754,5668
+"01069","Alabama","Houston",105319,69340
+"01071","Alabama","Jackson",51765,46198
+"01075","Alabama","Lamar",13854,11911
+"01077","Alabama","Lauderdale",92870,78084
+"01081","Alabama","Lee",163461,109707
+"01085","Alabama","Lowndes",9936,2450
+"01087","Alabama","Macon",18437,2973
+"01091","Alabama","Marengo",19138,8567
+"01093","Alabama","Marion",29818,27233
+"01097","Alabama","Mobile",413977,233970
+"01099","Alabama","Monroe",21006,11373
+"01103","Alabama","Morgan",119352,89837
+"01107","Alabama","Pickens",20049,10752
+"01109","Alabama","Pike",33274,18591
+"01113","Alabama","Russell",57938,26096
+"01115","Alabama","St. Clair",88929,76137
+"01119","Alabama","Sumter",12595,3131
+"01123","Alabama","Tallapoosa",40450,27819
+"01125","Alabama","Tuscaloosa",208854,127502
+"01129","Alabama","Washington",16336,10653
+"01131","Alabama","Wilcox",10552,2824
+"06001","California","Alameda",1661584,508583
+"06003","California","Alpine",1159,595
+"06007","California","Butte",223344,158924
+"06011","California","Colusa",21491,7482
+"06013","California","Contra Costa",1147788,489135
+"06017","California","El Dorado",190345,146919
+"06019","California","Fresno",990204,284169
+"01017","Alabama","Chambers",33427,18413
+"06023","California","Humboldt",136101,99861
+"06025","California","Imperial",180580,18393
+"06029","California","Kern",892458,296505
+"06031","California","Kings",151090,47717
+"06035","California","Lassen",30600,19873
+"06039","California","Madera",155925,52109
+"06041","California","Marin",259441,183259
+"06043","California","Mariposa",17319,13666
+"06045","California","Mendocino",87110,55847
+"06047","California","Merced",273661,73587
+"06049","California","Modoc",8853,6830
+"27027","Minnesota","Clay",64029,55375
+"27029","Minnesota","Clearwater",8872,7512
+"27031","Minnesota","Cook",5402,4592
+"27033","Minnesota","Cottonwood",11279,9631
+"27035","Minnesota","Crow Wing",64775,61215
+"27037","Minnesota","Dakota",425271,328845
+"27039","Minnesota","Dodge",20807,19042
+"27041","Minnesota","Douglas",37820,36193
+"27043","Minnesota","Faribault",13727,12376
+"27045","Minnesota","Fillmore",21031,20087
+"27049","Minnesota","Goodhue",46330,42182
+"27051","Minnesota","Grant",5962,5658
+"27055","Minnesota","Houston",18670,17695
+"27057","Minnesota","Hubbard",21287,19714
+"27061","Minnesota","Itasca",45180,40966
+"27065","Minnesota","Kanabec",16205,15335
+"27067","Minnesota","Kandiyohi",42909,33945
+"27071","Minnesota","Koochiching",12355,11254
+"27073","Minnesota","Lac qui Parle",6645,6288
+"27077","Minnesota","Lake of the Woods",3747,3447
+"27079","Minnesota","Le Sueur",28425,25815
+"27083","Minnesota","Lyon",25696,21338
+"27085","Minnesota","McLeod",35788,32371
+"27089","Minnesota","Marshall",9353,8716
+"27091","Minnesota","Martin",19737,18262
+"27095","Minnesota","Mille Lacs",25963,23000
+"27097","Minnesota","Morrison",33119,31638
+"27101","Minnesota","Murray",8247,7622
+"27103","Minnesota","Nicollet",34176,30080
+"27107","Minnesota","Norman",6466,5766
+"27109","Minnesota","Olmsted",156446,123695
+"27113","Minnesota","Pennington",14110,12742
+"27115","Minnesota","Pine",29254,25970
+"27119","Minnesota","Polk",31384,26929
+"27121","Minnesota","Pope",11107,10573
+"27125","Minnesota","Red Lake",4005,3683
+"27127","Minnesota","Redwood",15193,13167
+"27131","Minnesota","Rice",66549,54255
+"27133","Minnesota","Rock",9386,8752
+"27137","Minnesota","St. Louis",199499,180204
+"27139","Minnesota","Scott",147201,117972
+"27143","Minnesota","Sibley",14871,13091
+"27145","Minnesota","Stearns",159788,135291
+"27149","Minnesota","Stevens",9770,8468
+"27151","Minnesota","Swift",9329,8417
+"27155","Minnesota","Traverse",3282,2878
+"27157","Minnesota","Wabasha",21564,20379
+"27161","Minnesota","Waseca",18658,16601
+"27163","Minnesota","Washington",259072,211750
+"27167","Minnesota","Wilkin",6264,5819
+"27169","Minnesota","Winona",50744,46137
+"27171","Minnesota","Wright",136387,125212
+"27173","Minnesota","Yellow Medicine",9775,8725
+"29001","Missouri","Adair",25468,22696
+"29003","Missouri","Andrew",17554,16541
+"29005","Missouri","Atchison",5180,4989
+"29007","Missouri","Audrain",25336,22141
+"29009","Missouri","Barry",35615,30050
+"29011","Missouri","Barton",11732,10778
+"51005","Virginia","Alleghany",15030,13733
+"51007","Virginia","Amelia",12970,9463
+"51011","Virginia","Appomattox",15814,12148
+"51013","Virginia","Arlington",236434,143786
+"51017","Virginia","Bath",4248,3900
+"51019","Virginia","Bedford",78965,68785
+"51023","Virginia","Botetourt",33440,31015
+"51025","Virginia","Brunswick",16336,6630
+"51029","Virginia","Buckingham",17087,10451
+"51031","Virginia","Campbell",55406,43814
+"51035","Virginia","Carroll",29911,28176
+"51036","Virginia","Charles City",6965,2981
+"51037","Virginia","Charlotte",11953,8119
+"51043","Virginia","Clarke",14498,12373
+"51045","Virginia","Craig",5103,5012
+"51049","Virginia","Cumberland",9869,6256
+"51051","Virginia","Dickenson",14524,14156
+"51057","Virginia","Essex",10960,5995
+"51059","Virginia","Fairfax",1149439,574760
+"51063","Virginia","Floyd",15766,14699
+"51065","Virginia","Fluvanna",26873,20828
+"51069","Virginia","Frederick",88054,72947
+"51071","Virginia","Giles",16760,15861
+"51075","Virginia","Goochland",23472,18203
+"51077","Virginia","Grayson",15651,14006
+"51081","Virginia","Greensville",11403,4125
+"51083","Virginia","Halifax",34295,20486
+"51087","Virginia","Henrico",330076,172663
+"51089","Virginia","Henry",51032,35486
+"51093","Virginia","Isle of Wight",37107,26058
+"51095","Virginia","James City",76032,56879
+"51097","Virginia","King and Queen",7011,4628
+"51099","Virginia","King George",26679,19381
+"51101","Virginia","King William",16985,13084
+"51103","Virginia","Lancaster",10686,7187
+"51105","Virginia","Lee",23723,22068
+"51107","Virginia","Loudoun",405312,223329
+"51109","Virginia","Louisa",36654,28620
+"51111","Virginia","Lunenburg",12294,7259
+"51113","Virginia","Madison",13208,11191
+"51115","Virginia","Mathews",8760,7499
+"51117","Virginia","Mecklenburg",30726,18497
+"51119","Virginia","Middlesex",10642,8271
+"51121","Virginia","Montgomery",98495,82127
+"51125","Virginia","Nelson",14812,12035
+"51127","Virginia","New Kent",22310,17481
+"51131","Virginia","Northampton",11826,6464
+"51133","Virginia","Northumberland",12151,8422
+"51135","Virginia","Nottoway",15338,8304
+"51137","Virginia","Orange",36501,28366
+"51139","Virginia","Page",23862,22286
+"51141","Virginia","Patrick",17660,15845
+"51145","Virginia","Powhatan",29253,24899
+"51147","Virginia","Prince Edward",22892,13967
+"51149","Virginia","Prince George",38292,20856
+"51155","Virginia","Pulaski",34113,30926
+"51157","Virginia","Rappahannock",7360,6497
+"51161","Virginia","Roanoke",94103,80431
+"31087","Nebraska","Hitchcock",2788,2627
+"31093","Nebraska","Howard",6428,5937
+"31099","Nebraska","Kearney",6588,6010
+"31105","Nebraska","Kimball",3576,3082
+"31111","Nebraska","Lincoln",35042,30571
+"31117","Nebraska","McPherson",420,415
+"31123","Nebraska","Morrill",4711,3843
+"31127","Nebraska","Nemaha",6978,6353
+"31175","Nebraska","Valley",4100,3937
+"31179","Nebraska","Wayne",9388,8408
+"31185","Nebraska","York",13671,12331
+"32005","Nevada","Douglas",48486,38643
+"32011","Nevada","Eureka",1839,1669
+"32017","Nevada","Lincoln",5177,4284
+"32023","Nevada","Nye",45514,34078
+"32031","Nevada","Washoe",464182,288803
+"33001","New Hampshire","Belknap",61174,57849
+"33007","New Hampshire","Coos",31486,29677
+"33013","New Hampshire","Merrimack",150902,138724
+"33019","New Hampshire","Sullivan",43173,40774
+"22005","Louisiana","Ascension",125061,84811
+"22011","Louisiana","Beauregard",37387,30042
+"22017","Louisiana","Caddo",243243,107795
+"22023","Louisiana","Cameron",6963,6279
+"22029","Louisiana","Concordia",19533,11072
+"22035","Louisiana","East Carroll",6947,1856
+"22041","Louisiana","Franklin",20109,13071
+"22047","Louisiana","Iberville",32626,15514
+"22053","Louisiana","Jefferson Davis",31425,24497
+"22101","Louisiana","St. Mary",50020,27956
+"22107","Louisiana","Tensas",4435,1872
+"22111","Louisiana","Union",22270,15356
+"22117","Louisiana","Washington",46325,30228
+"22123","Louisiana","West Carroll",10934,8574
+"36003","New York","Allegany",46304,43664
+"36009","New York","Cattaraugus",76750,69202
+"36015","New York","Chemung",84115,72022
+"36021","New York","Columbia",60016,51480
+"36027","New York","Dutchess",293524,207050
+"36031","New York","Essex",37281,34175
+"36037","New York","Genesee",57554,51937
+"36043","New York","Herkimer",61738,57782
+"36049","New York","Lewis",26456,25270
+"36055","New York","Monroe",743084,519765
+"36061","New York","New York",1629153,763202
+"36067","New York","Onondaga",461591,352458
+"36073","New York","Orleans",40624,34890
+"36079","New York","Putnam",98714,76625
+"36085","New York","Richmond",475596,286462
+"37007","North Carolina","Anson",24430,10905
+"37013","North Carolina","Beaufort",47160,30988
+"37019","North Carolina","Brunswick",137303,111788
+"37025","North Carolina","Cabarrus",211605,135642
+"37031","North Carolina","Carteret",69301,59743
+"37037","North Carolina","Chatham",72853,52365
+"37045","North Carolina","Cleveland",97765,70917
+"37051","North Carolina","Cumberland",334562,142180
+"37057","North Carolina","Davidson",166837,132663
+"06053","California","Monterey",432977,127632
+"06055","California","Napa",138572,71817
+"06057","California","Nevada",99417,84317
+"06059","California","Orange",3170345,1262640
+"06061","California","Placer",391799,280266
+"06063","California","Plumas",18844,15501
+"06065","California","Riverside",2437864,837847
+"06067","California","Sacramento",1537948,671965
+"06069","California","San Benito",61547,20567
+"06071","California","San Bernardino",2162532,596262
+"06073","California","San Diego",3323970,1492165
+"06075","California","San Francisco",874784,348449
+"06077","California","San Joaquin",751615,230857
+"06079","California","San Luis Obispo",282517,192959
+"06081","California","San Mateo",765623,295172
+"06085","California","Santa Clara",1924379,589644
+"06087","California","Santa Cruz",273170,155409
+"06091","California","Sierra",2898,2561
+"06095","California","Solano",444538,165326
+"06097","California","Sonoma",496801,310607
+"06101","California","Sutter",96315,43635
+"06103","California","Tehama",64176,43273
+"06107","California","Tulare",463955,128751
+"06109","California","Tuolumne",54147,43139
+"06113","California","Yolo",218774,100258
+"06115","California","Yuba",77524,41849
+"05003","Arkansas","Ashley",20000,13581
+"05005","Arkansas","Baxter",41673,38865
+"05009","Arkansas","Boone",37525,35174
+"05013","Arkansas","Calhoun",5160,3721
+"05015","Arkansas","Carroll",28062,21984
+"05019","Arkansas","Clark",22341,15238
+"05021","Arkansas","Clay",14710,13943
+"05025","Arkansas","Cleveland",8063,6807
+"05027","Arkansas","Columbia",23620,14003
+"05031","Arkansas","Craighead",109081,81539
+"05035","Arkansas","Crittenden",48381,19947
+"05037","Arkansas","Cross",16576,11973
+"05041","Arkansas","Desha",11538,5145
+"05043","Arkansas","Drew",18263,12082
+"05047","Arkansas","Franklin",17785,16243
+"05049","Arkansas","Fulton",12301,11620
+"05053","Arkansas","Grant",18229,16850
+"05057","Arkansas","Hempstead",21695,11782
+"05059","Arkansas","Hot Spring",33667,27692
+"05063","Arkansas","Independence",37585,33044
+"05065","Arkansas","Izard",13596,12157
+"06051","California","Mono",14395,9338
+"05069","Arkansas","Jefferson",68123,26092
+"05071","Arkansas","Johnson",26475,20890
+"05075","Arkansas","Lawrence",16511,15474
+"05079","Arkansas","Lincoln",13278,8516
+"05081","Arkansas","Little River",12345,8982
+"05085","Arkansas","Lonoke",73163,62525
+"05087","Arkansas","Madison",16393,14472
+"05091","Arkansas","Miller",43515,29560
+"05095","Arkansas","Monroe",6879,3708
+"05097","Arkansas","Montgomery",8964,8153
+"29013","Missouri","Bates",16282,15214
+"29015","Missouri","Benton",19305,18238
+"29017","Missouri","Bollinger",12181,11636
+"29019","Missouri","Boone",179704,140869
+"29021","Missouri","Buchanan",87904,72663
+"29023","Missouri","Butler",42570,37609
+"29025","Missouri","Caldwell",9052,8525
+"29027","Missouri","Callaway",44944,40287
+"29029","Missouri","Camden",45823,43080
+"29031","Missouri","Cape Girardeau",78834,67480
+"29033","Missouri","Carroll",8723,8236
+"29035","Missouri","Carter",6085,5732
+"29039","Missouri","Cedar",14144,13363
+"29041","Missouri","Chariton",7449,7029
+"29045","Missouri","Clark",6783,6544
+"29047","Missouri","Clay",246480,198055
+"29051","Missouri","Cole",76630,62316
+"29053","Missouri","Cooper",17522,15401
+"29057","Missouri","Dade",7571,7076
+"29059","Missouri","Dallas",16841,15893
+"29063","Missouri","DeKalb",11872,10127
+"29065","Missouri","Dent",15518,14480
+"29069","Missouri","Dunklin",29657,23501
+"29071","Missouri","Franklin",103629,97965
+"29075","Missouri","Gentry",6576,6298
+"29077","Missouri","Greene",291574,253203
+"29081","Missouri","Harrison",8427,7980
+"29083","Missouri","Henry",21854,20419
+"29087","Missouri","Holt",4374,4186
+"29089","Missouri","Howard",10022,8861
+"29093","Missouri","Iron",10150,9579
+"29095","Missouri","Jackson",700733,432933
+"29099","Missouri","Jefferson",224777,208273
+"29103","Missouri","Knox",3948,3796
+"29105","Missouri","Laclede",35680,32925
+"29109","Missouri","Lawrence",38241,33951
+"29111","Missouri","Lewis",9898,9152
+"29115","Missouri","Linn",12004,11377
+"29117","Missouri","Livingston",14969,13804
+"29121","Missouri","Macon",15154,14130
+"29123","Missouri","Madison",12176,11525
+"29127","Missouri","Marion",28572,25674
+"29129","Missouri","Mercer",3623,3401
+"29133","Missouri","Mississippi",13328,9390
+"29135","Missouri","Moniteau",15907,14210
+"29139","Missouri","Montgomery",11414,10659
+"29141","Missouri","Morgan",20438,19210
+"29145","Missouri","Newton",58288,48824
+"29147","Missouri","Nodaway",22199,20452
+"29151","Missouri","Osage",13613,13256
+"29153","Missouri","Ozark",9138,8704
+"29157","Missouri","Perry",19227,18264
+"29159","Missouri","Pettis",42421,35800
+"29161","Missouri","Phelps",44587,39135
+"29163","Missouri","Pike",18158,16094
+"29165","Missouri","Platte",102848,82520
+"29167","Missouri","Polk",32031,29863
+"29169","Missouri","Pulaski",52359,36267
+"29171","Missouri","Putnam",4746,4542
+"51163","Virginia","Rockbridge",22728,20884
+"51167","Virginia","Russell",26937,25998
+"51169","Virginia","Scott",21761,21009
+"51173","Virginia","Smyth",30539,28703
+"51175","Virginia","Southampton",17829,10856
+"51179","Virginia","Stafford",150185,89842
+"51181","Virginia","Surry",6459,3412
+"51185","Virginia","Tazewell",41201,38609
+"51187","Virginia","Warren",39888,34416
+"51193","Virginia","Westmoreland",17873,11401
+"51195","Virginia","Wise",38032,34733
+"51199","Virginia","York",68389,47836
+"51510","Virginia","Alexandria",158309,81674
+"51530","Virginia","Buena Vista",6477,5690
+"51540","Virginia","Charlottesville",47217,30973
+"51570","Virginia","Colonial Heights",17283,12338
+"51580","Virginia","Covington",5653,4550
+"51590","Virginia","Danville",40668,16917
+"51600","Virginia","Fairfax",23312,12918
+"51610","Virginia","Falls Church",14309,10183
+"51630","Virginia","Fredericksburg",29059,16879
+"51640","Virginia","Galax",6402,4649
+"51660","Virginia","Harrisonburg",53558,34955
+"51670","Virginia","Hopewell",22500,10169
+"51680","Virginia","Lynchburg",80970,50382
+"51683","Virginia","Manassas",41038,16248
+"51690","Virginia","Martinsville",12646,5498
+"51700","Virginia","Newport News",179582,75587
+"51720","Virginia","Norton",3969,3711
+"51730","Virginia","Petersburg",30791,4610
+"51740","Virginia","Portsmouth",94961,35156
+"51750","Virginia","Radford",17833,14827
+"51770","Virginia","Roanoke",99122,57543
+"51775","Virginia","Salem",25290,21390
+"51790","Virginia","Staunton",24660,19860
+"51800","Virginia","Suffolk",91383,44706
+"51810","Virginia","Virginia Beach",450882,275271
+"51820","Virginia","Waynesboro",22300,16614
+"51830","Virginia","Williamsburg",15034,10214
+"51840","Virginia","Winchester",27912,18102
+"53001","Washington","Adams",19702,6579
+"53003","Washington","Asotin",22636,20312
+"53005","Washington","Benton",200715,139714
+"53007","Washington","Chelan",76653,51761
+"53009","Washington","Clallam",76482,62839
+"53011","Washington","Clark",481950,373376
+"53013","Washington","Columbia",4024,3413
+"53015","Washington","Cowlitz",108399,89261
+"53017","Washington","Douglas",42520,26874
+"53019","Washington","Ferry",7643,5584
+"53021","Washington","Franklin",93681,37350
+"53023","Washington","Garfield",2258,2005
+"53025","Washington","Grant",96648,50910
+"53027","Washington","Grays Harbor",73769,58450
+"53029","Washington","Island",84187,66189
+"53033","Washington","King",2225064,1295401
+"53035","Washington","Kitsap",268945,204485
+"53037","Washington","Kittitas",47097,38673
+"53041","Washington","Lewis",79430,65654
+"37063","North Carolina","Durham",317665,135354
+"37069","North Carolina","Franklin",68027,43055
+"37075","North Carolina","Graham",8501,7335
+"37081","North Carolina","Guilford",532956,264497
+"37087","North Carolina","Haywood",61862,57103
+"37095","North Carolina","Hyde",5089,2790
+"37101","North Carolina","Johnston",203308,136014
+"37107","North Carolina","Lenoir",56350,27598
+"37113","North Carolina","Macon",35172,31243
+"37119","North Carolina","Mecklenburg",1095170,506691
+"37167","North Carolina","Stanly",62050,49951
+"37173","North Carolina","Swain",14241,8706
+"37179","North Carolina","Union",235767,168665
+"37185","North Carolina","Warren",19746,7492
+"37191","North Carolina","Wayne",123785,65500
+"37197","North Carolina","Yadkin",37589,31606
+"34003","New Jersey","Bergen",931275,516790
+"34009","New Jersey","Cape May",92701,78808
+"34015","New Jersey","Gloucester",291745,227276
+"34021","New Jersey","Mercer",368085,179637
+"34027","New Jersey","Morris",492715,347576
+"34033","New Jersey","Salem",62754,46227
+"34039","New Jersey","Union",555208,216483
+"18003","Indiana","Allen",375520,274722
+"18009","Indiana","Blackford",11926,11374
+"18015","Indiana","Carroll",20137,18837
+"18021","Indiana","Clay",26231,25089
+"18027","Indiana","Daviess",33277,29795
+"18033","Indiana","DeKalb",43193,41013
+"18039","Indiana","Elkhart",205184,152461
+"18085","Indiana","Kosciusko",79156,69253
+"18091","Indiana","LaPorte",110026,86458
+"18097","Indiana","Marion",957337,519576
+"18103","Indiana","Miami",35684,31534
+"18109","Indiana","Morgan",70141,66924
+"18115","Indiana","Ohio",5890,5614
+"18121","Indiana","Parke",16912,15986
+"18127","Indiana","Porter",169482,139571
+"18133","Indiana","Putnam",37419,34253
+"18139","Indiana","Rush",16632,15896
+"18143","Indiana","Scott",23785,22517
+"18149","Indiana","Starke",22996,21544
+"18155","Indiana","Switzerland",10727,10216
+"18161","Indiana","Union",7140,6777
+"18167","Indiana","Vigo",107305,91459
+"18173","Indiana","Warrick",62608,57108
+"18179","Indiana","Wells",28010,26248
+"25001","Massachusetts","Barnstable",213505,188560
+"25007","Massachusetts","Dukes",17430,14620
+"25013","Massachusetts","Hampden",466647,289402
+"25019","Massachusetts","Nantucket",11212,8094
+"39037","Ohio","Darke",51387,49301
+"39043","Ohio","Erie",74419,61264
+"39049","Ohio","Franklin",1304715,811162
+"39055","Ohio","Geauga",93657,89029
+"39061","Ohio","Hamilton",815790,526944
+"39067","Ohio","Harrison",15132,14337
+"39071","Ohio","Highland",43080,40926
+"39077","Ohio","Huron",58271,52341
+"05099","Arkansas","Nevada",8249,5159
+"05101","Arkansas","Newton",7753,7213
+"05103","Arkansas","Ouachita",23597,12953
+"05105","Arkansas","Perry",10342,9463
+"05107","Arkansas","Phillips",18151,6183
+"05109","Arkansas","Pike",10714,9242
+"05111","Arkansas","Poinsett",23747,20364
+"05113","Arkansas","Polk",19999,17451
+"05115","Arkansas","Pope",63926,53502
+"05117","Arkansas","Prairie",8138,6873
+"05119","Arkansas","Pulaski",393078,202791
+"05121","Arkansas","Randolph",17934,16549
+"05123","Arkansas","St. Francis",25477,10039
+"05125","Arkansas","Saline",120990,100891
+"05127","Arkansas","Scott",10269,8639
+"05129","Arkansas","Searcy",7898,7169
+"05131","Arkansas","Sebastian",127670,88206
+"05133","Arkansas","Sevier",16947,9647
+"05135","Arkansas","Sharp",17217,15831
+"05137","Arkansas","Stone",12582,11680
+"05139","Arkansas","Union",39089,23703
+"05143","Arkansas","Washington",236198,164022
+"05145","Arkansas","White",78725,69159
+"05149","Arkansas","Yell",21425,16030
+"09003","Connecticut","Hartford",892153,536165
+"09005","Connecticut","Litchfield",181143,158675
+"09009","Connecticut","New Haven",855733,529955
+"09011","Connecticut","New London",266868,199587
+"09015","Connecticut","Windham",116657,95560
+"11001","District of Columbia","District of Columbia",701974,257792
+"02016","Alaska","Aleutians West",5708,1323
+"02020","Alaska","Anchorage",292090,165727
+"02060","Alaska","Bristol Bay",739,354
+"02063","Alaska","Chugach",6495,4764
+"02068","Alaska","Denali",2502,2025
+"02070","Alaska","Dillingham",4934,736
+"02100","Alaska","Haines",2547,1837
+"02105","Alaska","Hoonah-Angoon",2135,973
+"02122","Alaska","Kenai Peninsula",58809,46564
+"02130","Alaska","Ketchikan Gateway",13833,8739
+"02158","Alaska","Kusilvak",8298,270
+"02170","Alaska","Matanuska-Susitna",107360,84183
+"02180","Alaska","Nome",10009,1434
+"02188","Alaska","Northwest Arctic",7709,808
+"02195","Alaska","Petersburg",3278,1983
+"02220","Alaska","Sitka City and",8569,5266
+"02230","Alaska","Skagway",1300,996
+"02275","Alaska","Wrangell City and",2510,1615
+"02282","Alaska","Yakutat City and",597,193
+"02290","Alaska","Yukon-Koyukuk",5305,1132
+"08003","Colorado","Alamosa",16153,7642
+"08007","Colorado","Archuleta",13588,10360
+"08009","Colorado","Baca",3570,3005
+"08013","Colorado","Boulder",324682,250714
+"08014","Colorado","Broomfield",69444,53076
+"08017","Colorado","Cheyenne",1999,1666
+"08021","Colorado","Conejos",8130,3639
+"08023","Colorado","Costilla",3810,1280
+"29173","Missouri","Ralls",10258,9661
+"29175","Missouri","Randolph",24769,21813
+"29177","Missouri","Ray",22900,21321
+"29179","Missouri","Reynolds",6274,5858
+"29181","Missouri","Ripley",13484,12820
+"29183","Missouri","St. Charles",398472,345054
+"29185","Missouri","St. Clair",9455,8861
+"29186","Missouri","Ste. Genevieve",17887,17087
+"29187","Missouri","St. Francois",66653,60706
+"29189","Missouri","St. Louis",996179,645623
+"29195","Missouri","Saline",22932,18242
+"29197","Missouri","Schuyler",4550,4407
+"29199","Missouri","Scotland",4923,4787
+"29201","Missouri","Scott",38538,31930
+"29205","Missouri","Shelby",5975,5664
+"29207","Missouri","Stoddard",29255,27753
+"29211","Missouri","Sullivan",6163,4729
+"29213","Missouri","Taney",55563,49154
+"29217","Missouri","Vernon",20560,19257
+"29219","Missouri","Warren",35090,31873
+"29223","Missouri","Wayne",13058,12222
+"29225","Missouri","Webster",39127,36719
+"29229","Missouri","Wright",18256,17074
+"12001","Florida","Alachua",268105,162097
+"12003","Florida","Baker",28679,22615
+"12007","Florida","Bradford",27723,20240
+"12009","Florida","Brevard",594001,438314
+"12013","Florida","Calhoun",14324,11070
+"12015","Florida","Charlotte",185926,155318
+"12019","Florida","Clay",215294,154754
+"12021","Florida","Collier",379345,237479
+"12027","Florida","DeSoto",37371,20416
+"12029","Florida","Dixie",16740,14037
+"12033","Florida","Escambia",316691,202168
+"12035","Florida","Flagler",112854,83656
+"12039","Florida","Gadsden",45787,14770
+"12041","Florida","Gilchrist",18245,15710
+"12045","Florida","Gulf",15073,11737
+"12047","Florida","Hamilton",14397,7818
+"12051","Florida","Hendry",41472,13005
+"12053","Florida","Hernando",190700,146288
+"12057","Florida","Hillsborough",1451358,695575
+"12059","Florida","Holmes",19530,16858
+"12063","Florida","Jackson",47409,30954
+"12065","Florida","Jefferson",14278,8543
+"12069","Florida","Lake",356115,245615
+"12071","Florida","Lee",756570,501531
+"12075","Florida","Levy",40979,32344
+"12079","Florida","Madison",18557,9972
+"12081","Florida","Manatee",393847,279267
+"12085","Florida","Martin",160420,125077
+"12086","Florida","Miami-Dade",2705528,365906
+"12089","Florida","Nassau",85762,74050
+"12091","Florida","Okaloosa",207430,151136
+"12095","Florida","Orange",1373784,538872
+"12097","Florida","Osceola",363666,112114
+"12099","Florida","Palm Beach",1482057,799163
+"12101","Florida","Pasco",539885,395754
+"12103","Florida","Pinellas",970985,713630
+"53043","Washington","Lincoln",10732,9762
+"53047","Washington","Okanogan",42080,27195
+"53049","Washington","Pacific",22121,17774
+"53053","Washington","Pierce",891862,585988
+"53055","Washington","San Juan",16953,14952
+"53059","Washington","Skamania",11906,10381
+"53061","Washington","Snohomish",811572,552513
+"53065","Washington","Stevens",45233,39049
+"53067","Washington","Thurston",284698,210483
+"53071","Washington","Walla Walla",60785,43266
+"53073","Washington","Whatcom",224538,175337
+"53077","Washington","Yakima",250649,106349
+"54001","West Virginia","Barbour",16543,15613
+"54005","West Virginia","Boone",21897,21365
+"54007","West Virginia","Braxton",14032,12890
+"54011","West Virginia","Cabell",93328,83791
+"54013","West Virginia","Calhoun",7185,7134
+"54015","West Virginia","Clay",8599,8520
+"54019","West Virginia","Fayette",43087,39840
+"54021","West Virginia","Gilmer",7970,6477
+"54025","West Virginia","Greenbrier",34893,31918
+"54027","West Virginia","Hampshire",23304,22287
+"54031","West Virginia","Hardy",13789,12388
+"54033","West Virginia","Harrison",67620,63590
+"54037","West Virginia","Jefferson",56922,47158
+"54039","West Virginia","Kanawha",181014,158047
+"54043","West Virginia","Lincoln",20617,20042
+"54045","West Virginia","Logan",32593,31241
+"54049","West Virginia","Marion",56233,51765
+"54051","West Virginia","Marshall",30900,29838
+"54055","West Virginia","Mercer",59370,53303
+"54057","West Virginia","Mineral",27047,25269
+"54061","West Virginia","Monongalia",106196,92805
+"54063","West Virginia","Monroe",13344,12828
+"54067","West Virginia","Nicholas",24857,24078
+"54069","West Virginia","Ohio",41875,38314
+"54071","West Virginia","Pendleton",6968,6557
+"54073","West Virginia","Pleasants",7457,7140
+"54075","West Virginia","Pocahontas",8382,8227
+"54077","West Virginia","Preston",33610,30630
+"54079","West Virginia","Putnam",56604,53770
+"54081","West Virginia","Raleigh",74452,64707
+"54083","West Virginia","Randolph",28763,26856
+"54085","West Virginia","Ritchie",9747,9434
+"54087","West Virginia","Roane",13831,13212
+"54089","West Virginia","Summers",12710,11687
+"54091","West Virginia","Taylor",16817,16065
+"54093","West Virginia","Tucker",6943,6751
+"54095","West Virginia","Tyler",8736,8477
+"54097","West Virginia","Upshur",24451,23144
+"54099","West Virginia","Wayne",39952,38755
+"54101","West Virginia","Webster",8289,8156
+"54103","West Virginia","Wetzel",15291,14802
+"54105","West Virginia","Wirt",5764,5578
+"54107","West Virginia","Wood",84387,80180
+"54109","West Virginia","Wyoming",20890,20292
+"55003","Wisconsin","Ashland",15524,12778
+"08027","Colorado","Custer",4941,4230
+"08029","Colorado","Delta",30758,24855
+"08033","Colorado","Dolores",1896,1503
+"08035","Colorado","Douglas",344280,280073
+"08037","Colorado","Eagle",54960,36508
+"08039","Colorado","Elbert",26230,22839
+"08041","Colorado","El Paso",710499,486202
+"08043","Colorado","Fremont",47725,37671
+"08045","Colorado","Garfield",59605,40435
+"08047","Colorado","Gilpin",6108,5243
+"08049","Colorado","Grand",15536,13342
+"08051","Colorado","Gunnison",17119,14811
+"08053","Colorado","Hinsdale",781,675
+"08055","Colorado","Huerfano",6769,4177
+"08057","Colorado","Jackson",1316,1152
+"08059","Colorado","Jefferson",578795,449495
+"08061","Colorado","Kiowa",1463,1377
+"08063","Colorado","Kit Carson",7246,5633
+"08065","Colorado","Lake",7845,5246
+"08067","Colorado","La Plata",56138,43681
+"08069","Colorado","Larimer",350523,287326
+"08071","Colorado","Las Animas",14323,7573
+"08073","Colorado","Lincoln",5608,3890
+"08075","Colorado","Logan",22282,16926
+"08077","Colorado","Mesa",152962,123784
+"08081","Colorado","Moffat",13150,10476
+"08083","Colorado","Montezuma",26266,18917
+"08087","Colorado","Morgan",28617,16606
+"08091","Colorado","Ouray",4890,4557
+"08093","Colorado","Park",18345,16104
+"08097","Colorado","Pitkin",17980,15186
+"08099","Colorado","Prowers",12035,7019
+"08103","Colorado","Rio Blanco",6369,5339
+"08105","Colorado","Rio Grande",11300,5844
+"08109","Colorado","Saguache",6730,3966
+"08113","Colorado","San Miguel",8110,6933
+"08115","Colorado","Sedgwick",2306,1814
+"08119","Colorado","Teller",24981,21537
+"08121","Colorado","Washington",4869,4206
+"08125","Colorado","Yuma",10013,7417
+"10003","Delaware","New Castle",558306,314898
+"10005","Delaware","Sussex",230249,171855
+"30003","Montana","Big Horn",13302,3555
+"30005","Montana","Blaine",6698,2960
+"30009","Montana","Carbon",10689,9991
+"30011","Montana","Carter",1305,1256
+"30015","Montana","Chouteau",5731,4410
+"30019","Montana","Daniels",1705,1564
+"30021","Montana","Dawson",8824,8148
+"30025","Montana","Fallon",2975,2788
+"30027","Montana","Fergus",11167,10441
+"30031","Montana","Gallatin",111401,101437
+"30033","Montana","Garfield",1051,1042
+"30037","Montana","Golden Valley",814,687
+"30041","Montana","Hill",16422,11299
+"30043","Montana","Jefferson",12069,11157
+"30047","Montana","Lake",30383,19746
+"30049","Montana","Lewis and Clark",68714,62243
+"30053","Montana","Lincoln",19845,18203
+"12107","Florida","Putnam",73784,52447
+"12109","Florida","St. Johns",255410,209101
+"12111","Florida","St. Lucie",320914,181092
+"12113","Florida","Santa Rosa",179587,146703
+"12115","Florida","Sarasota",427766,353394
+"12117","Florida","Seminole",466695,276415
+"12119","Florida","Sumter",129938,110297
+"12121","Florida","Suwannee",44290,33287
+"12123","Florida","Taylor",21709,15508
+"12125","Florida","Union",15282,10587
+"12127","Florida","Volusia",546107,387044
+"12129","Florida","Wakulla",32855,26005
+"12131","Florida","Walton",71049,59689
+"12133","Florida","Washington",25094,19345
+"31001","Nebraska","Adams",31541,26912
+"31003","Nebraska","Antelope",6315,5995
+"31007","Nebraska","Banner",645,587
+"31009","Nebraska","Blaine",467,467
+"31013","Nebraska","Box Butte",10845,8796
+"31015","Nebraska","Boyd",1882,1783
+"31019","Nebraska","Buffalo",49594,42950
+"31021","Nebraska","Burt",6503,6024
+"31025","Nebraska","Cass",26022,24188
+"31027","Nebraska","Cedar",8483,8168
+"31031","Nebraska","Cherry",5801,5059
+"31033","Nebraska","Cheyenne",9428,8371
+"31037","Nebraska","Colfax",10681,5170
+"31041","Nebraska","Custer",10788,10179
+"31043","Nebraska","Dakota",20124,9373
+"31047","Nebraska","Dawson",23638,13728
+"31049","Nebraska","Deuel",1770,1538
+"31053","Nebraska","Dodge",36565,30376
+"31055","Nebraska","Douglas",565739,389520
+"31059","Nebraska","Fillmore",5542,5182
+"31061","Nebraska","Franklin",2970,2825
+"31065","Nebraska","Furnas",4712,4387
+"31067","Nebraska","Gage",21548,20292
+"31071","Nebraska","Garfield",2081,2011
+"31073","Nebraska","Gosper",2001,1890
+"31077","Nebraska","Greeley",2361,2268
+"31079","Nebraska","Hall",61338,40255
+"31083","Nebraska","Harlan",3380,3182
+"31085","Nebraska","Hayes",889,824
+"31089","Nebraska","Holt",10123,9412
+"31091","Nebraska","Hooker",741,639
+"31095","Nebraska","Jefferson",7102,6615
+"31097","Nebraska","Johnson",5118,4103
+"31101","Nebraska","Keith",8048,7198
+"31103","Nebraska","Keya Paha",875,863
+"12105","Florida","Polk",705735,406349
+"31107","Nebraska","Knox",8400,7162
+"31109","Nebraska","Lancaster",315976,254480
+"31113","Nebraska","Logan",896,861
+"31115","Nebraska","Loup",690,620
+"31119","Nebraska","Madison",35023,27744
+"31121","Nebraska","Merrick",7826,7191
+"31125","Nebraska","Nance",3525,3383
+"31129","Nebraska","Nuckolls",4204,3962
+"31131","Nebraska","Otoe",15965,14135
+"55005","Wisconsin","Barron",45182,41938
+"55009","Wisconsin","Brown",262559,210667
+"55011","Wisconsin","Buffalo",13087,12500
+"55015","Wisconsin","Calumet",50005,45276
+"55017","Wisconsin","Chippewa",64175,59864
+"55021","Wisconsin","Columbia",57331,52800
+"55023","Wisconsin","Crawford",16155,15203
+"55027","Wisconsin","Dodge",87569,78421
+"55029","Wisconsin","Door",27621,25830
+"55033","Wisconsin","Dunn",45029,41598
+"55035","Wisconsin","Eau Claire",104132,92903
+"55039","Wisconsin","Fond du Lac",102654,90984
+"55041","Wisconsin","Forest",9003,6990
+"55045","Wisconsin","Green",36790,34616
+"55047","Wisconsin","Green Lake",18807,17300
+"55051","Wisconsin","Iron",5679,5414
+"55053","Wisconsin","Jackson",20556,17672
+"55057","Wisconsin","Juneau",26603,24300
+"55059","Wisconsin","Kenosha",168998,126773
+"55063","Wisconsin","La Crosse",118168,105586
+"55065","Wisconsin","Lafayette",16682,15623
+"55069","Wisconsin","Lincoln",27687,26258
+"55071","Wisconsin","Manitowoc",78977,70964
+"55075","Wisconsin","Marinette",40312,38341
+"55077","Wisconsin","Marquette",15380,14332
+"55079","Wisconsin","Milwaukee",949180,477362
+"55081","Wisconsin","Monroe",46155,41604
+"55083","Wisconsin","Oconto",37870,35794
+"55087","Wisconsin","Outagamie",186829,162791
+"55089","Wisconsin","Ozaukee",89179,81109
+"55093","Wisconsin","Pierce",42336,39570
+"55095","Wisconsin","Polk",43549,41298
+"55099","Wisconsin","Price",13351,12530
+"55101","Wisconsin","Racine",195859,138845
+"55105","Wisconsin","Rock",162532,133095
+"55107","Wisconsin","Rusk",14074,13305
+"55111","Wisconsin","Sauk",64152,58095
+"55113","Wisconsin","Sawyer",16477,12652
+"55115","Wisconsin","Shawano",40813,35204
+"55117","Wisconsin","Sheboygan",115152,96192
+"55119","Wisconsin","Taylor",20320,19434
+"55121","Wisconsin","Trempealeau",29525,26308
+"55123","Wisconsin","Vernon",30759,29467
+"55125","Wisconsin","Vilas",21923,18560
+"55127","Wisconsin","Walworth",103391,88146
+"55129","Wisconsin","Washburn",15726,14775
+"55131","Wisconsin","Washington",135529,125302
+"55133","Wisconsin","Waukesha",402637,352161
+"55135","Wisconsin","Waupaca",50997,48001
+"55137","Wisconsin","Waushara",24256,21623
+"55139","Wisconsin","Winnebago",170924,150071
+"55141","Wisconsin","Wood",72892,66984
+"56001","Wyoming","Albany",38664,31709
+"56003","Wyoming","Big Horn",11809,10333
+"56005","Wyoming","Campbell",46958,40986
+"56007","Wyoming","Carbon",15073,11610
+"56009","Wyoming","Converse",13842,12258
+"56011","Wyoming","Crook",7502,7054
+"56013","Wyoming","Fremont",39711,27549
+"30055","Montana","McCone",1826,1637
+"30059","Montana","Meagher",1795,1648
+"30061","Montana","Mineral",4330,3964
+"30065","Montana","Musselshell",4682,4284
+"30069","Montana","Petroleum",464,449
+"30071","Montana","Phillips",4032,3346
+"30075","Montana","Powder River",1634,1497
+"30077","Montana","Powell",6843,6079
+"30079","Montana","Prairie",1162,1121
+"30081","Montana","Ravalli",43424,39806
+"30083","Montana","Richland",11097,9779
+"30085","Montana","Roosevelt",11091,3741
+"30087","Montana","Rosebud",9065,4750
+"30089","Montana","Sanders",11804,10623
+"30091","Montana","Sheridan",3389,3055
+"30093","Montana","Silver Bow",34895,31473
+"30095","Montana","Stillwater",9562,8858
+"30097","Montana","Sweet Grass",3676,3404
+"30099","Montana","Teton",6127,5716
+"30101","Montana","Toole",4812,4179
+"30103","Montana","Treasure",614,606
+"30105","Montana","Valley",7424,6284
+"30107","Montana","Wheatland",2138,2020
+"30109","Montana","Wibaux",1037,944
+"30111","Montana","Yellowstone",160390,137578
+"13001","Georgia","Appling",18428,12695
+"13003","Georgia","Atkinson",8311,4636
+"13005","Georgia","Bacon",11140,8159
+"13007","Georgia","Baker",3090,1549
+"13011","Georgia","Banks",18900,16558
+"13013","Georgia","Barrow",81294,56583
+"13017","Georgia","Ben Hill",16889,9338
+"13021","Georgia","Bibb",153026,57550
+"13023","Georgia","Bleckley",12870,8769
+"13027","Georgia","Brooks",15548,8627
+"13029","Georgia","Bryan",38321,27632
+"13033","Georgia","Burke",22567,10697
+"13035","Georgia","Butts",24463,16105
+"13039","Georgia","Camden",53960,37558
+"13045","Georgia","Carroll",118692,82470
+"13047","Georgia","Catoosa",67181,60840
+"13051","Georgia","Chatham",289649,138639
+"13053","Georgia","Chattahoochee",10470,5921
+"13057","Georgia","Cherokee",253780,198415
+"13059","Georgia","Clarke",126952,69710
+"13063","Georgia","Clayton",287560,27546
+"13067","Georgia","Cobb",756653,386108
+"13069","Georgia","Coffee",43070,24878
+"13073","Georgia","Columbia",154257,104687
+"13075","Georgia","Cook",17217,11087
+"13079","Georgia","Crawford",12267,8986
+"13081","Georgia","Crisp",22509,11160
+"13085","Georgia","Dawson",25277,22982
+"13089","Georgia","DeKalb",755287,219695
+"13091","Georgia","Dodge",20725,13333
+"13095","Georgia","Dougherty",88696,21907
+"13097","Georgia","Douglas",145063,56389
+"13101","Georgia","Echols",3944,2331
+"13105","Georgia","Elbert",19164,12115
+"31133","Nebraska","Pawnee",2640,2513
+"31135","Nebraska","Perkins",2889,2727
+"31137","Nebraska","Phelps",9050,8293
+"31139","Nebraska","Pierce",7132,6837
+"31141","Nebraska","Platte",33250,25726
+"31143","Nebraska","Polk",5208,4775
+"31145","Nebraska","Red Willow",10725,9803
+"31147","Nebraska","Richardson",7913,7278
+"31149","Nebraska","Rock",1430,1379
+"31151","Nebraska","Saline",14221,9755
+"31153","Nebraska","Sarpy",183956,147279
+"31155","Nebraska","Saunders",21356,20276
+"31157","Nebraska","Scotts Bluff",35884,25606
+"31159","Nebraska","Seward",17217,16271
+"31161","Nebraska","Sheridan",5215,4221
+"31163","Nebraska","Sherman",3015,2887
+"31165","Nebraska","Sioux",1298,1191
+"31167","Nebraska","Stanton",5946,5393
+"31169","Nebraska","Thayer",5000,4711
+"31171","Nebraska","Thomas",586,579
+"31173","Nebraska","Thurston",7218,2533
+"31177","Nebraska","Washington",20546,19364
+"31181","Nebraska","Webster",3497,3201
+"31183","Nebraska","Wheeler",689,672
+"32001","Nevada","Churchill",24606,17798
+"32003","Nevada","Clark",2228866,930203
+"32007","Nevada","Elko",52537,34192
+"32009","Nevada","Esmeralda",1030,736
+"32013","Nevada","Humboldt",16834,10921
+"32015","Nevada","Lander",5565,3876
+"32019","Nevada","Lyon",55667,41259
+"32021","Nevada","Mineral",4487,2758
+"32027","Nevada","Pershing",6591,4244
+"32029","Nevada","Storey",4086,3329
+"32033","Nevada","White Pine",9570,6846
+"32510","Nevada","Carson City",55244,36520
+"33003","New Hampshire","Carroll",48461,46288
+"33005","New Hampshire","Cheshire",76040,71399
+"33009","New Hampshire","Grafton",90331,81200
+"33011","New Hampshire","Hillsborough",415305,347545
+"33015","New Hampshire","Rockingham",308211,283422
+"33017","New Hampshire","Strafford",130161,117151
+"22001","Louisiana","Acadia",62371,48176
+"22003","Louisiana","Allen",25572,18026
+"22007","Louisiana","Assumption",22236,14551
+"22009","Louisiana","Avoyelles",40465,26142
+"22013","Louisiana","Bienville",13391,7219
+"22015","Louisiana","Bossier",126952,84199
+"22019","Louisiana","Calcasieu",202858,135772
+"22021","Louisiana","Caldwell",9959,7875
+"22025","Louisiana","Catahoula",9586,6252
+"22027","Louisiana","Claiborne",15854,7086
+"22031","Louisiana","De Soto",27395,16151
+"22033","Louisiana","East Baton Rouge",443158,196221
+"22037","Louisiana","East Feliciana",19228,10294
+"22039","Louisiana","Evangeline",33491,22064
+"22043","Louisiana","Grant",22339,17004
+"22045","Louisiana","Iberia",70763,41136
+"22049","Louisiana","Jackson",15822,10564
+"56015","Wyoming","Goshen",13301,11289
+"56019","Wyoming","Johnson",8518,7773
+"56021","Wyoming","Laramie",99272,77541
+"56023","Wyoming","Lincoln",19640,18047
+"56027","Wyoming","Niobrara",2377,2077
+"56029","Wyoming","Park",29273,26532
+"56033","Wyoming","Sheridan",30397,27780
+"56035","Wyoming","Sublette",9865,8748
+"56039","Wyoming","Teton",23356,18969
+"56041","Wyoming","Uinta",20374,17793
+"56045","Wyoming","Weston",6942,6293
+"72001","Puerto Rico","Adjuntas",17614,65
+"72005","Puerto Rico","Aguadilla",51552,727
+"72007","Puerto Rico","Aguas Buenas",25298,93
+"72011","Puerto Rico","Añasco",26555,1135
+"72013","Puerto Rico","Arecibo",83682,415
+"72017","Puerto Rico","Barceloneta",23913,90
+"72019","Puerto Rico","Barranquitas",28026,34
+"72023","Puerto Rico","Cabo Rojo",47977,147
+"72025","Puerto Rico","Caguas",126734,1679
+"72027","Puerto Rico","Camuy",31066,218
+"72031","Puerto Rico","Carolina",150378,1297
+"72033","Puerto Rico","Cataño",23698,258
+"72037","Puerto Rico","Ceiba",11207,166
+"72039","Puerto Rico","Ciales",16188,120
+"72043","Puerto Rico","Coamo",38603,272
+"72045","Puerto Rico","Comerío",18942,80
+"72049","Puerto Rico","Culebra",1371,99
+"72051","Puerto Rico","Dorado",36475,1027
+"72054","Puerto Rico","Florida",11513,148
+"72055","Puerto Rico","Guánica",15825,129
+"72057","Puerto Rico","Guayama",40198,296
+"72061","Puerto Rico","Guaynabo",85312,1123
+"72063","Puerto Rico","Gurabo",46948,780
+"72067","Puerto Rico","Hormigueros",15731,17
+"72069","Puerto Rico","Humacao",51586,440
+"72073","Puerto Rico","Jayuya",14239,120
+"72075","Puerto Rico","Juana Díaz",45414,70
+"72079","Puerto Rico","Lajas",22391,237
+"72081","Puerto Rico","Lares",24945,45
+"72083","Puerto Rico","Las Marías",8131,34
+"72085","Puerto Rico","Las Piedras",37233,33
+"72087","Puerto Rico","Loíza",25164,6
+"72089","Puerto Rico","Luquillo",17924,136
+"72091","Puerto Rico","Manatí",38062,620
+"72093","Puerto Rico","Maricao",5900,54
+"72095","Puerto Rico","Maunabo",10568,156
+"72097","Puerto Rico","Mayagüez",73336,449
+"72099","Puerto Rico","Moca",35547,102
+"72101","Puerto Rico","Morovis",30652,95
+"72103","Puerto Rico","Naguabo",25931,162
+"72105","Puerto Rico","Naranjito",27719,1
+"72107","Puerto Rico","Orocovis",20608,36
+"72109","Puerto Rico","Patillas",16591,46
+"72111","Puerto Rico","Peñuelas",19797,83
+"72113","Puerto Rico","Ponce",135674,656
+"72115","Puerto Rico","Quebradillas",23261,250
+"13107","Georgia","Emanuel",22525,13309
+"13111","Georgia","Fannin",25797,24332
+"13113","Georgia","Fayette",113544,68739
+"13117","Georgia","Forsyth",236605,165009
+"13121","Georgia","Fulton",1051550,413234
+"13123","Georgia","Gilmer",30986,26558
+"13127","Georgia","Glynn",85008,53783
+"13129","Georgia","Gordon",57756,44586
+"13133","Georgia","Greene",17808,10331
+"13135","Georgia","Gwinnett",926414,334658
+"13139","Georgia","Hall",201434,121398
+"13143","Georgia","Haralson",29608,26781
+"13145","Georgia","Harris",34676,26540
+"13147","Georgia","Hart",25981,19372
+"13149","Georgia","Heard",11785,9991
+"13151","Georgia","Henry",229994,94427
+"13153","Georgia","Houston",155317,86277
+"13155","Georgia","Irwin",9379,6231
+"13157","Georgia","Jackson",70467,56965
+"13159","Georgia","Jasper",14074,10454
+"13161","Georgia","Jeff Davis",15063,10688
+"13163","Georgia","Jefferson",15489,6528
+"13165","Georgia","Jenkins",8787,4863
+"13167","Georgia","Johnson",9717,6022
+"13169","Georgia","Jones",28622,20268
+"13171","Georgia","Lamar",18834,12258
+"13173","Georgia","Lanier",10534,7175
+"13175","Georgia","Laurens",47404,26874
+"13177","Georgia","Lee",29735,21104
+"13179","Georgia","Liberty",62039,23763
+"13181","Georgia","Lincoln",7929,5270
+"13183","Georgia","Long",19236,10919
+"13187","Georgia","Lumpkin",33009,29874
+"13191","Georgia","McIntosh",14217,8815
+"13193","Georgia","Macon",13107,4115
+"13197","Georgia","Marion",8450,4967
+"13199","Georgia","Meriwether",21080,11899
+"13205","Georgia","Mitchell",22072,10094
+"13209","Georgia","Montgomery",9069,5903
+"13211","Georgia","Morgan",18832,13606
+"13215","Georgia","Muscogee",195418,77771
+"13217","Georgia","Newton",109835,49375
+"13221","Georgia","Oglethorpe",15040,11335
+"13223","Georgia","Paulding",164440,113618
+"13227","Georgia","Pickens",32002,27431
+"13231","Georgia","Pike",18565,16129
+"13233","Georgia","Polk",42251,30334
+"13237","Georgia","Putnam",21906,14360
+"13239","Georgia","Quitman",2290,963
+"13243","Georgia","Randolph",6888,2205
+"13247","Georgia","Rockdale",90155,27147
+"13249","Georgia","Schley",5215,3388
+"13253","Georgia","Seminole",8218,5038
+"13255","Georgia","Spalding",66043,38196
+"13259","Georgia","Stewart",6446,1459
+"13261","Georgia","Sumter",29714,11603
+"13265","Georgia","Taliaferro",1596,582
+"13269","Georgia","Taylor",8126,4671
+"13271","Georgia","Telfair",15871,7777
+"13275","Georgia","Thomas",44545,25639
+"22051","Louisiana","Jefferson",434903,226094
+"22055","Louisiana","Lafayette",243692,158812
+"22057","Louisiana","Lafourche",97980,75119
+"22059","Louisiana","LaSalle",14950,12364
+"22061","Louisiana","Lincoln",47118,25088
+"22063","Louisiana","Livingston",140524,122432
+"22065","Louisiana","Madison",11137,3744
+"22067","Louisiana","Morehouse",25189,12379
+"22069","Louisiana","Natchitoches",38505,19465
+"22071","Louisiana","Orleans",391249,119931
+"22073","Louisiana","Ouachita",154679,88725
+"22075","Louisiana","Plaquemines",23305,14795
+"22077","Louisiana","Pointe Coupee",21883,13193
+"22079","Louisiana","Rapides",130376,79490
+"22081","Louisiana","Red River",8462,4768
+"22083","Louisiana","Richland",20251,12271
+"22085","Louisiana","Sabine",23915,16011
+"22087","Louisiana","St. Bernard",46694,28851
+"22089","Louisiana","St. Charles",52856,34098
+"22091","Louisiana","St. Helena",10227,4514
+"22093","Louisiana","St. James",21142,10258
+"22095","Louisiana","St. John the Baptist",43055,14352
+"22097","Louisiana","St. Landry",82786,44860
+"22099","Louisiana","St. Martin",53607,34487
+"22103","Louisiana","St. Tammany",258447,201839
+"22105","Louisiana","Tangipahoa",133753,83979
+"22109","Louisiana","Terrebonne",111297,74030
+"22113","Louisiana","Vermilion",59787,46798
+"22115","Louisiana","Vernon",49315,34383
+"22119","Louisiana","Webster",38813,23978
+"22121","Louisiana","West Baton Rouge",26395,14615
+"22125","Louisiana","West Feliciana",15441,8081
+"22127","Louisiana","Winn",14165,9179
+"36001","New York","Albany",306165,218092
+"36005","New York","Bronx",1427056,128717
+"36007","New York","Broome",192042,158962
+"36011","New York","Cayuga",76958,68927
+"36013","New York","Chautauqua",127584,110961
+"36017","New York","Chenango",47527,44894
+"36019","New York","Clinton",80320,72136
+"36023","New York","Cortland",47618,43865
+"36025","New York","Delaware",44676,40913
+"36029","New York","Erie",918873,688019
+"36033","New York","Franklin",50389,41011
+"36035","New York","Fulton",53452,48794
+"36039","New York","Greene",47335,40025
+"36041","New York","Hamilton",4454,4170
+"36045","New York","Jefferson",111454,90493
+"36047","New York","Kings",2576771,938573
+"36051","New York","Livingston",63218,56956
+"36053","New York","Madison",70990,65518
+"36057","New York","Montgomery",49294,39493
+"36059","New York","Nassau",1355683,799547
+"36063","New York","Niagara",210145,178123
+"36065","New York","Oneida",229074,186651
+"36069","New York","Ontario",109774,98238
+"36071","New York","Orange",382077,241184
+"36075","New York","Oswego",117630,109977
+"72119","Puerto Rico","Río Grande",48828,171
+"72121","Puerto Rico","Sabana Grande",22140,123
+"72125","Puerto Rico","San Germán",30811,262
+"72127","Puerto Rico","San Juan",326953,4913
+"72129","Puerto Rico","San Lorenzo",36586,9
+"72133","Puerto Rico","Santa Isabel",21474,48
+"72135","Puerto Rico","Toa Alta",72450,712
+"72139","Puerto Rico","Trujillo Alto",65011,530
+"72141","Puerto Rico","Utuado",28041,164
+"72145","Puerto Rico","Vega Baja",51089,1347
+"72147","Puerto Rico","Vieques",8508,520
+"72149","Puerto Rico","Villalba",21899,36
+"72153","Puerto Rico","Yauco",34501,138
+"48001","Texas","Anderson",57917,33642
+"48005","Texas","Angelina",87119,52457
+"48007","Texas","Aransas",24220,16215
+"48011","Texas","Armstrong",1950,1726
+"48013","Texas","Atascosa",50194,16477
+"48017","Texas","Bailey",6916,2202
+"48019","Texas","Bandera",22770,17438
+"48023","Texas","Baylor",3560,2854
+"48025","Texas","Bee",32609,10096
+"48029","Texas","Bexar",1978826,536112
+"48031","Texas","Blanco",11733,8864
+"48035","Texas","Bosque",18428,14170
+"48039","Texas","Brazoria",368062,169687
+"48041","Texas","Brazos",226370,124631
+"48045","Texas","Briscoe",1348,791
+"48047","Texas","Brooks",7100,563
+"48051","Texas","Burleson",18237,11714
+"48053","Texas","Burnet",47548,34912
+"48057","Texas","Calhoun",21470,8919
+"48059","Texas","Callahan",13959,11976
+"48063","Texas","Camp",12938,7144
+"48065","Texas","Carson",5957,5084
+"48069","Texas","Castro",7561,2382
+"48071","Texas","Chambers",42571,28135
+"48075","Texas","Childress",7219,3980
+"48077","Texas","Clay",10444,9306
+"48081","Texas","Coke",3298,2461
+"48083","Texas","Coleman",8281,6345
+"48087","Texas","Collingsworth",2939,1650
+"48089","Texas","Colorado",21357,11865
+"48091","Texas","Comal",148921,99164
+"48093","Texas","Comanche",13597,9374
+"48095","Texas","Concho",3018,1683
+"48097","Texas","Cooke",40428,30370
+"48099","Texas","Coryell",75576,43743
+"72117","Puerto Rico","Rincón",13849,1138
+"48101","Texas","Cottle",1624,1066
+"48103","Texas","Crane",4739,1446
+"48105","Texas","Crockett",3393,1242
+"48107","Texas","Crosby",5753,2249
+"48109","Texas","Culberson",2183,251
+"48111","Texas","Dallam",7272,3841
+"48113","Texas","Dallas",2622634,749571
+"48115","Texas","Dawson",12849,4118
+"48117","Texas","Deaf Smith",18617,4482
+"48119","Texas","Delta",5277,4235
+"39083","Ohio","Knox",61776,58438
+"39089","Ohio","Licking",175409,156773
+"39095","Ohio","Lucas",430319,292316
+"39099","Ohio","Mahoning",228452,171874
+"39105","Ohio","Meigs",22974,22165
+"39111","Ohio","Monroe",13827,13420
+"39117","Ohio","Morrow",35148,33661
+"39123","Ohio","Ottawa",40557,37291
+"39129","Ohio","Pickaway",58112,53677
+"13281","Georgia","Towns",11815,11072
+"13283","Georgia","Treutlen",6787,4684
+"13287","Georgia","Turner",7920,4225
+"13291","Georgia","Union",23999,22483
+"13293","Georgia","Upson",26329,17657
+"13297","Georgia","Walton",93284,68838
+"13299","Georgia","Ware",35745,22430
+"13303","Georgia","Washington",20316,8578
+"13307","Georgia","Webster",2587,1372
+"13309","Georgia","Wheeler",7897,4408
+"13313","Georgia","Whitfield",104122,60444
+"13315","Georgia","Wilcox",8701,5117
+"13319","Georgia","Wilkinson",8945,5068
+"15001","Hawaii","Hawaii",201350,60094
+"15003","Hawaii","Honolulu",979682,175756
+"15005","Hawaii","Kalawao",436,57
+"15007","Hawaii","Kauai",71949,21036
+"15009","Hawaii","Maui",166657,49417
+"16001","Idaho","Ada",469473,395230
+"16003","Idaho","Adams",4200,3852
+"16005","Idaho","Bannock",86742,71994
+"16007","Idaho","Bear Lake",6054,5615
+"16009","Idaho","Benewah",9231,7808
+"16011","Idaho","Bingham",46246,34129
+"16013","Idaho","Blaine",22729,16820
+"16015","Idaho","Boise",7625,6865
+"16017","Idaho","Bonner",44688,41309
+"16019","Idaho","Bonneville",116970,96597
+"16021","Idaho","Boundary",12156,10895
+"16023","Idaho","Butte",2603,2489
+"16025","Idaho","Camas",1069,1011
+"16027","Idaho","Canyon",223890,156398
+"16029","Idaho","Caribou",7028,6414
+"16031","Idaho","Cassia",23847,16352
+"16033","Idaho","Clark",885,489
+"16037","Idaho","Custer",4193,3571
+"16041","Idaho","Franklin",13736,12406
+"16043","Idaho","Fremont",13111,11167
+"16047","Idaho","Gooding",15280,10304
+"16049","Idaho","Idaho",16511,14995
+"16053","Idaho","Jerome",24074,14640
+"16057","Idaho","Latah",40052,35093
+"16059","Idaho","Lemhi",7929,7408
+"16063","Idaho","Lincoln",5342,3510
+"16065","Idaho","Madison",39725,35023
+"16069","Idaho","Nez Perce",40468,35052
+"16073","Idaho","Owyhee",11724,8066
+"13277","Georgia","Tift",40590,22363
+"16075","Idaho","Payette",23705,18330
+"16079","Idaho","Shoshone",12700,11574
+"16081","Idaho","Teton",11776,9549
+"16085","Idaho","Valley",11085,10424
+"16087","Idaho","Washington",10128,7999
+"17003","Illinois","Alexander",6011,3769
+"17007","Illinois","Boone",53293,38646
+"17009","Illinois","Brown",6599,4874
+"17013","Illinois","Calhoun",4782,4601
+"17015","Illinois","Carroll",14398,13380
+"17019","Illinois","Champaign",210006,139664
+"17023","Illinois","Clark",15602,15069
+"36077","New York","Otsego",59593,54128
+"36081","New York","Queens",2270976,559778
+"36083","New York","Rensselaer",159013,131144
+"36087","New York","Rockland",325213,204650
+"36089","New York","St. Lawrence",108352,99410
+"36091","New York","Saratoga",229313,206201
+"36093","New York","Schenectady",155086,111949
+"36095","New York","Schoharie",31189,28753
+"36097","New York","Schuyler",17845,16912
+"36099","New York","Seneca",34295,30307
+"36101","New York","Steuben",95843,89289
+"36103","New York","Suffolk",1481364,991862
+"36105","New York","Sullivan",75329,53148
+"36107","New York","Tioga",48431,45786
+"36109","New York","Tompkins",102237,78613
+"36111","New York","Ulster",178371,137257
+"36113","New York","Warren",64187,59995
+"36115","New York","Washington",61304,56136
+"36117","New York","Wayne",90103,80435
+"36119","New York","Westchester",968738,510754
+"36121","New York","Wyoming",40027,35921
+"36123","New York","Yates",24981,23646
+"37001","North Carolina","Alamance",166144,104817
+"37003","North Carolina","Alexander",37271,32317
+"37005","North Carolina","Alleghany",11085,9615
+"37009","North Carolina","Ashe",27009,24959
+"37011","North Carolina","Avery",17510,15515
+"37015","North Carolina","Bertie",19081,6534
+"37017","North Carolina","Bladen",33209,18195
+"37021","North Carolina","Buncombe",259576,216260
+"37023","North Carolina","Burke",90148,73345
+"37027","North Carolina","Caldwell",82056,71350
+"37029","North Carolina","Camden",10654,8536
+"37033","North Carolina","Caswell",22619,13778
+"37035","North Carolina","Catawba",158507,118594
+"37039","North Carolina","Cherokee",28413,25762
+"37041","North Carolina","Chowan",13995,8388
+"37043","North Carolina","Clay",11150,10384
+"37047","North Carolina","Columbus",55659,32918
+"37049","North Carolina","Craven",102290,66719
+"37053","North Carolina","Currituck",27210,23672
+"37055","North Carolina","Dare",36698,31929
+"37059","North Carolina","Davie",42543,35806
+"37061","North Carolina","Duplin",58965,30263
+"37065","North Carolina","Edgecombe",52069,18697
+"37067","North Carolina","Forsyth",378499,212309
+"37071","North Carolina","Gaston",222119,158980
+"37073","North Carolina","Gates",11519,7252
+"37077","North Carolina","Granville",59823,34500
+"37079","North Carolina","Greene",20987,9809
+"37083","North Carolina","Halifax",50678,19301
+"37085","North Carolina","Harnett",134328,82035
+"37089","North Carolina","Henderson",116298,96418
+"37091","North Carolina","Hertford",23752,7868
+"37093","North Carolina","Hoke",54590,21310
+"37097","North Carolina","Iredell",178853,135146
+"37099","North Carolina","Jackson",43435,34999
+"48121","Texas","Denton",861690,501173
+"48123","Texas","DeWitt",20217,11030
+"48125","Texas","Dickens",2182,1468
+"48127","Texas","Dimmit",10232,1072
+"48129","Texas","Donley",3317,2665
+"48131","Texas","Duval",11194,1041
+"48135","Texas","Ector",162067,50661
+"48137","Texas","Edwards",1944,929
+"48141","Texas","El Paso",836915,98336
+"48143","Texas","Erath",42226,31255
+"48147","Texas","Fannin",35046,27479
+"48149","Texas","Fayette",25247,17896
+"48153","Texas","Floyd",5782,2125
+"48155","Texas","Foard",1207,850
+"48159","Texas","Franklin",10767,8415
+"48161","Texas","Freestone",19744,12995
+"48165","Texas","Gaines",21077,11639
+"48169","Texas","Garza",6028,2347
+"48171","Texas","Gillespie",26668,19781
+"48175","Texas","Goliad",7578,4383
+"48177","Texas","Gonzales",20828,8585
+"48181","Texas","Grayson",133527,99574
+"48183","Texas","Gregg",123633,70235
+"48187","Texas","Guadalupe",163030,80949
+"48189","Texas","Hale",33463,11143
+"48193","Texas","Hamilton",8434,7067
+"48195","Texas","Hansford",5431,2764
+"48199","Texas","Hardin",57356,49350
+"48201","Texas","Harris",4680609,1356752
+"48205","Texas","Hartley",5588,3347
+"48207","Texas","Haskell",5711,3673
+"48211","Texas","Hemphill",3901,2385
+"48213","Texas","Henderson",81969,63356
+"48217","Texas","Hill",36109,25368
+"48219","Texas","Hockley",22986,10557
+"48223","Texas","Hopkins",36708,26807
+"48225","Texas","Houston",22942,14148
+"48229","Texas","Hudspeth",4687,789
+"48231","Texas","Hunt",96202,68271
+"48235","Texas","Irion",1553,1053
+"48237","Texas","Jack",8888,6839
+"48241","Texas","Jasper",35562,26466
+"48243","Texas","Jeff Davis",2245,1601
+"48247","Texas","Jim Hogg",5187,370
+"48249","Texas","Jim Wells",40796,7257
+"48253","Texas","Jones",19874,10915
+"48255","Texas","Karnes",15547,5472
+"48257","Texas","Kaufman",129792,79675
+"48259","Texas","Kendall",45491,32698
+"48261","Texas","Kenedy",391,12
+"48263","Texas","Kent",704,608
+"48265","Texas","Kerr",52195,35550
+"48267","Texas","Kimble",4375,3158
+"48269","Texas","King",279,219
+"48271","Texas","Kinney",3674,1428
+"48273","Texas","Kleberg",30725,6148
+"48275","Texas","Knox",3679,2116
+"48277","Texas","Lamar",49705,36519
+"48279","Texas","Lamb",13018,5069
+"48281","Texas","Lampasas",21152,15247
+"48283","Texas","La Salle",7551,958
+"39133","Ohio","Portage",162476,144121
+"39139","Ohio","Richland",121043,102888
+"39145","Ohio","Scioto",75441,70281
+"39151","Ohio","Stark",371516,319340
+"39157","Ohio","Tuscarawas",92165,86745
+"39163","Ohio","Vinton",13045,12585
+"40033","Oklahoma","Cotton",5783,4372
+"40039","Oklahoma","Custer",28929,19637
+"40045","Oklahoma","Ellis",3936,3382
+"40051","Oklahoma","Grady",55315,44787
+"40057","Oklahoma","Harmon",2663,1482
+"40063","Oklahoma","Hughes",13265,8171
+"40069","Oklahoma","Johnston",11028,7585
+"40075","Oklahoma","Kiowa",8816,6511
+"40081","Oklahoma","Lincoln",34936,28610
+"40087","Oklahoma","McClain",39921,31456
+"40093","Oklahoma","Major",7654,6429
+"40099","Oklahoma","Murray",13972,9914
+"40105","Oklahoma","Nowata",10243,6743
+"40109","Oklahoma","Oklahoma",792668,439111
+"40115","Oklahoma","Ottawa",31283,20003
+"40121","Oklahoma","Pittsburg",43955,30189
+"40127","Oklahoma","Pushmataha",11055,7721
+"40133","Oklahoma","Seminole",24624,15711
+"40139","Oklahoma","Texas",20633,8765
+"40145","Oklahoma","Wagoner",80264,56613
+"40151","Oklahoma","Woods",8914,7373
+"41003","Oregon","Benton",92168,73376
+"41049","Oregon","Morrow",11425,6698
+"41053","Oregon","Polk",84730,65704
+"41059","Oregon","Umatilla",77319,50281
+"41065","Oregon","Wasco",26274,19441
+"41071","Oregon","Yamhill",106087,81395
+"44005","Rhode Island","Newport",82731,70546
+"42001","Pennsylvania","Adams",102627,91003
+"42007","Pennsylvania","Beaver",164781,146576
+"42013","Pennsylvania","Blair",122495,115375
+"42019","Pennsylvania","Butler",187798,177231
+"42025","Pennsylvania","Carbon",63964,58106
+"42031","Pennsylvania","Clarion",38633,36890
+"42037","Pennsylvania","Columbia",65390,60683
+"42043","Pennsylvania","Dauphin",277071,178712
+"42049","Pennsylvania","Erie",272046,227513
+"42055","Pennsylvania","Franklin",154954,135473
+"42061","Pennsylvania","Huntingdon",45145,40766
+"42067","Pennsylvania","Juniata",24657,23076
+"42073","Pennsylvania","Lawrence",86148,78773
+"42079","Pennsylvania","Luzerne",317547,254848
+"42087","Pennsylvania","Mifflin",46179,44126
+"42129","Pennsylvania","Westmoreland",350722,327908
+"45003","South Carolina","Aiken",169947,111939
+"45009","South Carolina","Bamberg",14236,5147
+"45015","South Carolina","Berkeley",222103,139175
+"45021","South Carolina","Cherokee",57110,41432
+"45027","South Carolina","Clarendon",33865,16206
+"45035","South Carolina","Dorchester",161309,102597
+"45041","South Carolina","Florence",138237,71009
+"45047","South Carolina","Greenwood",70672,41946
+"17025","Illinois","Clay",13217,12687
+"17029","Illinois","Coles",51065,46330
+"17031","Illinois","Cook",5169517,2168964
+"17035","Illinois","Cumberland",10787,10410
+"17037","Illinois","DeKalb",104588,79607
+"17041","Illinois","Douglas",19551,17593
+"17045","Illinois","Edgar",17272,16713
+"17047","Illinois","Edwards",6431,6203
+"17051","Illinois","Fayette",21418,19723
+"17053","Illinois","Ford",13155,12225
+"17057","Illinois","Fulton",34654,31747
+"17059","Illinois","Gallatin",4983,4757
+"17063","Illinois","Grundy",50798,43546
+"17067","Illinois","Hancock",17820,17051
+"17069","Illinois","Hardin",3890,3737
+"17073","Illinois","Henry",49032,44176
+"17075","Illinois","Iroquois",27437,24577
+"17079","Illinois","Jasper",9547,9277
+"17081","Illinois","Jefferson",37774,32041
+"17083","Illinois","Jersey",21776,20787
+"17085","Illinois","Jo Daviess",21429,20255
+"17087","Illinois","Johnson",12391,10597
+"17089","Illinois","Kane",531756,301506
+"17091","Illinois","Kankakee",109924,78444
+"17093","Illinois","Kendall",127583,86955
+"17095","Illinois","Knox",50052,41226
+"17097","Illinois","Lake",699682,425678
+"17099","Illinois","LaSalle",108998,92632
+"17101","Illinois","Lawrence",15830,13398
+"17103","Illinois","Lee",34204,29391
+"17105","Illinois","Livingston",35757,31792
+"17107","Illinois","Logan",28818,24807
+"17109","Illinois","McDonough",30107,26341
+"17111","Illinois","McHenry",307291,246788
+"17113","Illinois","McLean",172164,136202
+"17115","Illinois","Macon",104688,79270
+"17117","Illinois","Macoupin",45243,43319
+"17119","Illinois","Madison",264403,223418
+"17123","Illinois","Marshall",11562,10885
+"17125","Illinois","Mason",13486,13002
+"17129","Illinois","Menard",12261,11702
+"17131","Illinois","Mercer",15503,14708
+"17135","Illinois","Montgomery",28598,26502
+"17137","Illinois","Morgan",34012,29872
+"17141","Illinois","Ogle",50793,43613
+"17145","Illinois","Perry",21092,18099
+"17147","Illinois","Piatt",16412,15746
+"17151","Illinois","Pope",4177,3736
+"17153","Illinois","Pulaski",5414,3447
+"17157","Illinois","Randolph",31973,27063
+"17159","Illinois","Richland",15677,14843
+"17163","Illinois","St. Clair",261186,159367
+"17167","Illinois","Sangamon",195963,156480
+"17169","Illinois","Schuyler",6897,6393
+"17173","Illinois","Shelby",21623,20992
+"17175","Illinois","Stark",5393,5094
+"17179","Illinois","Tazewell",132524,124138
+"17181","Illinois","Union",16829,15299
+"17185","Illinois","Wabash",11390,10717
+"37103","North Carolina","Jones",9453,5893
+"37105","North Carolina","Lee",61083,35446
+"37109","North Carolina","Lincoln",84580,71335
+"37111","North Carolina","McDowell",45402,39730
+"37115","North Carolina","Madison",21608,20274
+"37117","North Carolina","Martin",22644,11734
+"37121","North Carolina","Mitchell",14959,13746
+"37123","North Carolina","Montgomery",27223,17212
+"37125","North Carolina","Moore",99263,76249
+"37127","North Carolina","Nash",94287,46380
+"37129","North Carolina","New Hanover",231448,178457
+"37131","North Carolina","Northampton",19672,7609
+"37133","North Carolina","Onslow",198377,130601
+"37135","North Carolina","Orange",146354,101525
+"37137","North Carolina","Pamlico",12673,9426
+"37139","North Carolina","Pasquotank",39775,21713
+"37141","North Carolina","Pender",61891,46520
+"37143","North Carolina","Perquimans",13513,9767
+"37145","North Carolina","Person",39561,26177
+"37147","North Carolina","Pitt",179961,97253
+"37149","North Carolina","Polk",20682,17941
+"37151","North Carolina","Randolph",143460,112755
+"37153","North Carolina","Richmond",44759,25331
+"37155","North Carolina","Robeson",131656,32703
+"37157","North Carolina","Rockingham",91051,65584
+"37159","North Carolina","Rowan",140978,101124
+"37161","North Carolina","Rutherford",66741,55286
+"37163","North Carolina","Sampson",63284,32082
+"37165","North Carolina","Scotland",34921,14900
+"37169","North Carolina","Stokes",45688,41484
+"37171","North Carolina","Surry",71904,59968
+"37175","North Carolina","Transylvania",34039,30745
+"37177","North Carolina","Tyrrell",3978,2270
+"37181","North Carolina","Vance",44614,17422
+"37183","North Carolina","Wake",1091662,647265
+"37187","North Carolina","Washington",11788,5216
+"37189","North Carolina","Watauga",55669,51012
+"37193","North Carolina","Wilkes",68341,59536
+"37195","North Carolina","Wilson",81579,38035
+"37199","North Carolina","Yancey",17870,16515
+"34001","New Jersey","Atlantic",264650,147712
+"34005","New Jersey","Burlington",446301,297157
+"34007","New Jersey","Camden",506721,283475
+"34011","New Jersey","Cumberland",150085,68165
+"34013","New Jersey","Essex",798698,239760
+"34017","New Jersey","Hudson",671923,191992
+"34019","New Jersey","Hunterdon",125063,106076
+"34023","New Jersey","Middlesex",825015,346259
+"34025","New Jersey","Monmouth",620821,465628
+"34029","New Jersey","Ocean",602018,507501
+"34031","New Jersey","Passaic",502763,204783
+"34035","New Jersey","Somerset",330151,181828
+"34037","New Jersey","Sussex",140996,120289
+"34041","New Jersey","Warren",105730,85385
+"18001","Indiana","Adams",35544,33161
+"18005","Indiana","Bartholomew",83280,67114
+"18007","Indiana","Benton",8695,8014
+"48287","Texas","Lee",17174,10832
+"48289","Texas","Leon",17325,13145
+"48291","Texas","Liberty",86173,52992
+"48293","Texas","Limestone",23364,13415
+"48295","Texas","Lipscomb",3301,2089
+"48297","Texas","Live Oak",12175,6853
+"48299","Texas","Llano",21452,18383
+"48303","Texas","Lubbock",308392,163154
+"48307","Texas","McCulloch",7970,4791
+"48309","Texas","McLennan",254045,140810
+"48313","Texas","Madison",14329,7804
+"48315","Texas","Marion",9987,7072
+"48319","Texas","Mason",4248,3253
+"48321","Texas","Matagorda",36791,15847
+"48325","Texas","Medina",50869,21627
+"48327","Texas","Menard",2108,1282
+"48331","Texas","Milam",24797,15336
+"48333","Texas","Mills",4877,3661
+"48337","Texas","Montague",19640,16783
+"48339","Texas","Montgomery",590188,383155
+"48343","Texas","Morris",12357,7917
+"48345","Texas","Motley",1362,1071
+"48349","Texas","Navarro",49475,27427
+"48351","Texas","Newton",13788,10096
+"48355","Texas","Nueces",362151,104979
+"48357","Texas","Ochiltree",9907,4205
+"48361","Texas","Orange",83776,67093
+"48363","Texas","Palo Pinto",28792,21429
+"48367","Texas","Parker",138447,114688
+"48369","Texas","Parmer",9639,3219
+"48373","Texas","Polk",50155,35656
+"48375","Texas","Potter",118323,51539
+"48379","Texas","Rains",12001,10208
+"48381","Texas","Randall",136005,95638
+"48385","Texas","Real",3429,2558
+"48387","Texas","Red River",12115,8891
+"48391","Texas","Refugio",7015,2896
+"48393","Texas","Roberts",784,666
+"48397","Texas","Rockwall",101175,70586
+"48399","Texas","Runnels",10280,6287
+"48403","Texas","Sabine",10470,8877
+"48405","Texas","San Augustine",8260,5718
+"48409","Texas","San Patricio",66969,25350
+"48411","Texas","San Saba",6004,3831
+"48415","Texas","Scurry",16918,8714
+"48417","Texas","Shackelford",3291,2802
+"48421","Texas","Sherman",3046,1623
+"48423","Texas","Smith",230184,136726
+"48285","Texas","Lavaca",20072,14704
+"48425","Texas","Somervell",8958,7148
+"48427","Texas","Starr",64032,619
+"48429","Texas","Stephens",9358,6584
+"48431","Texas","Sterling",1274,785
+"48433","Texas","Stonewall",1412,1040
+"48435","Texas","Sutton",3793,1196
+"48437","Texas","Swisher",7403,3379
+"48439","Texas","Tarrant",2077153,952535
+"48441","Texas","Taylor",137521,86121
+"48443","Texas","Terrell",903,403
+"48445","Texas","Terry",12408,5145
+"48447","Texas","Throckmorton",1500,1277
+"45053","South Carolina","Jasper",29558,12874
+"45061","South Carolina","Lee",17144,5563
+"45067","South Carolina","Marion",30954,11862
+"45073","South Carolina","Oconee",78314,66076
+"45079","South Carolina","Richland",414660,173158
+"45085","South Carolina","Sumter",106675,47824
+"46003","South Dakota","Aurora",2757,2439
+"46009","South Dakota","Bon Homme",6914,5989
+"46015","South Dakota","Brule",5233,4376
+"46061","South Dakota","Hanson",3423,3329
+"46067","South Dakota","Hutchinson",7308,6708
+"46073","South Dakota","Jerauld",2009,1868
+"46081","South Dakota","Lawrence",25806,23349
+"46087","South Dakota","McCook",5543,5171
+"46093","South Dakota","Meade",28149,24502
+"46099","South Dakota","Minnehaha",191682,156399
+"46103","South Dakota","Pennington",112504,89319
+"46111","South Dakota","Sanborn",2372,2211
+"46119","South Dakota","Sully",1278,1190
+"46125","South Dakota","Turner",8325,7903
+"46135","South Dakota","Yankton",22746,19986
+"47003","Tennessee","Bedford",48937,37405
+"47009","Tennessee","Blount",131641,119217
+"47015","Tennessee","Cannon",14374,13490
+"47021","Tennessee","Cheatham",40539,37206
+"47027","Tennessee","Clay",7640,7218
+"47033","Tennessee","Crockett",14310,10500
+"47039","Tennessee","Decatur",11663,10705
+"47087","Tennessee","Jackson",11767,11136
+"47093","Tennessee","Knox",466184,381864
+"47099","Tennessee","Lawrence",43780,40756
+"47105","Tennessee","Loudon",53169,46234
+"47111","Tennessee","Macon",24208,22120
+"47117","Tennessee","Marshall",33708,28402
+"47123","Tennessee","Monroe",46413,41950
+"47129","Tennessee","Morgan",21538,19615
+"47135","Tennessee","Perry",8020,7342
+"47141","Tennessee","Putnam",78542,68963
+"47147","Tennessee","Robertson",70982,58524
+"47155","Tennessee","Sevier",98007,87761
+"47161","Tennessee","Stewart",13553,12397
+"47167","Tennessee","Tipton",61562,46216
+"47173","Tennessee","Union",19678,18905
+"47179","Tennessee","Washington",128874,113489
+"47185","Tennessee","White",27087,25229
+"49001","Utah","Beaver",6594,5561
+"49007","Utah","Carbon",20401,16892
+"49013","Utah","Duchesne",19950,16983
+"50001","Vermont","Addison",36947,34099
+"50007","Vermont","Chittenden",163414,143764
+"50013","Vermont","Grand Isle",7075,6517
+"50019","Vermont","Orleans",26843,25435
+"50025","Vermont","Windham",42628,39444
+"51003","Virginia","Albemarle",108819,83403
+"51009","Virginia","Amherst",31782,23755
+"51015","Virginia","Augusta",75754,68319
+"51021","Virginia","Bland",6334,5934
+"51027","Virginia","Buchanan",21374,20240
+"17187","Illinois","Warren",16981,14097
+"17191","Illinois","Wayne",16309,15683
+"17195","Illinois","Whiteside",55583,46737
+"17197","Illinois","Will",689704,434072
+"17201","Illinois","Winnebago",283635,193136
+"17203","Illinois","Woodford",38503,36737
+"19003","Iowa","Adams",3633,3496
+"19005","Iowa","Allamakee",13761,12371
+"19009","Iowa","Audubon",5528,5315
+"19013","Iowa","Black Hawk",131813,105929
+"19015","Iowa","Boone",26381,24858
+"19019","Iowa","Buchanan",21141,20272
+"19023","Iowa","Butler",14508,13988
+"19025","Iowa","Calhoun",9656,9068
+"19029","Iowa","Cass",12990,12332
+"19031","Iowa","Cedar",18475,17612
+"19035","Iowa","Cherokee",11281,10401
+"19037","Iowa","Chickasaw",11970,11408
+"19041","Iowa","Clay",16138,15014
+"19045","Iowa","Clinton",46734,42459
+"19047","Iowa","Crawford",16998,11050
+"19051","Iowa","Davis",8977,8680
+"19053","Iowa","Decatur",7908,7256
+"19057","Iowa","Des Moines",39227,34066
+"19059","Iowa","Dickinson",17260,16438
+"19061","Iowa","Dubuque",97193,87721
+"19063","Iowa","Emmet",9322,8064
+"19065","Iowa","Fayette",19604,18230
+"19067","Iowa","Floyd",15713,14171
+"19069","Iowa","Franklin",10091,8548
+"19071","Iowa","Fremont",6895,6511
+"19073","Iowa","Greene",8923,8413
+"19075","Iowa","Grundy",12262,11858
+"19077","Iowa","Guthrie",10702,10144
+"19079","Iowa","Hamilton",14905,13252
+"19081","Iowa","Hancock",10709,9872
+"19083","Iowa","Hardin",16924,15493
+"19085","Iowa","Harrison",14043,13450
+"19087","Iowa","Henry",19889,17454
+"19089","Iowa","Howard",9201,8864
+"19091","Iowa","Humboldt",9518,8851
+"19093","Iowa","Ida",6862,6499
+"19095","Iowa","Iowa",16155,15197
+"19097","Iowa","Jackson",19348,18404
+"19101","Iowa","Jefferson",18153,14702
+"19103","Iowa","Johnson",150819,117015
+"19107","Iowa","Keokuk",10163,9768
+"19111","Iowa","Lee",33946,30765
+"19113","Iowa","Linn",225601,191912
+"19117","Iowa","Lucas",8556,8268
+"19119","Iowa","Lyon",11800,11223
+"19123","Iowa","Mahaska",22351,20718
+"19127","Iowa","Marshall",39804,27719
+"19129","Iowa","Mills",15023,14115
+"19133","Iowa","Monona",8675,8184
+"19135","Iowa","Monroe",7761,7354
+"19139","Iowa","Muscatine",42703,32611
+"19143","Iowa","Osceola",6016,5304
+"19145","Iowa","Page",15205,13788
+"19149","Iowa","Plymouth",25141,22929
+"19151","Iowa","Pocahontas",6725,6231
+"18011","Indiana","Boone",66875,60151
+"18013","Indiana","Brown",15093,14400
+"18017","Indiana","Cass",37727,29809
+"18019","Indiana","Clark",117410,96756
+"18023","Indiana","Clinton",32186,26332
+"18025","Indiana","Crawford",10582,10140
+"18029","Indiana","Dearborn",49612,47702
+"18031","Indiana","Decatur",26587,25159
+"18035","Indiana","Delaware",114461,99008
+"18037","Indiana","Dubois",42534,38271
+"18041","Indiana","Fayette",23068,21709
+"18043","Indiana","Floyd",77879,68157
+"18045","Indiana","Fountain",16456,15653
+"18047","Indiana","Franklin",22750,21988
+"18049","Indiana","Fulton",20069,18375
+"18051","Indiana","Gibson",33711,31305
+"18053","Indiana","Grant",66055,55888
+"18055","Indiana","Greene",32174,30935
+"18057","Indiana","Hamilton",330455,274357
+"18059","Indiana","Hancock",76614,70403
+"18061","Indiana","Harrison",40164,38173
+"18063","Indiana","Hendricks",166806,138805
+"18065","Indiana","Henry",48158,44984
+"18067","Indiana","Howard",82486,69694
+"18069","Indiana","Huntington",36351,34318
+"18071","Indiana","Jackson",44077,38454
+"18073","Indiana","Jasper",33433,30095
+"18075","Indiana","Jay",20697,19604
+"18077","Indiana","Jefferson",32167,29727
+"18079","Indiana","Jennings",27639,26205
+"18081","Indiana","Johnson",156148,137744
+"18083","Indiana","Knox",36833,33787
+"18087","Indiana","LaGrange",39537,37181
+"18089","Indiana","Lake",485983,259931
+"18093","Indiana","Lawrence",45552,43292
+"18095","Indiana","Madison",129486,109125
+"18099","Indiana","Marshall",46336,40358
+"18101","Indiana","Martin",10169,9570
+"18105","Indiana","Monroe",147318,122700
+"18107","Indiana","Montgomery",38295,35084
+"18111","Indiana","Newton",13981,12674
+"18113","Indiana","Noble",47640,41363
+"18117","Indiana","Orange",19552,18526
+"18119","Indiana","Owen",20854,20027
+"18123","Indiana","Perry",19091,17931
+"18125","Indiana","Pike",12364,11897
+"18129","Indiana","Posey",25480,24323
+"18131","Indiana","Pulaski",12482,11715
+"18135","Indiana","Randolph",24694,22782
+"18137","Indiana","Ripley",28457,27089
+"18141","Indiana","St. Joseph",270881,194591
+"18145","Indiana","Shelby",44559,40965
+"18147","Indiana","Spencer",20364,19233
+"18151","Indiana","Steuben",34591,32354
+"18153","Indiana","Sullivan",20647,18864
+"18157","Indiana","Tippecanoe",193302,145249
+"18159","Indiana","Tipton",15154,14330
+"18163","Indiana","Vanderburgh",181548,150944
+"18165","Indiana","Vermillion",15485,14937
+"18169","Indiana","Wabash",31198,29356
+"48449","Texas","Titus",32709,14567
+"48451","Texas","Tom Green",118645,62252
+"48453","Texas","Travis",1250884,607813
+"48455","Texas","Trinity",14689,11464
+"48457","Texas","Tyler",21524,16954
+"48459","Texas","Upshur",41386,33113
+"48461","Texas","Upton",3651,1450
+"48463","Texas","Uvalde",26899,6876
+"48467","Texas","Van Zandt",55970,46610
+"48469","Texas","Victoria",92044,40580
+"48473","Texas","Waller",53626,22956
+"48475","Texas","Ward",11745,4624
+"48479","Texas","Webb",274847,9577
+"48481","Texas","Wharton",41672,18384
+"48485","Texas","Wichita",132154,85537
+"48487","Texas","Wilbarger",12717,7267
+"48491","Texas","Williamson",570437,332829
+"48493","Texas","Wilson",50110,28131
+"48497","Texas","Wise",67884,51739
+"48499","Texas","Wood",45054,36995
+"48503","Texas","Young",17961,13911
+"48505","Texas","Zapata",14243,573
+"01039","Alabama","Covington",37096,30835
+"01045","Alabama","Dale",49293,33598
+"01051","Alabama","Elmore",81526,59611
+"01057","Alabama","Fayette",16406,13821
+"01061","Alabama","Geneva",26383,21955
+"01067","Alabama","Henry",17123,11859
+"01073","Alabama","Jefferson",658615,326618
+"01079","Alabama","Lawrence",32969,25224
+"01083","Alabama","Limestone",96921,73499
+"01089","Alabama","Madison",367686,236781
+"01095","Alabama","Marshall",96137,77368
+"01101","Alabama","Montgomery",226451,75147
+"01105","Alabama","Perry",9104,2685
+"01111","Alabama","Randolph",22732,17067
+"01117","Alabama","Shelby",216350,167380
+"01121","Alabama","Talladega",80244,50005
+"01127","Alabama","Walker",63802,56327
+"01133","Alabama","Winston",23712,22181
+"06005","California","Amador",39023,29961
+"06009","California","Calaveras",45828,36780
+"06015","California","Del Norte",27692,16928
+"06021","California","Glenn",28060,14298
+"06027","California","Inyo",17930,10950
+"06033","California","Lake",64276,44490
+"06037","California","Los Angeles",10040682,2603280
+"06083","California","Santa Barbara",444895,195329
+"06089","California","Shasta",179267,141585
+"51033","Virginia","Caroline",30581,19317
+"51041","Virginia","Chesterfield",348500,212226
+"51047","Virginia","Culpeper",51935,35831
+"51053","Virginia","Dinwiddie",28686,17802
+"51061","Virginia","Fauquier",70353,55909
+"51067","Virginia","Franklin",56231,48970
+"51073","Virginia","Gloucester",37362,31492
+"51079","Virginia","Greene",19734,16001
+"51085","Virginia","Hanover",106538,88873
+"51091","Virginia","Highland",2202,2112
+"51143","Virginia","Pittsylvania",60867,44975
+"51153","Virginia","Prince William",466834,194705
+"51159","Virginia","Richmond",8951,5423
+"51165","Virginia","Rockingham",81138,71485
+"51171","Virginia","Shenandoah",43441,37857
+"51177","Virginia","Spotsylvania",134683,90587
+"51183","Virginia","Sussex",11202,4309
+"51191","Virginia","Washington",54005,51419
+"51197","Virginia","Wythe",28725,26935
+"51520","Virginia","Bristol",17059,14936
+"51550","Virginia","Chesapeake",242647,136878
+"51595","Virginia","Emporia",5408,1443
+"51620","Virginia","Franklin",8015,2983
+"51650","Virginia","Hampton",135169,50636
+"51678","Virginia","Lexington",7205,5722
+"51685","Virginia","Manassas Park",17548,5704
+"51710","Virginia","Norfolk",244300,105247
+"51735","Virginia","Poquoson",12121,10976
+"51760","Virginia","Richmond",229233,94400
+"53031","Washington","Jefferson",31825,27760
+"53039","Washington","Klickitat",22055,18080
+"53045","Washington","Mason",65326,51805
+"53051","Washington","Pend Oreille",13588,11810
+"53057","Washington","Skagit",127442,93874
+"53063","Washington","Spokane",513402,430536
+"53069","Washington","Wahkiakum",4318,3696
+"53075","Washington","Whitman",49577,38469
+"54003","West Virginia","Berkeley",117615,97854
+"54009","West Virginia","Brooke",22162,20952
+"54017","West Virginia","Doddridge",8499,8140
+"54023","West Virginia","Grant",11565,11162
+"54029","West Virginia","Hancock",29118,27238
+"54035","West Virginia","Jackson",28793,27838
+"54041","West Virginia","Lewis",16024,15073
+"54047","West Virginia","McDowell",18083,16058
+"54053","West Virginia","Mason",26700,25716
+"54059","West Virginia","Mingo",23808,22806
+"54065","West Virginia","Morgan",17800,16923
+"55001","Wisconsin","Adams",20208,18184
+"55007","Wisconsin","Bayfield",15088,12728
+"55013","Wisconsin","Burnett",15363,13892
+"55019","Wisconsin","Clark",34668,32008
+"55025","Wisconsin","Dane",542459,427110
+"55031","Wisconsin","Douglas",43497,39522
+"55037","Wisconsin","Florence",4312,4193
+"55043","Wisconsin","Grant",51570,48822
+"55049","Wisconsin","Iowa",23632,22308
+"55055","Wisconsin","Jefferson",84837,75849
+"19155","Iowa","Pottawattamie",93478,81397
+"19159","Iowa","Ringgold",4922,4680
+"19161","Iowa","Sac",9711,9177
+"19165","Iowa","Shelby",11544,10875
+"19167","Iowa","Sioux",34900,30260
+"19171","Iowa","Tama",16962,13559
+"19175","Iowa","Union",12303,11524
+"19177","Iowa","Van Buren",7104,6823
+"19181","Iowa","Warren",50867,47769
+"19183","Iowa","Washington",22100,19998
+"19187","Iowa","Webster",36348,31309
+"19191","Iowa","Winneshiek",20090,19072
+"19193","Iowa","Woodbury",102687,73746
+"19197","Iowa","Wright",12644,10865
+"24001","Maryland","Allegany",71002,61485
+"24005","Maryland","Baltimore",828193,465027
+"24011","Maryland","Caroline",33260,25003
+"24013","Maryland","Carroll",168233,148612
+"24017","Maryland","Charles",161448,61795
+"24019","Maryland","Dorchester",31994,20017
+"24023","Maryland","Garrett",29155,28053
+"24025","Maryland","Harford",253736,191074
+"24029","Maryland","Kent",19456,15058
+"24033","Maryland","Prince George's",910551,112285
+"24035","Maryland","Queen Anne's",50163,42850
+"24039","Maryland","Somerset",25699,13233
+"24041","Maryland","Talbot",37087,28746
+"24043","Maryland","Washington",150575,117471
+"24045","Maryland","Wicomico",103222,64097
+"24047","Maryland","Worcester",51967,41534
+"24510","Maryland","Baltimore",602274,164417
+"26001","Michigan","Alcona",10396,9925
+"26003","Michigan","Alger",9098,7593
+"26005","Michigan","Allegan",117104,102347
+"26007","Michigan","Alpena",28431,27064
+"26009","Michigan","Antrim",23301,21960
+"26011","Michigan","Arenac",15013,14183
+"26013","Michigan","Baraga",8337,6062
+"26015","Michigan","Barry",61045,57302
+"26017","Michigan","Bay",103506,92885
+"26019","Michigan","Benzie",17703,16565
+"26021","Michigan","Berrien",153797,114148
+"26023","Michigan","Branch",43428,38992
+"26025","Michigan","Calhoun",133943,103177
+"26027","Michigan","Cass",51613,43938
+"26029","Michigan","Charlevoix",26197,24510
+"26033","Michigan","Chippewa",37418,25533
+"26035","Michigan","Clare",30655,29039
+"26039","Michigan","Crawford",13904,13067
+"26041","Michigan","Delta",35874,32875
+"26045","Michigan","Eaton",109730,90428
+"26049","Michigan","Genesee",406770,291698
+"26051","Michigan","Gladwin",25312,24120
+"26055","Michigan","Grand Traverse",92640,85669
+"26057","Michigan","Gratiot",40692,34820
+"26061","Michigan","Houghton",35890,33035
+"26063","Michigan","Huron",31105,29476
+"26067","Michigan","Ionia",64401,56595
+"26071","Michigan","Iron",11099,10453
+"18171","Indiana","Warren",8219,7852
+"18175","Indiana","Washington",27942,27012
+"18177","Indiana","Wayne",66176,58010
+"18181","Indiana","White",24163,21485
+"18183","Indiana","Whitley",33899,32101
+"25003","Massachusetts","Berkshire",125927,110438
+"25005","Massachusetts","Bristol",563301,451430
+"25009","Massachusetts","Essex",787038,546725
+"25011","Massachusetts","Franklin",70529,63462
+"25015","Massachusetts","Hampshire",161361,134314
+"25017","Massachusetts","Middlesex",1605899,1140148
+"25021","Massachusetts","Norfolk",703740,518457
+"25023","Massachusetts","Plymouth",518597,414785
+"25025","Massachusetts","Suffolk",801162,359034
+"25027","Massachusetts","Worcester",826655,625553
+"39001","Ohio","Adams",27685,26636
+"39003","Ohio","Allen",102808,82303
+"39005","Ohio","Ashland",53533,51010
+"39007","Ohio","Ashtabula",97416,86782
+"39009","Ohio","Athens",65945,59075
+"39011","Ohio","Auglaize",45709,43508
+"39013","Ohio","Belmont",67424,62434
+"39015","Ohio","Brown",43508,41852
+"39017","Ohio","Butler",382129,305253
+"39019","Ohio","Carroll",27195,26072
+"39021","Ohio","Champaign",38861,36021
+"39023","Ohio","Clark",134409,112558
+"39025","Ohio","Clermont",205616,191105
+"39027","Ohio","Clinton",42000,39113
+"39029","Ohio","Columbiana",102514,95785
+"39031","Ohio","Coshocton",36558,35012
+"39033","Ohio","Crawford",41603,39489
+"39035","Ohio","Cuyahoga",1241475,723024
+"39039","Ohio","Defiance",38024,32743
+"39041","Ohio","Delaware",205454,172445
+"39045","Ohio","Fairfield",156204,132874
+"39047","Ohio","Fayette",28609,26376
+"39051","Ohio","Fulton",42186,37394
+"39053","Ohio","Gallia",29995,27892
+"39057","Ohio","Greene",167867,139031
+"39059","Ohio","Guernsey",38996,36711
+"39063","Ohio","Hancock",75765,67130
+"39065","Ohio","Hardin",31393,29636
+"39069","Ohio","Henry",27068,24246
+"39073","Ohio","Hocking",28306,27120
+"39075","Ohio","Holmes",43954,42977
+"39079","Ohio","Jackson",32440,31130
+"39081","Ohio","Jefferson",65943,59418
+"39085","Ohio","Lake",229755,201170
+"39087","Ohio","Lawrence",59901,56649
+"39091","Ohio","Logan",45315,42092
+"39093","Ohio","Lorain",309134,240439
+"39097","Ohio","Madison",44248,38960
+"39101","Ohio","Marion",65179,57324
+"39103","Ohio","Medina",179116,166746
+"39107","Ohio","Mercer",41034,39035
+"39109","Ohio","Miami",106074,97578
+"39113","Ohio","Montgomery",531988,373424
+"39115","Ohio","Morgan",14557,13325
+"39119","Ohio","Muskingum",86033,78431
+"06093","California","Siskiyou",43516,32878
+"06099","California","Stanislaus",546235,222962
+"06105","California","Trinity",12541,10073
+"06111","California","Ventura",845599,379971
+"05001","Arkansas","Arkansas",17761,12246
+"05007","Arkansas","Benton",273510,192131
+"05011","Arkansas","Bradley",10805,5981
+"05017","Arkansas","Chicot",10433,4051
+"05023","Arkansas","Cleburne",25063,23523
+"05029","Arkansas","Conway",20895,17008
+"05033","Arkansas","Crawford",63118,52859
+"05039","Arkansas","Dallas",7114,3760
+"05045","Arkansas","Faulkner",124800,99457
+"05051","Arkansas","Garland",99043,80691
+"05055","Arkansas","Greene",45197,41415
+"05061","Arkansas","Howard",13267,8462
+"05067","Arkansas","Jackson",16908,12927
+"05073","Arkansas","Lafayette",6728,3931
+"05077","Arkansas","Lee",8963,3663
+"05083","Arkansas","Logan",21619,19165
+"05089","Arkansas","Marion",16586,15537
+"05093","Arkansas","Mississippi",41396,23906
+"05141","Arkansas","Van Buren",16578,15360
+"05147","Arkansas","Woodruff",6477,4505
+"09001","Connecticut","Fairfield",944306,576391
+"09007","Connecticut","Middlesex",162742,135279
+"09013","Connecticut","Tolland",150947,126330
+"02013","Alaska","Aleutians East",3389,450
+"02050","Alaska","Bethel",18263,1719
+"02066","Alaska","Copper River",2894,1645
+"02090","Alaska","Fairbanks North Star",98455,67691
+"02110","Alaska","Juneau City and",32099,20366
+"02150","Alaska","Kodiak Island",13383,6395
+"02164","Alaska","Lake and Peninsula",1156,279
+"02185","Alaska","North Slope",9375,2627
+"02198","Alaska","Prince of Wales-Hyder",6338,2848
+"02240","Alaska","Southeast Fairbanks",6911,5037
+"08001","Colorado","Adams",509844,250340
+"08005","Colorado","Arapahoe",649980,386914
+"08011","Colorado","Bent",5677,3220
+"08015","Colorado","Chaffee",19977,17003
+"08019","Colorado","Clear Creek",9533,8407
+"08025","Colorado","Crowley",5733,3080
+"08031","Colorado","Denver",715878,387855
+"08079","Colorado","Mineral",853,703
+"08085","Colorado","Montrose",42280,32094
+"08089","Colorado","Otero",18284,9588
+"08095","Colorado","Phillips",4343,2992
+"08101","Colorado","Pueblo",167412,86274
+"08107","Colorado","Routt",25317,22270
+"08111","Colorado","San Juan",646,484
+"08117","Colorado","Summit",30735,24863
+"08123","Colorado","Weld",315389,205413
+"10001","Delaware","Kent",179124,108483
+"30001","Montana","Beaverhead",9454,8515
+"30007","Montana","Broadwater",6080,5760
+"30013","Montana","Cascade",81576,69287
+"30017","Montana","Custer",11563,10581
+"55061","Wisconsin","Kewaunee",20398,19215
+"55067","Wisconsin","Langlade",19167,17919
+"55073","Wisconsin","Marathon",135485,118484
+"55078","Wisconsin","Menominee",4566,436
+"55085","Wisconsin","Oneida",35480,33589
+"55091","Wisconsin","Pepin",7261,6983
+"55097","Wisconsin","Portage",70822,64306
+"55103","Wisconsin","Richland",17408,16368
+"55109","Wisconsin","St. Croix",89702,83947
+"56017","Wyoming","Hot Springs",4550,4185
+"56025","Wyoming","Natrona",80067,69291
+"56031","Wyoming","Platte",8572,7365
+"56037","Wyoming","Sweetwater",43352,34147
+"56043","Wyoming","Washakie",7933,6487
+"72003","Puerto Rico","Aguada",37307,2334
+"72009","Puerto Rico","Aibonito",22545,64
+"72015","Puerto Rico","Arroyo",17502,34
+"72021","Puerto Rico","Bayamón",173695,1300
+"72029","Puerto Rico","Canóvanas",45120,37
+"72035","Puerto Rico","Cayey",43126,68
+"72041","Puerto Rico","Cidra",38977,138
+"72047","Puerto Rico","Corozal",32928,384
+"72053","Puerto Rico","Fajardo",30263,102
+"72059","Puerto Rico","Guayanilla",18080,47
+"72065","Puerto Rico","Hatillo",39561,90
+"72071","Puerto Rico","Isabela",41084,350
+"72077","Puerto Rico","Juncos",38471,140
+"72123","Puerto Rico","Salinas",27638,19
+"72131","Puerto Rico","San Sebastián",36292,1068
+"72137","Puerto Rico","Toa Baja",76008,865
+"72143","Puerto Rico","Vega Alta",36559,296
+"72151","Puerto Rico","Yabucoa",32867,22
+"48003","Texas","Andrews",18227,7217
+"48009","Texas","Archer",8754,7721
+"48015","Texas","Austin",29892,18421
+"48021","Texas","Bastrop",86839,44099
+"48027","Texas","Bell",355700,158981
+"48033","Texas","Borden",653,548
+"48037","Texas","Bowie",93622,59229
+"48043","Texas","Brewster",9231,4599
+"48049","Texas","Brown",37805,26886
+"48055","Texas","Caldwell",42817,16640
+"48061","Texas","Cameron",422135,36943
+"48067","Texas","Cass",30002,22851
+"48073","Texas","Cherokee",52341,31491
+"48079","Texas","Cochran",2860,1017
+"48085","Texas","Collin",1006038,558786
+"48133","Texas","Eastland",18289,14405
+"48139","Texas","Ellis",179484,106903
+"48145","Texas","Falls",17281,8789
+"48151","Texas","Fisher",3827,2548
+"48157","Texas","Fort Bend",790892,254705
+"48163","Texas","Frio",20013,3050
+"48167","Texas","Galveston",337600,191561
+"48173","Texas","Glasscock",1447,872
+"48179","Texas","Gray",22063,13832
+"48185","Texas","Grimes",28447,16510
+"48191","Texas","Hall",3025,1682
+"48197","Texas","Hardeman",3958,2642
+"26073","Michigan","Isabella",70363,59489
+"26077","Michigan","Kalamazoo",264322,202945
+"26079","Michigan","Kalkaska",17725,16642
+"26083","Michigan","Keweenaw",2102,2032
+"26085","Michigan","Lake",11805,10057
+"26089","Michigan","Leelanau",21649,19454
+"26093","Michigan","Livingston",190832,179472
+"26095","Michigan","Luce",6286,4881
+"26099","Michigan","Macomb",870893,680560
+"26101","Michigan","Manistee",24539,21747
+"26105","Michigan","Mason",29062,26525
+"26107","Michigan","Mecosta",43481,39441
+"26111","Michigan","Midland",83445,75917
+"26115","Michigan","Monroe",150000,136372
+"26117","Michigan","Montcalm",63516,57925
+"26121","Michigan","Muskegon",173679,132132
+"26123","Michigan","Newaygo",48687,43832
+"26127","Michigan","Oceana",26545,21610
+"26129","Michigan","Ogemaw",20895,19693
+"26133","Michigan","Osceola",23323,21976
+"26135","Michigan","Oscoda",8282,7857
+"26139","Michigan","Ottawa",289162,240703
+"26143","Michigan","Roscommon",23863,22514
+"26145","Michigan","Saginaw",191166,131755
+"26149","Michigan","St. Joseph",60789,52337
+"26151","Michigan","Sanilac",41179,38589
+"26155","Michigan","Shiawassee",68176,63879
+"26157","Michigan","Tuscola",52683,48875
+"26161","Michigan","Washtenaw",368385,256390
+"26163","Michigan","Wayne",1753059,862696
+"26165","Michigan","Wexford",33433,31254
+"28001","Mississippi","Adams",31103,11276
+"28003","Mississippi","Alcorn",37058,30248
+"28005","Mississippi","Amite",12341,7085
+"28007","Mississippi","Attala",18308,9751
+"28009","Mississippi","Benton",8275,4999
+"28011","Mississippi","Bolivar",31253,9997
+"28013","Mississippi","Calhoun",14417,9274
+"28015","Mississippi","Carroll",9972,6416
+"28017","Mississippi","Chickasaw",17060,8432
+"28019","Mississippi","Choctaw",8206,5525
+"28021","Mississippi","Claiborne",9042,1004
+"28023","Mississippi","Clarke",15612,9835
+"28025","Mississippi","Clay",19515,7547
+"28027","Mississippi","Coahoma",22685,4630
+"28029","Mississippi","Copiah",28339,12346
+"28031","Mississippi","Covington",18810,11341
+"28033","Mississippi","DeSoto",182256,114497
+"28035","Mississippi","Forrest",75162,42749
+"28037","Mississippi","Franklin",7716,4858
+"28041","Mississippi","Greene",13619,9799
+"28043","Mississippi","Grenada",20927,11284
+"28047","Mississippi","Harrison",206169,130652
+"28049","Mississippi","Hinds",235604,56874
+"28053","Mississippi","Humphreys",8198,1670
+"28055","Mississippi","Issaquena",1223,476
+"28059","Mississippi","Jackson",142872,96285
+"28061","Mississippi","Jasper",16454,7324
+"39121","Ohio","Noble",14410,13263
+"39125","Ohio","Paulding",18742,17262
+"39127","Ohio","Perry",36076,34794
+"39131","Ohio","Pike",27914,26550
+"39135","Ohio","Preble",40995,39409
+"39137","Ohio","Putnam",33836,31158
+"39141","Ohio","Ross",76816,68651
+"39143","Ohio","Sandusky",58801,49263
+"39147","Ohio","Seneca",55251,49348
+"39149","Ohio","Shelby",48610,44913
+"39153","Ohio","Summit",540810,412419
+"39155","Ohio","Trumbull",199144,172468
+"39159","Ohio","Union",57871,51448
+"39161","Ohio","Van Wert",28213,26378
+"39165","Ohio","Warren",232540,198602
+"39167","Ohio","Washington",60217,57175
+"39169","Ohio","Wayne",116063,108651
+"39171","Ohio","Williams",36760,33967
+"39173","Ohio","Wood",130662,114666
+"39175","Ohio","Wyandot",21907,20778
+"40001","Oklahoma","Adair",22171,8692
+"40003","Oklahoma","Alfalfa",5791,4815
+"40005","Oklahoma","Atoka",13815,9683
+"40007","Oklahoma","Beaver",5326,3764
+"40009","Oklahoma","Beckham",21860,16390
+"40011","Oklahoma","Blaine",9521,6813
+"40013","Oklahoma","Bryan",47325,33218
+"40015","Oklahoma","Caddo",29179,16434
+"40017","Oklahoma","Canadian",144610,107925
+"40019","Oklahoma","Carter",48380,33409
+"40021","Oklahoma","Cherokee",48871,22696
+"40023","Oklahoma","Choctaw",14727,8803
+"40025","Oklahoma","Cimarron",2159,1622
+"40027","Oklahoma","Cleveland",282189,200353
+"40029","Oklahoma","Coal",5577,3764
+"40031","Oklahoma","Comanche",121374,67274
+"40035","Oklahoma","Craig",14274,8932
+"40037","Oklahoma","Creek",71505,53875
+"40041","Oklahoma","Delaware",42741,27051
+"40043","Oklahoma","Dewey",4885,3976
+"40047","Oklahoma","Garfield",61555,45232
+"40049","Oklahoma","Garvin",27789,20668
+"40053","Oklahoma","Grant",4369,3769
+"40055","Oklahoma","Greer",5790,4277
+"40059","Oklahoma","Harper",3730,2799
+"40061","Oklahoma","Haskell",12688,8802
+"40065","Oklahoma","Jackson",24808,15412
+"40067","Oklahoma","Jefferson",6084,4687
+"40071","Oklahoma","Kay",44074,32458
+"40073","Oklahoma","Kingfisher",15811,11919
+"40077","Oklahoma","Latimer",10239,6500
+"40079","Oklahoma","Le Flore",49999,35288
+"40083","Oklahoma","Logan",47401,36602
+"40085","Oklahoma","Love",10128,7093
+"40089","Oklahoma","McCurtain",32913,20104
+"40091","Oklahoma","McIntosh",19677,13284
+"40095","Oklahoma","Marshall",16688,10746
+"40097","Oklahoma","Mayes",41098,26242
+"40101","Oklahoma","Muskogee",68451,37692
+"40103","Oklahoma","Noble",11263,9079
+"30023","Montana","Deer Lodge",9153,8165
+"30029","Montana","Flathead",102001,94231
+"30035","Montana","Glacier",13706,4087
+"30039","Montana","Granite",3325,3129
+"30045","Montana","Judith Basin",1968,1838
+"30051","Montana","Liberty",2455,2415
+"30057","Montana","Madison",8530,7890
+"30063","Montana","Missoula",119062,104938
+"30067","Montana","Park",16513,15379
+"30073","Montana","Pondera",5911,4799
+"13009","Georgia","Baldwin",45072,23548
+"13015","Georgia","Bartow",106456,80700
+"13019","Georgia","Berrien",19206,15674
+"13025","Georgia","Brantley",18924,17397
+"13031","Georgia","Bulloch",77719,49141
+"13037","Georgia","Calhoun",6301,2046
+"13043","Georgia","Candler",10834,6512
+"13049","Georgia","Charlton",13032,7983
+"13055","Georgia","Chattooga",24826,20500
+"13061","Georgia","Clay",2931,1241
+"13065","Georgia","Clinch",6648,4321
+"13071","Georgia","Colquitt",45510,25171
+"13077","Georgia","Coweta",145839,102999
+"13083","Georgia","Dade",16183,14992
+"13087","Georgia","Decatur",26595,13259
+"13093","Georgia","Dooly",13571,5748
+"13099","Georgia","Early",10218,4556
+"13103","Georgia","Effingham",62241,47976
+"13109","Georgia","Evans",10671,6001
+"13115","Georgia","Floyd",97805,68886
+"13119","Georgia","Franklin",23015,19129
+"13125","Georgia","Glascock",2984,2603
+"13131","Georgia","Grady",24693,14335
+"13137","Georgia","Habersham",45204,34504
+"13141","Georgia","Hancock",8500,2075
+"13185","Georgia","Lowndes",116436,61865
+"13189","Georgia","McDuffie",21404,11379
+"13195","Georgia","Madison",29624,23751
+"13201","Georgia","Miller",5725,3869
+"13207","Georgia","Monroe",27455,19871
+"13213","Georgia","Murray",39789,32507
+"13219","Georgia","Oconee",39194,32790
+"13225","Georgia","Peach",27502,12519
+"13229","Georgia","Pierce",19336,16256
+"13235","Georgia","Pulaski",11185,6450
+"13241","Georgia","Rabun",16859,14828
+"13245","Georgia","Richmond",202178,68407
+"13251","Georgia","Screven",13977,7623
+"13257","Georgia","Stephens",25934,21215
+"13263","Georgia","Talbot",6245,2522
+"13267","Georgia","Tattnall",25392,14454
+"13273","Georgia","Terrell",8654,3091
+"13279","Georgia","Toombs",26947,16114
+"13285","Georgia","Troup",70095,39107
+"13289","Georgia","Twiggs",8195,4499
+"13295","Georgia","Walker",69398,62876
+"13301","Georgia","Warren",5259,1985
+"13305","Georgia","Wayne",29959,21298
+"13311","Georgia","White",29962,27651
+"13317","Georgia","Wilkes",9797,5019
+"48203","Texas","Harrison",66547,41889
+"48209","Texas","Hays",222827,116980
+"48215","Texas","Hidalgo",861137,50969
+"48221","Texas","Hood",60025,50396
+"48227","Texas","Howard",36213,17147
+"48233","Texas","Hutchinson",21105,14701
+"48239","Texas","Jackson",14822,8622
+"48245","Texas","Jefferson",253136,101025
+"48251","Texas","Johnson",171359,121662
+"48301","Texas","Loving",117,117
+"48305","Texas","Lynn",5886,2939
+"48311","Texas","McMullen",724,254
+"48317","Texas","Martin",5676,2911
+"48323","Texas","Maverick",58098,1466
+"48329","Texas","Midland",171238,76123
+"48335","Texas","Mitchell",8256,3958
+"48341","Texas","Moore",21169,6731
+"48347","Texas","Nacogdoches",65080,38550
+"48353","Texas","Nolan",14901,8124
+"48359","Texas","Oldham",2110,1599
+"48365","Texas","Panola",23186,16963
+"48371","Texas","Pecos",15725,3907
+"48377","Texas","Presidio",6808,1141
+"48383","Texas","Reagan",3766,1025
+"48389","Texas","Reeves",15546,3629
+"48395","Texas","Robertson",17094,9715
+"48401","Texas","Rusk",53988,34140
+"48407","Texas","San Jacinto",28574,21241
+"48413","Texas","Schleicher",2898,1257
+"48419","Texas","Shelby",25263,15521
+"48465","Texas","Val Verde",49018,7264
+"48471","Texas","Walker",72295,40630
+"48477","Texas","Washington",35275,22361
+"48483","Texas","Wheeler",5187,3567
+"48489","Texas","Willacy",21419,2277
+"48495","Texas","Winkler",7822,2633
+"48501","Texas","Yoakum",8612,2706
+"48507","Texas","Zavala",11930,626
+"28065","Mississippi","Jefferson Davis",11182,4201
+"28067","Mississippi","Jones",68307,44020
+"28071","Mississippi","Lafayette",54059,37768
+"28075","Mississippi","Lauderdale",75557,39310
+"28077","Mississippi","Lawrence",12595,8132
+"28081","Mississippi","Lee",85304,55325
+"28083","Mississippi","Leflore",28764,6272
+"28087","Mississippi","Lowndes",58896,30115
+"28089","Mississippi","Madison",105482,58200
+"28093","Mississippi","Marshall",35502,16930
+"28095","Mississippi","Monroe",35559,23806
+"28099","Mississippi","Neshoba",29250,17001
+"28103","Mississippi","Noxubee",10566,2717
+"28105","Mississippi","Oktibbeha",49593,27820
+"28109","Mississippi","Pearl River",55512,45036
+"28111","Mississippi","Perry",11981,9298
+"28115","Mississippi","Pontotoc",31996,24390
+"28117","Mississippi","Prentiss",25155,20544
+"28121","Mississippi","Rankin",154119,113122
+"28123","Mississippi","Scott",28288,13944
+"28127","Mississippi","Simpson",26818,16493
+"28131","Mississippi","Stone",18282,13964
+"28133","Mississippi","Sunflower",25759,6071
+"28137","Mississippi","Tate",28419,18370
+"28139","Mississippi","Tippah",21976,16915
+"28143","Mississippi","Tunica",9807,1828
+"28145","Mississippi","Union",28578,22263
+"28149","Mississippi","Warren",46030,21589
+"28151","Mississippi","Washington",45072,11141
+"28155","Mississippi","Webster",9727,7619
+"28157","Mississippi","Wilkinson",8727,2418
+"28161","Mississippi","Yalobusha",12276,7117
+"28163","Mississippi","Yazoo",28511,9782
+"35003","New Mexico","Catron",3547,2931
+"35005","New Mexico","Chaves",64912,24763
+"35006","New Mexico","Cibola",26763,5028
+"35007","New Mexico","Colfax",12106,5639
+"35009","New Mexico","Curry",49502,23096
+"35011","New Mexico","De Baca",1995,611
+"35013","New Mexico","Doña Ana",217696,58682
+"35015","New Mexico","Eddy",57865,26247
+"35017","New Mexico","Grant",27391,12519
+"35019","New Mexico","Guadalupe",4336,812
+"35021","New Mexico","Harding",432,217
+"35023","New Mexico","Hidalgo",4234,1601
+"35025","New Mexico","Lea",70359,24242
+"35027","New Mexico","Lincoln",19640,11962
+"35028","New Mexico","Los Alamos",18976,13543
+"35029","New Mexico","Luna",24022,6916
+"35031","New Mexico","McKinley",71956,6043
+"35033","New Mexico","Mora",4500,764
+"35035","New Mexico","Otero",66804,31944
+"35037","New Mexico","Quay",8265,4059
+"35039","New Mexico","Rio Arriba",38962,4714
+"35043","New Mexico","Sandoval",144954,61938
+"35045","New Mexico","San Juan",125608,46997
+"35049","New Mexico","Santa Fe",150319,64243
+"35053","New Mexico","Socorro",16723,5616
+"40107","Oklahoma","Okfuskee",11987,7276
+"40111","Oklahoma","Okmulgee",38553,23869
+"40113","Oklahoma","Osage",47074,29670
+"40117","Oklahoma","Pawnee",16402,12480
+"40119","Oklahoma","Payne",81912,62800
+"40123","Oklahoma","Pontotoc",38385,24728
+"40125","Oklahoma","Pottawatomie",72511,52011
+"40129","Oklahoma","Roger Mills",3635,2996
+"40131","Oklahoma","Rogers",92052,65546
+"40135","Oklahoma","Sequoyah",41687,25762
+"40137","Oklahoma","Stephens",43401,34560
+"40141","Oklahoma","Tillman",7347,4290
+"40143","Oklahoma","Tulsa",650291,397577
+"40147","Oklahoma","Washington",51995,37496
+"40149","Oklahoma","Washita",11066,9159
+"40153","Oklahoma","Woodward",20352,16192
+"41001","Oregon","Baker",16090,14484
+"41005","Oregon","Clackamas",415084,336161
+"41007","Oregon","Clatsop",39656,33045
+"41009","Oregon","Columbia",52117,45794
+"41011","Oregon","Coos",64175,54352
+"41013","Oregon","Crook",23733,20897
+"41015","Oregon","Curry",22889,19614
+"41017","Oregon","Deschutes",191749,166323
+"41019","Oregon","Douglas",110015,96078
+"41021","Oregon","Gilliam",1896,1646
+"41023","Oregon","Grant",7174,6524
+"41025","Oregon","Harney",7310,6327
+"41027","Oregon","Hood River",23270,14758
+"41029","Oregon","Jackson",218781,175085
+"41031","Oregon","Jefferson",24048,14058
+"41033","Oregon","Josephine",87097,74693
+"41035","Oregon","Klamath",67606,51905
+"41037","Oregon","Lake",7896,6644
+"41039","Oregon","Lane",377749,307314
+"41041","Oregon","Lincoln",49336,40144
+"41043","Oregon","Linn",127216,107303
+"41045","Oregon","Malheur",30632,18587
+"41047","Oregon","Marion",343742,221233
+"41051","Oregon","Multnomah",809869,558225
+"41055","Oregon","Sherman",1686,1490
+"41057","Oregon","Tillamook",26782,22502
+"41061","Oregon","Union",26502,23441
+"41063","Oregon","Wallowa",7065,6502
+"41067","Oregon","Washington",595761,385254
+"41069","Oregon","Wheeler",1417,1216
+"44001","Rhode Island","Bristol",48645,44283
+"44003","Rhode Island","Kent",164122,143667
+"44007","Rhode Island","Providence",636161,382712
+"44009","Rhode Island","Washington",126139,114500
+"42003","Pennsylvania","Allegheny",1218380,948585
+"42005","Pennsylvania","Armstrong",65356,63260
+"42009","Pennsylvania","Bedford",48154,46482
+"42011","Pennsylvania","Berks",419062,295451
+"42015","Pennsylvania","Bradford",60721,57988
+"42017","Pennsylvania","Bucks",627668,518679
+"42021","Pennsylvania","Cambria",131611,121551
+"42023","Pennsylvania","Cameron",4512,4266
+"42027","Pennsylvania","Centre",162264,138442
+"13321","Georgia","Worth",20346,13651
+"16035","Idaho","Clearwater",8735,7860
+"16039","Idaho","Elmore",27043,19474
+"16045","Idaho","Gem",17771,15494
+"16051","Idaho","Jefferson",29238,25327
+"16055","Idaho","Kootenai",161676,144254
+"16061","Idaho","Lewis",3850,3151
+"16067","Idaho","Minidoka",20817,12856
+"16071","Idaho","Oneida",4429,4104
+"16077","Idaho","Power",7635,4682
+"16083","Idaho","Twin Falls",86198,66949
+"17001","Illinois","Adams",65670,59988
+"17005","Illinois","Bond",16520,14471
+"17011","Illinois","Bureau",32878,28659
+"17017","Illinois","Cass",12324,9230
+"17021","Illinois","Christian",32705,31048
+"17027","Illinois","Clinton",37549,34219
+"17033","Illinois","Crawford",18833,17110
+"17039","Illinois","De Witt",15764,14887
+"17043","Illinois","DuPage",926005,612736
+"17049","Illinois","Effingham",34151,32646
+"17055","Illinois","Franklin",38688,36988
+"17061","Illinois","Greene",12988,12506
+"17065","Illinois","Hamilton",8151,7811
+"17071","Illinois","Henderson",6737,6434
+"17077","Illinois","Jackson",57517,42522
+"17121","Illinois","Marion",37524,34013
+"17127","Illinois","Massac",14041,12282
+"17133","Illinois","Monroe",34444,33156
+"17139","Illinois","Moultrie",14557,14045
+"17143","Illinois","Peoria",181111,125366
+"17149","Illinois","Pike",15571,14865
+"17155","Illinois","Putnam",5720,5246
+"17161","Illinois","Rock Island",142801,101660
+"17165","Illinois","Saline",23735,21724
+"17171","Illinois","Scott",4982,4806
+"17177","Illinois","Stephenson",44683,36541
+"17183","Illinois","Vermilion",76704,59737
+"17189","Illinois","Washington",13967,13410
+"17193","Illinois","White",13712,13195
+"17199","Illinois","Williamson",66929,59825
+"19001","Iowa","Adair",7048,6717
+"19007","Iowa","Appanoose",12462,11828
+"19011","Iowa","Benton",25558,24439
+"19017","Iowa","Bremer",25032,23735
+"19021","Iowa","Buena Vista",19950,11556
+"19027","Iowa","Carroll",20150,18989
+"19033","Iowa","Cerro Gordo",42672,38368
+"19039","Iowa","Clarke",9383,7663
+"19043","Iowa","Clayton",17527,16808
+"19049","Iowa","Dallas",90418,76148
+"19055","Iowa","Delaware",17107,16400
+"19099","Iowa","Jasper",37032,34495
+"19105","Iowa","Jones",20575,19151
+"19109","Iowa","Kossuth",14864,13995
+"19115","Iowa","Louisa",11125,8656
+"19121","Iowa","Madison",16148,15319
+"19125","Iowa","Marion",33193,31293
+"19131","Iowa","Mitchell",10588,10239
+"19137","Iowa","Montgomery",10016,9335
+"35055","New Mexico","Taos",32759,11573
+"35059","New Mexico","Union",4106,2102
+"35061","New Mexico","Valencia",76518,24579
+"38003","North Dakota","Barnes",10592,9512
+"38005","North Dakota","Benson",6860,2783
+"38009","North Dakota","Bottineau",6418,5839
+"38011","North Dakota","Bowman",3091,2893
+"38015","North Dakota","Burleigh",95509,83515
+"38017","North Dakota","Cass",179937,152179
+"38021","North Dakota","Dickey",4857,4500
+"38025","North Dakota","Dunn",4362,3592
+"38027","North Dakota","Eddy",2262,1987
+"38031","North Dakota","Foster",3231,3070
+"38033","North Dakota","Golden Valley",1796,1589
+"38037","North Dakota","Grant",2318,2202
+"38039","North Dakota","Griggs",2314,2230
+"38043","North Dakota","Kidder",2468,2275
+"38045","North Dakota","LaMoure",4225,4036
+"38049","North Dakota","McHenry",5825,5551
+"38051","North Dakota","McIntosh",2535,2399
+"38055","North Dakota","McLean",9531,8456
+"38057","North Dakota","Mercer",8359,7633
+"38061","North Dakota","Mountrail",10348,6196
+"38065","North Dakota","Oliver",1962,1790
+"38067","North Dakota","Pembina",6850,6242
+"38071","North Dakota","Ramsey",11521,9538
+"38073","North Dakota","Ransom",5258,4935
+"38077","North Dakota","Richland",16245,14678
+"38079","North Dakota","Rolette",14437,2608
+"38083","North Dakota","Sheridan",1289,1263
+"38085","North Dakota","Sioux",4339,534
+"38089","North Dakota","Stark",31164,27114
+"38091","North Dakota","Steele",1817,1742
+"38095","North Dakota","Towner",2191,1918
+"38097","North Dakota","Traill",7999,7306
+"38101","North Dakota","Ward",68962,56647
+"38105","North Dakota","Williams",36044,28141
+"04001","Arizona","Apache",71714,12993
+"04003","Arizona","Cochise",126442,69095
+"04005","Arizona","Coconino",142254,76544
+"04007","Arizona","Gila",53846,33305
+"04009","Arizona","Graham",38304,19492
+"04011","Arizona","Greenlee",9465,4362
+"04012","Arizona","La Paz",21035,12028
+"04013","Arizona","Maricopa",4412779,2407398
+"04015","Arizona","Mohave",210998,161829
+"04017","Arizona","Navajo",110271,45785
+"04019","Arizona","Pima",1038476,531144
+"04021","Arizona","Pinal",447559,251708
+"04023","Arizona","Santa Cruz",46594,7015
+"04025","Arizona","Yavapai",232396,186181
+"04027","Arizona","Yuma",211931,64843
+"20001","Kansas","Allen",12503,11235
+"20003","Kansas","Anderson",7877,7415
+"20005","Kansas","Atchison",16210,14266
+"20007","Kansas","Barber",4493,4052
+"20009","Kansas","Barton",26209,21208
+"20011","Kansas","Bourbon",14539,13032
+"42029","Pennsylvania","Chester",521980,411379
+"42033","Pennsylvania","Clearfield",79466,73652
+"42035","Pennsylvania","Clinton",38549,36637
+"42039","Pennsylvania","Crawford",85074,80351
+"42041","Pennsylvania","Cumberland",251487,213304
+"42045","Pennsylvania","Delaware",565328,372568
+"42047","Pennsylvania","Elk",30077,29164
+"42051","Pennsylvania","Fayette",130329,119122
+"42053","Pennsylvania","Forest",7190,5127
+"42057","Pennsylvania","Fulton",14492,13852
+"42059","Pennsylvania","Greene",36484,33786
+"42063","Pennsylvania","Indiana",84463,78762
+"42065","Pennsylvania","Jefferson",43570,42242
+"42069","Pennsylvania","Lackawanna",210162,176639
+"42071","Pennsylvania","Lancaster",543050,441681
+"42075","Pennsylvania","Lebanon",140410,114146
+"42077","Pennsylvania","Lehigh",367338,232125
+"42081","Pennsylvania","Lycoming",114014,102486
+"42083","Pennsylvania","McKean",41021,38147
+"42085","Pennsylvania","Mercer",110519,99344
+"42089","Pennsylvania","Monroe",168824,109458
+"42091","Pennsylvania","Montgomery",827180,619162
+"42093","Pennsylvania","Montour",18178,16533
+"42095","Pennsylvania","Northampton",304233,230545
+"42097","Pennsylvania","Northumberland",91234,83785
+"42099","Pennsylvania","Perry",46133,43853
+"42101","Pennsylvania","Philadelphia",1581531,539826
+"42103","Pennsylvania","Pike",55660,44283
+"42105","Pennsylvania","Potter",16685,16072
+"42107","Pennsylvania","Schuylkill",141935,128299
+"42109","Pennsylvania","Snyder",40452,38429
+"42111","Pennsylvania","Somerset",73844,69359
+"42113","Pennsylvania","Sullivan",6038,5624
+"42115","Pennsylvania","Susquehanna",40604,39041
+"42117","Pennsylvania","Tioga",40759,39157
+"42119","Pennsylvania","Union",44831,37853
+"42121","Pennsylvania","Venango",51355,48973
+"42123","Pennsylvania","Warren",39466,37779
+"42125","Pennsylvania","Washington",207081,190052
+"42127","Pennsylvania","Wayne",51268,46245
+"42131","Pennsylvania","Wyoming",27078,24837
+"42133","Pennsylvania","York",447628,369676
+"45001","South Carolina","Abbeville",24582,16802
+"45005","South Carolina","Allendale",8789,1937
+"45007","South Carolina","Anderson",200183,154394
+"45011","South Carolina","Barnwell",21170,10714
+"45013","South Carolina","Beaufort",189732,129106
+"45017","South Carolina","Calhoun",14608,7896
+"45019","South Carolina","Charleston",407543,263849
+"45023","South Carolina","Chester",32260,18868
+"45025","South Carolina","Chesterfield",45833,27532
+"45029","South Carolina","Colleton",37624,21166
+"45031","South Carolina","Darlington",66858,36419
+"45033","South Carolina","Dillon",30473,13866
+"45037","South Carolina","Edgefield",27021,15352
+"45039","South Carolina","Fairfield",22406,8540
+"45043","South Carolina","Georgetown",62150,40084
+"19141","Iowa","O'Brien",13796,12710
+"19147","Iowa","Palo Alto",8941,8232
+"19153","Iowa","Polk",485418,373665
+"19157","Iowa","Poweshiek",18391,16832
+"19163","Iowa","Scott",172938,136920
+"19169","Iowa","Story",97355,81016
+"19173","Iowa","Taylor",6160,5549
+"19179","Iowa","Wapello",35102,28586
+"19185","Iowa","Wayne",6426,6096
+"19189","Iowa","Winnebago",10474,9549
+"19195","Iowa","Worth",7422,6988
+"24003","Maryland","Anne Arundel",575421,385867
+"24009","Maryland","Calvert",92094,71488
+"24015","Maryland","Cecil",102889,86797
+"24021","Maryland","Frederick",255955,185309
+"24027","Maryland","Howard",322407,163403
+"24031","Maryland","Montgomery",1047661,451553
+"24037","Maryland","St. Mary's",113182,83320
+"26031","Michigan","Cheboygan",25435,23197
+"26037","Michigan","Clinton",78957,70378
+"26043","Michigan","Dickinson",25373,24061
+"26047","Michigan","Emmet",33175,29651
+"26053","Michigan","Gogebic",14715,13339
+"26059","Michigan","Hillsdale",45707,43082
+"26065","Michigan","Ingham",290923,201143
+"26069","Michigan","Iosco",25213,23514
+"26075","Michigan","Jackson",158174,133104
+"26081","Michigan","Kent",652617,475874
+"26087","Michigan","Lapeer",87975,80322
+"26091","Michigan","Lenawee",98310,84768
+"26097","Michigan","Mackinac",10781,7874
+"26103","Michigan","Marquette",66403,61126
+"26109","Michigan","Menominee",22902,21273
+"26113","Michigan","Missaukee",15075,14088
+"26119","Michigan","Montmorency",9270,8862
+"26125","Michigan","Oakland",1255340,892678
+"26131","Michigan","Ontonagon",5802,5503
+"26137","Michigan","Otsego",24613,23235
+"26141","Michigan","Presque Isle",12687,12090
+"26147","Michigan","St. Clair",159285,144725
+"26153","Michigan","Schoolcraft",8031,6871
+"26159","Michigan","Van Buren",75416,60854
+"28039","Mississippi","George",24098,21016
+"28045","Mississippi","Hancock",47339,40097
+"28051","Mississippi","Holmes",17414,2656
+"28057","Mississippi","Itawamba",23396,21034
+"28063","Mississippi","Jefferson",7129,930
+"28069","Mississippi","Kemper",9829,3326
+"28073","Mississippi","Lamar",62693,46191
+"28079","Mississippi","Leake",22791,10651
+"28085","Mississippi","Lincoln",34197,22957
+"28091","Mississippi","Marion",24785,15977
+"28097","Mississippi","Montgomery",9956,5182
+"28101","Mississippi","Newton",21215,12713
+"28107","Mississippi","Panola",34079,15955
+"28113","Mississippi","Pike",39365,16929
+"28119","Mississippi","Quitman",7038,1802
+"28125","Mississippi","Sharkey",4427,1092
+"28129","Mississippi","Smith",15919,11764
+"20015","Kansas","Butler",66890,58904
+"20019","Kansas","Chautauqua",3280,2796
+"20021","Kansas","Cherokee",20017,17537
+"20025","Kansas","Clark",2006,1784
+"20027","Kansas","Clay",8030,7518
+"20031","Kansas","Coffey",8218,7652
+"20033","Kansas","Comanche",1759,1629
+"20037","Kansas","Crawford",38874,33486
+"20041","Kansas","Dickinson",18614,16834
+"20043","Kansas","Doniphan",7616,6839
+"20047","Kansas","Edwards",2822,2140
+"20049","Kansas","Elk",2502,2227
+"20053","Kansas","Ellsworth",6176,5277
+"20055","Kansas","Finney",36451,14830
+"20059","Kansas","Franklin",25643,23246
+"20061","Kansas","Geary",33309,18445
+"20065","Kansas","Graham",2464,2173
+"20069","Kansas","Gray",6020,4910
+"20071","Kansas","Greeley",1156,885
+"20075","Kansas","Hamilton",2552,1515
+"20077","Kansas","Harper",5506,4948
+"20081","Kansas","Haskell",3990,2649
+"20083","Kansas","Hodgeman",1872,1642
+"20087","Kansas","Jefferson",18974,17718
+"20091","Kansas","Johnson",597574,474054
+"20093","Kansas","Kearny",3863,2544
+"20097","Kansas","Kiowa",2483,2198
+"20099","Kansas","Labette",19938,16971
+"20103","Kansas","Leavenworth",81499,63999
+"20105","Kansas","Lincoln",3013,2817
+"20109","Kansas","Logan",2789,2515
+"20113","Kansas","McPherson",28557,26027
+"20115","Kansas","Marion",11865,10959
+"20119","Kansas","Meade",4120,3050
+"20121","Kansas","Miami",33740,31115
+"20125","Kansas","Montgomery",32114,25368
+"20127","Kansas","Morris",5551,5058
+"20131","Kansas","Nemaha",10109,9574
+"20133","Kansas","Neosho",16008,14280
+"20137","Kansas","Norton",5416,4787
+"20141","Kansas","Osborne",3494,3284
+"20143","Kansas","Ottawa",5776,5419
+"20145","Kansas","Pawnee",6539,5493
+"20147","Kansas","Phillips",5297,4943
+"20149","Kansas","Pottawatomie",24203,21668
+"20151","Kansas","Pratt",9324,8194
+"20153","Kansas","Rawlins",2490,2224
+"20155","Kansas","Reno",62421,52182
+"20157","Kansas","Republic",4607,4369
+"20159","Kansas","Rice",9532,7878
+"20161","Kansas","Riley",74059,56389
+"20163","Kansas","Rooks",4985,4682
+"20165","Kansas","Rush",2953,2712
+"20167","Kansas","Russell",6896,6339
+"20169","Kansas","Saline",54384,43454
+"20171","Kansas","Scott",4893,3828
+"20173","Kansas","Sedgwick",515416,348133
+"20175","Kansas","Seward",21902,6426
+"20177","Kansas","Shawnee",177293,129505
+"20179","Kansas","Sheridan",2515,2325
+"45049","South Carolina","Hampton",19223,7875
+"45051","South Carolina","Horry",344186,266186
+"45055","South Carolina","Kershaw",65926,45111
+"45057","South Carolina","Lancaster",95378,66784
+"45059","South Carolina","Laurens",66990,45233
+"45063","South Carolina","Lexington",295033,219154
+"45065","South Carolina","McCormick",9495,4864
+"45069","South Carolina","Marlboro",26376,10284
+"45071","South Carolina","Newberry",38329,22972
+"45075","South Carolina","Orangeburg",86953,28788
+"45077","South Carolina","Pickens",125381,107120
+"45081","South Carolina","Saluda",20292,11873
+"45083","South Carolina","Spartanburg",313791,212852
+"45087","South Carolina","Union",27325,17557
+"45089","South Carolina","Williamsburg",30810,9680
+"45091","South Carolina","York",273887,191130
+"46005","South Dakota","Beadle",18338,13921
+"46007","South Dakota","Bennett",3430,1137
+"46011","South Dakota","Brookings",35115,31472
+"46013","South Dakota","Brown",38988,33655
+"46017","South Dakota","Buffalo",2005,269
+"46019","South Dakota","Butte",10295,9252
+"46021","South Dakota","Campbell",1458,1420
+"46023","South Dakota","Charles Mix",9324,5820
+"46025","South Dakota","Clark",3715,3465
+"46027","South Dakota","Clay",14076,12188
+"46029","South Dakota","Codington",28133,25820
+"46031","South Dakota","Corson",4106,1176
+"46033","South Dakota","Custer",8826,7918
+"46035","South Dakota","Davison",19890,17946
+"46037","South Dakota","Day",5452,4691
+"46039","South Dakota","Deuel",4309,4137
+"46041","South Dakota","Dewey",5841,1135
+"46043","South Dakota","Douglas",2913,2743
+"46045","South Dakota","Edmunds",3876,3717
+"46047","South Dakota","Fall River",6721,5679
+"46049","South Dakota","Faulk",2315,2212
+"46051","South Dakota","Grant",7125,6578
+"46053","South Dakota","Gregory",4193,3667
+"46055","South Dakota","Haakon",1935,1820
+"46057","South Dakota","Hamlin",6104,5676
+"46059","South Dakota","Hand",3064,2951
+"46063","South Dakota","Harding",1178,1088
+"46065","South Dakota","Hughes",17560,14337
+"46069","South Dakota","Hyde",1446,1279
+"46071","South Dakota","Jackson",3296,1271
+"46075","South Dakota","Jones",873,743
+"46077","South Dakota","Kingsbury",4936,4793
+"45045","South Carolina","Greenville",516126,349315
+"46079","South Dakota","Lake",12747,11854
+"46083","South Dakota","Lincoln",58887,54305
+"46085","South Dakota","Lyman",3831,2131
+"46089","South Dakota","McPherson",2316,2198
+"46091","South Dakota","Marshall",4881,4059
+"46095","South Dakota","Mellette",2065,791
+"46097","South Dakota","Miner",2213,2104
+"46101","South Dakota","Moody",6508,4952
+"28135","Mississippi","Tallahatchie",14041,4863
+"28141","Mississippi","Tishomingo",19396,17856
+"28147","Mississippi","Walthall",14423,7573
+"28153","Mississippi","Wayne",20344,11651
+"28159","Mississippi","Winston",18116,9028
+"35001","New Mexico","Bernalillo",679037,256847
+"35041","New Mexico","Roosevelt",18723,9579
+"35047","New Mexico","San Miguel",27546,4704
+"35051","New Mexico","Sierra",10988,6867
+"35057","New Mexico","Torrance",15477,7761
+"38001","North Dakota","Adams",2271,2124
+"38007","North Dakota","Billings",886,886
+"38013","North Dakota","Burke",2142,1995
+"38019","North Dakota","Cavalier",3769,3534
+"38023","North Dakota","Divide",2289,2076
+"38029","North Dakota","Emmons",3262,3157
+"38035","North Dakota","Grand Forks",70243,58398
+"38041","North Dakota","Hettinger",2510,2273
+"38047","North Dakota","Logan",1743,1688
+"38053","North Dakota","McKenzie",13836,10649
+"38059","North Dakota","Morton",31118,27805
+"38063","North Dakota","Nelson",2864,2635
+"38069","North Dakota","Pierce",4061,3765
+"38075","North Dakota","Renville",2387,2193
+"38081","North Dakota","Sargent",3899,3561
+"38087","North Dakota","Slope",788,753
+"38093","North Dakota","Stutsman",20879,19169
+"38099","North Dakota","Walsh",10642,8946
+"38103","North Dakota","Wells",3889,3784
+"20013","Kansas","Brown",9575,7895
+"20017","Kansas","Chase",2604,2347
+"20023","Kansas","Cheyenne",2639,2436
+"20029","Kansas","Cloud",8831,8177
+"20035","Kansas","Cowley",35090,27745
+"20039","Kansas","Decatur",2826,2693
+"20045","Kansas","Douglas",121304,94090
+"20051","Kansas","Ellis",28747,25655
+"20057","Kansas","Ford",33718,13352
+"20063","Kansas","Gove",2650,2489
+"20067","Kansas","Grant",7324,3652
+"20073","Kansas","Greenwood",6010,5508
+"20079","Kansas","Harvey",34434,28205
+"20085","Kansas","Jackson",13249,11050
+"20089","Kansas","Jewell",2854,2680
+"20095","Kansas","Kingman",7173,6669
+"20101","Kansas","Lane",1523,1318
+"20107","Kansas","Linn",9687,9035
+"20111","Kansas","Lyon",33237,23577
+"20117","Kansas","Marshall",9713,9167
+"20123","Kansas","Mitchell",6053,5745
+"20129","Kansas","Morton",2656,1884
+"20135","Kansas","Ness",2838,2490
+"20139","Kansas","Osage",15855,14754
+"20185","Kansas","Stafford",4125,3437
+"20191","Kansas","Sumner",22928,20457
+"20197","Kansas","Wabaunsee",6877,6330
+"20203","Kansas","Wichita",2112,1438
+"20207","Kansas","Woodson",3117,2882
+"21003","Kentucky","Allen",21065,20007
+"20181","Kansas","Sherman",5904,4928
+"20183","Kansas","Smith",3594,3386
+"20187","Kansas","Stanton",2030,1193
+"20189","Kansas","Stevens",5498,3368
+"20193","Kansas","Thomas",7748,6911
+"20195","Kansas","Trego",2802,2717
+"20199","Kansas","Wallace",1583,1422
+"20201","Kansas","Washington",5474,5121
+"20205","Kansas","Wilson",8600,7890
+"20209","Kansas","Wyandotte",165447,66340
+"21001","Kentucky","Adair",19366,17911
+"21005","Kentucky","Anderson",22580,21066
+"21007","Kentucky","Ballard",7914,7307
+"21011","Kentucky","Bath",12421,11808
+"21013","Kentucky","Bell",26426,24866
+"21017","Kentucky","Bourbon",19998,16970
+"21019","Kentucky","Boyd",47361,43898
+"21023","Kentucky","Bracken",8308,7968
+"21027","Kentucky","Breckinridge",20283,19065
+"21029","Kentucky","Bullitt",80921,76071
+"21033","Kentucky","Caldwell",12679,11515
+"21035","Kentucky","Calloway",38991,34882
+"21039","Kentucky","Carlisle",4738,4427
+"21041","Kentucky","Carroll",10691,9460
+"21045","Kentucky","Casey",15968,15103
+"21047","Kentucky","Christian",71470,46513
+"21051","Kentucky","Clay",20110,18359
+"21053","Kentucky","Clinton",10175,9658
+"21057","Kentucky","Cumberland",6660,6149
+"21059","Kentucky","Daviess",101001,88298
+"21063","Kentucky","Elliott",7461,7120
+"21067","Kentucky","Fayette",322200,226571
+"21069","Kentucky","Fleming",14519,13899
+"21073","Kentucky","Franklin",50744,41288
+"21075","Kentucky","Fulton",6064,4281
+"21079","Kentucky","Garrard",17554,16476
+"21081","Kentucky","Grant",25107,23417
+"21085","Kentucky","Grayson",26313,25177
+"21087","Kentucky","Green",11000,10359
+"21091","Kentucky","Hancock",8748,8331
+"21093","Kentucky","Hardin",109627,82997
+"21097","Kentucky","Harrison",18763,17589
+"21101","Kentucky","Henderson",45550,38977
+"21103","Kentucky","Henry",15999,14576
+"21105","Kentucky","Hickman",4461,3837
+"21107","Kentucky","Hopkins",45044,39738
+"21109","Kentucky","Jackson",13368,13082
+"21111","Kentucky","Jefferson",768419,511897
+"21113","Kentucky","Jessamine",53476,47238
+"21115","Kentucky","Johnson",22427,21778
+"21117","Kentucky","Kenton",166552,146765
+"21119","Kentucky","Knott",15041,14564
+"21121","Kentucky","Knox",31288,29939
+"21123","Kentucky","Larue",14269,12972
+"21125","Kentucky","Laurel",60631,58011
+"21127","Kentucky","Lawrence",15604,15073
+"21129","Kentucky","Lee",7088,6721
+"21131","Kentucky","Leslie",10081,9778
+"21133","Kentucky","Letcher",21936,21317
+"46102","South Dakota","Oglala Lakota",14277,637
+"46105","South Dakota","Perkins",2996,2753
+"46107","South Dakota","Potter",2311,2129
+"46109","South Dakota","Roberts",10310,5794
+"46115","South Dakota","Spink",6438,5952
+"46117","South Dakota","Stanley",3058,2654
+"46121","South Dakota","Todd",10308,778
+"46123","South Dakota","Tripp",5448,4393
+"46127","South Dakota","Union",15659,14188
+"46129","South Dakota","Walworth",5431,4280
+"46137","South Dakota","Ziebach",2767,661
+"47001","Tennessee","Anderson",76513,67828
+"47005","Tennessee","Benton",16133,15386
+"47007","Tennessee","Bledsoe",14961,13127
+"47011","Tennessee","Bradley",106924,91087
+"47013","Tennessee","Campbell",39818,38333
+"47017","Tennessee","Carroll",27841,23504
+"47019","Tennessee","Carter",56452,53348
+"47023","Tennessee","Chester",17260,14706
+"47025","Tennessee","Claiborne",31827,30277
+"47029","Tennessee","Cocke",35797,33295
+"47031","Tennessee","Coffee",56024,49213
+"47035","Tennessee","Cumberland",60016,56586
+"47037","Tennessee","Davidson",690540,386782
+"47041","Tennessee","DeKalb",20104,17655
+"47043","Tennessee","Dickson",53289,47624
+"47045","Tennessee","Dyer",37201,29603
+"47047","Tennessee","Fayette",40612,27373
+"47049","Tennessee","Fentress",18405,17719
+"47051","Tennessee","Franklin",41999,37070
+"47053","Tennessee","Gibson",49193,37411
+"47055","Tennessee","Giles",29403,24671
+"47057","Tennessee","Grainger",23268,21830
+"47059","Tennessee","Greene",69077,64106
+"47061","Tennessee","Grundy",13371,11628
+"47063","Tennessee","Hamblen",64479,52507
+"47065","Tennessee","Hamilton",364718,258213
+"47067","Tennessee","Hancock",6568,6340
+"47069","Tennessee","Hardeman",25247,13669
+"47071","Tennessee","Hardin",25665,23572
+"47073","Tennessee","Hawkins",56735,53866
+"47075","Tennessee","Haywood",17391,7593
+"47077","Tennessee","Henderson",27956,24378
+"47079","Tennessee","Henry",32251,28006
+"47081","Tennessee","Hickman",25017,22564
+"47083","Tennessee","Houston",8201,7521
+"47085","Tennessee","Humphreys",18528,16915
+"47089","Tennessee","Jefferson",54162,49904
+"47091","Tennessee","Johnson",17755,16406
+"47095","Tennessee","Lake",7273,4864
+"47097","Tennessee","Lauderdale",25689,15493
+"47101","Tennessee","Lewis",12131,11298
+"47103","Tennessee","Lincoln",34158,29437
+"47107","Tennessee","McMinn",53392,47349
+"47109","Tennessee","McNairy",25814,23132
+"47113","Tennessee","Madison",97838,54208
+"47115","Tennessee","Marion",28639,26239
+"47119","Tennessee","Maury",94615,74705
+"21015","Kentucky","Boone",132368,115319
+"21021","Kentucky","Boyle",30090,25547
+"21025","Kentucky","Breathitt",12802,12360
+"21031","Kentucky","Butler",12756,12067
+"21037","Kentucky","Campbell",93608,86141
+"21043","Kentucky","Carter",26976,25926
+"21049","Kentucky","Clark",36152,32409
+"21055","Kentucky","Crittenden",8940,8582
+"21061","Kentucky","Edmonson",12195,11559
+"21065","Kentucky","Estill",14187,13728
+"21071","Kentucky","Floyd",35931,34855
+"21077","Kentucky","Gallatin",8760,7843
+"21083","Kentucky","Graves",37125,31995
+"21089","Kentucky","Greenup",35359,33991
+"21095","Kentucky","Harlan",26307,24969
+"21099","Kentucky","Hart",18833,17234
+"21149","Kentucky","McLean",9202,8821
+"21153","Kentucky","Magoffin",12346,12077
+"21159","Kentucky","Martin",11421,10493
+"21165","Kentucky","Menifee",6463,6151
+"21171","Kentucky","Monroe",10616,9912
+"21177","Kentucky","Muhlenberg",30815,28345
+"21183","Kentucky","Ohio",24081,22701
+"21189","Kentucky","Owsley",4416,4092
+"21193","Kentucky","Perry",26266,24854
+"21199","Kentucky","Pulaski",64789,60733
+"21205","Kentucky","Rowan",24534,23172
+"21211","Kentucky","Shelby",48100,38196
+"21217","Kentucky","Taylor",25572,22804
+"21221","Kentucky","Trigg",14569,12817
+"21227","Kentucky","Warren",130836,101743
+"21233","Kentucky","Webster",13021,11497
+"21239","Kentucky","Woodford",26486,22830
+"23005","Maine","Cumberland",294520,263199
+"23011","Maine","Kennebec",122158,115281
+"23017","Maine","Oxford",57741,54637
+"23023","Maine","Sagadahoc",35720,33635
+"23027","Maine","Waldo",39723,37650
+"27001","Minnesota","Aitkin",15826,14831
+"27047","Minnesota","Freeborn",30465,25706
+"27053","Minnesota","Hennepin",1255296,852045
+"27059","Minnesota","Isanti",40004,37408
+"27063","Minnesota","Jackson",9873,9082
+"27069","Minnesota","Kittson",4272,4053
+"27075","Minnesota","Lake",10571,10085
+"27081","Minnesota","Lincoln",5641,5394
+"27087","Minnesota","Mahnomen",5508,2468
+"27093","Minnesota","Meeker",23149,21705
+"27099","Minnesota","Mower",39931,30982
+"21009","Kentucky","Barren",44026,39678
+"27105","Minnesota","Nobles",21667,12640
+"27111","Minnesota","Otter Tail",58416,53920
+"27117","Minnesota","Pipestone",9163,8007
+"27123","Minnesota","Ramsey",546598,332580
+"27129","Minnesota","Renville",14572,12741
+"27135","Minnesota","Roseau",15259,13876
+"27141","Minnesota","Sherburne",96015,86342
+"27147","Minnesota","Steele",36710,31640
+"27153","Minnesota","Todd",24603,22002
