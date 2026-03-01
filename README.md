@@ -13,6 +13,7 @@ For a step-by-step tutorial with copy/paste commands, see:
 
 - `QUICKSTART_TUTORIALS.md`
 - `SKILLS_TEACHING_NOTES.md` (teaching notes, exercises, and troubleshooting)
+- `BUILD_A_SKILL_FROM_YOUR_CODE.md` (build a skill from existing R/Python scripts)
 
 ## What is a skill?
 
