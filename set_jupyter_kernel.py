@@ -13,11 +13,32 @@ KERNEL_NAME = config['kernel_name']
 
 ## Set the project-specific paths for jupyter and ipython
 ENV_FILE_PATH = Path('.env')
+JUPYTER_ENV_SETTINGS = {
+    "JUPYTER_PATH": ".venv/share/jupyter",
+    "JUPYTER_CONFIG_DIR": ".venv/etc/jupyter",
+    "JUPYTER_RUNTIME_DIR": ".venv/tmp/jupyter",
+}
+
+existing_lines = []
+if ENV_FILE_PATH.exists():
+    existing_lines = ENV_FILE_PATH.read_text().splitlines()
+
+filtered_lines = []
+for line in existing_lines:
+    stripped = line.strip()
+    if any(
+        stripped.startswith(f"{key}=") or stripped.startswith(f"export {key}=")
+        for key in JUPYTER_ENV_SETTINGS
+    ):
+        continue
+    filtered_lines.append(line)
+
 with ENV_FILE_PATH.open('w') as f:
-    f.write("\n# Jupyter environment isolation\n")
-    f.write("JUPYTER_PATH=.venv/share/jupyter\n")
-    f.write("JUPYTER_CONFIG_DIR=.venv/etc/jupyter\n")
-    f.write("JUPYTER_RUNTIME_DIR=.venv/tmp/jupyter\n")
+    if filtered_lines:
+        f.write("\n".join(filtered_lines).rstrip() + "\n\n")
+    f.write("# Jupyter environment isolation\n")
+    for key, value in JUPYTER_ENV_SETTINGS.items():
+        f.write(f"{key}={value}\n")
 
 ## Install our project kernel. The kernel.json this
 ## creates gets overwritten later.
@@ -46,7 +67,7 @@ kernel_json_data = {
     "display_name": KERNEL_NAME,
     "language": "python",
     "metadata": {
-        "dubugger": True
+        "debugger": True
     }
 }
 with open(KERNEL_DIR / 'kernel.json', 'w') as kernel_json_file:

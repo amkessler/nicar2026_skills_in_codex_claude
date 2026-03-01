@@ -111,8 +111,8 @@ the same skill files work in both tools — they just need to be present in the 
 | Claude Code | `.claude/skills/` | Auto-triggers based on `description` frontmatter, or invoke with `/skill-name` |
 | Codex CLI | `.codex/skills/` | Auto-triggers based on `description` frontmatter, or invoke with `$skill-name` |
 
-Both directories in this repo contain the same four skills: `fecfile`, `weather-forecast`,
-`image-rotator`, and `skill-creator`.
+Both directories in this repo contain the same six skills: `fecfile`, `weather-forecast`,
+`image-rotator`, `skill-creator`, `state-county-rankings`, and `majority-minority-change`.
 
 The `skills/` directory at the repo root is the **session/canonical copy** — it's the canonical source
 used in the NICAR session. The `.claude/skills/` and `.codex/skills/` directories are the

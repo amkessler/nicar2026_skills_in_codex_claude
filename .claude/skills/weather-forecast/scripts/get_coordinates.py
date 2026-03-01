@@ -20,7 +20,6 @@ Examples:
 
 import json
 import sys
-import os
 from pathlib import Path
 
 
@@ -85,20 +84,13 @@ def load_cities_database():
         sys.exit(1)
 
 
-def find_city_coordinates(city_name, state_name, cities_data):
+def find_city_coordinates(city_name, normalized_state, cities_data):
     """
     Find coordinates for a city in a specific state.
 
     Returns: (latitude, longitude) tuple or None if not found
     """
     city_name = city_name.strip()
-
-    # Normalize state name
-    normalized_state = normalize_state(state_name)
-    if not normalized_state:
-        print(f"Error: Unknown state '{state_name}'", file=sys.stderr)
-        print("Please use state abbreviation (e.g., PA, NJ) or full name (e.g., Pennsylvania, New Jersey)", file=sys.stderr)
-        return None
 
     # Search for matching city
     for city_data in cities_data:
@@ -161,11 +153,17 @@ def main():
         print("Supports state abbreviations (PA, NJ) or full names (Pennsylvania, New Jersey)", file=sys.stderr)
         sys.exit(1)
 
+    normalized_state = normalize_state(state)
+    if not normalized_state:
+        print(f"Error: Unknown state '{state}'", file=sys.stderr)
+        print("Please use state abbreviation (e.g., PA, NJ) or full name (e.g., Pennsylvania, New Jersey)", file=sys.stderr)
+        sys.exit(1)
+
     # Load cities database
     cities_data = load_cities_database()
 
     # Find coordinates
-    coords = find_city_coordinates(city, state, cities_data)
+    coords = find_city_coordinates(city, normalized_state, cities_data)
 
     if coords:
         lat, lon = coords
@@ -174,7 +172,6 @@ def main():
         else:
             print(f"{lat} {lon}")
     else:
-        normalized_state = normalize_state(state)
         print(f"Error: City '{city}, {normalized_state}' not found in database", file=sys.stderr)
         print(f"", file=sys.stderr)
         print(f"The database contains the 1000 largest US cities.", file=sys.stderr)

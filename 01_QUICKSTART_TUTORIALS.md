@@ -44,7 +44,7 @@ Look for the `file_number` column in output. That is the filing ID.
 Replace `<FILING_ID>` with one `file_number` value from Step 1.
 
 ```bash
-uv run python .codex/skills/fecfile/scripts/fetch_filing.py <FILING_ID> --summary-only
+uv run skills/fecfile/scripts/fetch_filing.py <FILING_ID> --summary-only
 ```
 
 This is the safest first step for any filing size.
@@ -52,7 +52,7 @@ This is the safest first step for any filing size.
 ### Step 3: Pull one schedule
 
 ```bash
-uv run python .codex/skills/fecfile/scripts/fetch_filing.py <FILING_ID> --schedule A
+uv run skills/fecfile/scripts/fetch_filing.py <FILING_ID> --schedule A
 ```
 
 Use `--schedule B` for disbursements.
@@ -60,7 +60,7 @@ Use `--schedule B` for disbursements.
 ### Step 4: Stream large filings (optional)
 
 ```bash
-uv run python .codex/skills/fecfile/scripts/fetch_filing.py <FILING_ID> --stream --schedule A
+uv run skills/fecfile/scripts/fetch_filing.py <FILING_ID> --stream --schedule A
 ```
 
 This outputs JSONL (one JSON record per line) and avoids loading huge filings into memory.

@@ -159,28 +159,29 @@ def format_json(periods):
 
 def main():
     if len(sys.argv) < 3:
-        print("Usage: python get_forecast.py <latitude> <longitude> [--json]")
-        print("Example: python get_forecast.py 39.7392 -104.9903")
-        print("\nOptions:")
-        print("  --json    Output as JSON for charting")
+        print("Usage: python get_forecast.py <latitude> <longitude> [--json]", file=sys.stderr)
+        print("Example: python get_forecast.py 39.7392 -104.9903", file=sys.stderr)
+        print("\nOptions:", file=sys.stderr)
+        print("  --json    Output as JSON for charting", file=sys.stderr)
         sys.exit(1)
     
     try:
         lat = float(sys.argv[1])
         lon = float(sys.argv[2])
     except ValueError:
-        print("Error: Latitude and longitude must be valid numbers")
+        print("Error: Latitude and longitude must be valid numbers", file=sys.stderr)
         sys.exit(1)
     
     output_json = "--json" in sys.argv
     
-    print(f"Coordinates: {lat}, {lon}")
-    print(f"Fetching 7-day forecast from Open-Meteo...\n")
+    if not output_json:
+        print(f"Coordinates: {lat}, {lon}")
+        print("Fetching 7-day forecast from Open-Meteo...\n")
     
     periods = get_forecast(lat, lon)
     
     if periods is None or len(periods) == 0:
-        print("Error: Could not fetch forecast data")
+        print("Error: Could not fetch forecast data", file=sys.stderr)
         sys.exit(1)
     
     if output_json:

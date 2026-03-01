@@ -9,11 +9,11 @@
 Query the OpenFEC API for filings by committee ID.
 
 Examples:
-  uv run etl/fec_find_filings.py C00770941
-  uv run etl/fec_find_filings.py C00770941 --most-recent --limit 10
-  uv run etl/fec_find_filings.py C00770941 --form-type F3X --report-year 2024
-  uv run etl/fec_find_filings.py C00770941 --format json --limit 5
-  uv run etl/fec_find_filings.py C00770941 --format csv --limit 5
+  uv run python fec_find_filings.py C00770941
+  uv run python fec_find_filings.py C00770941 --most-recent --limit 10
+  uv run python fec_find_filings.py C00770941 --form-type F3X --report-year 2024
+  uv run python fec_find_filings.py C00770941 --format json --limit 5
+  uv run python fec_find_filings.py C00770941 --format csv --limit 5
 
 Notes:
 - The output field `file_number` is the filing ID used by fecfile scripts.
