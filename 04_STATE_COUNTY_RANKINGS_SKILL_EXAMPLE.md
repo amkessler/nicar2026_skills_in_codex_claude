@@ -82,7 +82,7 @@ File: `skills/state-county-rankings/SKILL.md`
 
 The skill description is tuned to trigger on ranking requests and local demographic files.
 
-## Suggested Classroom Exercise
+## Suggested Session Exercise
 
 1. Run income ranking for one state.
 2. Run poverty ranking for the same state.

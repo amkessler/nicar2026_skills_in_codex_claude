@@ -7,7 +7,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 Demo project for NICAR 2026 showing how to use AI "skills" — modular, self-contained instruction packages
 that extend Claude/Codex's capabilities for domain-specific tasks. The repo includes six skills covering
 FEC campaign finance, weather forecasts, image rotation, county-level demographic analysis, and skill creation.
-The `skills/` directory is the canonical teaching copy; numbered tutorial docs (`01_*.md` – `05_*.md`)
+The `skills/` directory is the canonical session copy; numbered tutorial docs (`01_*.md` – `05_*.md`)
 walk through quickstart workflows, skill-building exercises, and worked Census examples.
 
 ## Environment Setup
@@ -40,7 +40,7 @@ Jupyter isolated inside `.venv`. This file is gitignored — do not commit it.
 Skills are directories containing a `SKILL.md` (with YAML frontmatter) and optional bundled
 resources (`scripts/`, `references/`, `assets/`). This repo has three skill locations:
 
-- `skills/` — teaching copy used in the NICAR presentation (canonical source)
+- `skills/` — session copy used in the NICAR conference session (canonical source)
 - `.claude/skills/` — active skills for Claude Code (auto-loaded when you open the project)
 - `.codex/skills/` — active skills for the Codex CLI
 
@@ -161,12 +161,12 @@ Key output fields: `nonwhite_share_<year_label>`, `delta_nonwhite_share_pp`,
 
 ## Tutorial Documents
 
-Numbered tutorial docs at the repo root (`01_*.md` – `05_*.md`) are the workshop teaching materials:
+Numbered tutorial docs at the repo root (`01_*.md` – `05_*.md`) are the session materials:
 
 | File | Contents |
 |------|----------|
-| `01_QUICKSTART_TUTORIALS.md` | Student quickstart commands and first-run workflows |
-| `02_SKILLS_TEACHING_NOTES.md` | Teaching notes, exercises, and troubleshooting |
+| `01_QUICKSTART_TUTORIALS.md` | Attendee quickstart commands and first-run workflows |
+| `02_SKILLS_TEACHING_NOTES.md` | Session notes, exercises, and troubleshooting |
 | `03_BUILD_A_SKILL_FROM_YOUR_CODE.md` | How to turn existing R/Python scripts into a skill |
 | `04_STATE_COUNTY_RANKINGS_SKILL_EXAMPLE.md` | Worked state-county-rankings example |
 | `05_MAJORITY_MINORITY_CHANGE_SKILL_EXAMPLE.md` | Worked majority-minority-change example |

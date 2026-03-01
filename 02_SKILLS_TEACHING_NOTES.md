@@ -1,7 +1,7 @@
-# Skills Teaching Notes
+# Skills Session Notes
 
-This guide is a beginner-friendly companion to `01_QUICKSTART_TUTORIALS.md`.
-Use it in class to explain how skills work, when to use each one, and how to avoid common mistakes.
+This guide is an attendee-friendly companion to `01_QUICKSTART_TUTORIALS.md`.
+Use it in session to explain how skills work, when to use each one, and how to avoid common mistakes.
 
 ## 1) Skill Mental Model (1 page)
 
@@ -24,7 +24,7 @@ Practical rule:
 
 ## 2) Which Skill Should I Use?
 
-| If the student says... | Skill | First action |
+| If an attendee says... | Skill | First action |
 |---|---|---|
 | "Analyze filing 1896830" | `fecfile` | Run summary-only first |
 | "What is the weather in Denver this week?" | `weather-forecast` | Resolve coordinates, then forecast |
@@ -33,7 +33,7 @@ Practical rule:
 | "Rank counties in Ohio by poverty rate" | `state-county-rankings` | Run rankings script on local CSV with metric list |
 | "Which counties crossed majority-minority thresholds?" | `majority-minority-change` | Compare start/end files and compute crossings |
 
-## 3) Starter Prompts Students Can Copy
+## 3) Starter Prompts Attendees Can Copy
 
 ### FEC
 - "Analyze filing `1896830` and give me 3 key numbers."
@@ -127,7 +127,7 @@ Why this matters:
 
 ## 8) Safety and Scale Checklist
 
-For beginners, enforce this checklist:
+For first-time attendees, enforce this checklist:
 - Always run summary/overview before full data pulls.
 - Limit or aggregate outputs before sharing.
 - Prefer script outputs over hand-typed field names.
@@ -142,7 +142,7 @@ For beginners, enforce this checklist:
 4. Run scripts exactly as documented.
 5. Only then ask for interpretation or narrative.
 
-## 10) Common Beginner Misconceptions
+## 10) Common First-Time Attendee Misconceptions
 
 - "A skill is a plugin."
   - Not exactly. It is instructions plus optional local resources.

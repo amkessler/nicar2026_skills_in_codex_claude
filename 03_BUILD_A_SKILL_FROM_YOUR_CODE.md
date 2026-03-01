@@ -1,6 +1,6 @@
 # Build A Skill From Your Own R/Python Code
 
-This tutorial walks beginners through turning existing code into a reusable skill.
+This tutorial walks attendees through turning existing code into a reusable skill.
 Use this when you already have working scripts and want the assistant to run them reliably.
 
 Estimated time: 20-30 minutes.
@@ -221,7 +221,7 @@ Expected output:
 
 ## Step 9: Mirror Into Active Skill Directories
 
-`skills/` is the teaching/canonical copy. To actively use the skill in both tools, copy to:
+`skills/` is the session/canonical copy. To actively use the skill in both tools, copy to:
 - `.claude/skills/`
 - `.codex/skills/`
 
@@ -262,4 +262,3 @@ Before sharing the skill:
 - SKILL.md has deterministic order of operations
 - Validation passes
 - Zip package builds successfully
-

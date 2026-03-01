@@ -9,12 +9,12 @@ new skills, `state-county-rankings` for ranked county demographics from local CS
 they demonstrate the range of what skills can do — from domain-specific data analysis to simple
 utilities to meta-tooling for the skill system itself.
 
-## Student Quickstart
+## Attendee Quickstart
 
 For a step-by-step tutorial with copy/paste commands, see:
 
 - `01_QUICKSTART_TUTORIALS.md`
-- `02_SKILLS_TEACHING_NOTES.md` (teaching notes, exercises, and troubleshooting)
+- `02_SKILLS_TEACHING_NOTES.md` (session notes, exercises, and troubleshooting)
 - `03_BUILD_A_SKILL_FROM_YOUR_CODE.md` (build a skill from existing R/Python scripts)
 - `04_STATE_COUNTY_RANKINGS_SKILL_EXAMPLE.md` (rank counties within a state from local demographics CSVs)
 - `05_MAJORITY_MINORITY_CHANGE_SKILL_EXAMPLE.md` (analyze threshold crossings between two Census snapshots)
@@ -114,8 +114,8 @@ the same skill files work in both tools — they just need to be present in the 
 Both directories in this repo contain the same four skills: `fecfile`, `weather-forecast`,
 `image-rotator`, and `skill-creator`.
 
-The `skills/` directory at the repo root is the **teaching copy** — it's the canonical source
-used in the NICAR presentation. The `.claude/skills/` and `.codex/skills/` directories are the
+The `skills/` directory at the repo root is the **session/canonical copy** — it's the canonical source
+used in the NICAR session. The `.claude/skills/` and `.codex/skills/` directories are the
 **active copies** that each tool actually reads.
 
 ### Enabling repo-local skills

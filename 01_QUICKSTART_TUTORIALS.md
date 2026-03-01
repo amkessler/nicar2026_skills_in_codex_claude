@@ -1,6 +1,6 @@
 # Quickstart Tutorials (NICAR 2026 Skills Demo)
 
-This guide gives students three fast, hands-on paths through this repo:
+This guide gives attendees three fast, hands-on paths through this repo:
 1. FEC filing analysis
 2. Weather forecast workflow
 3. Creating a new skill
@@ -161,4 +161,3 @@ Weather city lookup fails
 
 Image rotation script fails on Pillow
 - Run `uv sync` to install project dependencies.
-

@@ -72,7 +72,7 @@ File: `skills/majority-minority-change/SKILL.md`
 
 The skill is designed to trigger on change-over-time threshold questions and force a deterministic comparison workflow.
 
-## Suggested Classroom Exercise
+## Suggested Session Exercise
 
 1. Run all counties nationally (no state filter).
 2. Run for one state.
