@@ -120,10 +120,11 @@ Why this matters:
 2. Pull forecast table.
 3. Pull JSON and identify hottest and coldest periods.
 
-### Exercise C: Build a Skill
-1. Initialize `skills/city-budget`.
-2. Edit `SKILL.md` so description clearly states trigger conditions.
-3. Validate and package to `dist/`.
+### Exercise C: Majority-Minority Change
+1. Run `skills/majority-minority-change/scripts/analyze_majority_minority_change.R` on the bundled 2010 and 2020 county files.
+2. Re-run with `--state "Georgia"` (or another state) to compare state-specific results.
+3. Count counties where `crossed_to_majority_minority == TRUE`.
+4. Write one headline and one methodology caveat from the output.
 
 ## 8) Safety and Scale Checklist
 
