@@ -1,9 +1,12 @@
 # Quickstart Tutorials For Underlying Code
 
-This guide gives attendees three fast, hands-on paths through this repo:
+This guide gives attendees six fast, hands-on paths through this repo:
 1. FEC filing analysis
 2. Weather forecast workflow
-3. Creating a new skill
+3. State county rankings from local data
+4. Majority-minority change between two snapshots
+5. Image rotation
+6. Creating a new skill
 
 ## Before You Start
 
@@ -95,7 +98,97 @@ uv run python skills/weather-forecast/scripts/get_forecast.py 39.9525839 -75.165
 
 Use this for charting or downstream analysis.
 
-## Quickstart 3: Create a New Skill
+## Quickstart 3: State County Rankings
+
+Goal: rank counties in one state using bundled demographic data.
+
+### Step 1: Run a basic ranking
+
+```bash
+Rscript skills/state-county-rankings/scripts/get_state_county_rankings.R \
+  --input skills/state-county-rankings/data/county_demographics_acs5_2023.csv \
+  --state GA \
+  --top-n 5
+```
+
+Expected output:
+- `data/processed/ga_county_rankings.csv`
+
+### Step 2: Run custom metrics and JSON output
+
+```bash
+Rscript skills/state-county-rankings/scripts/get_state_county_rankings.R \
+  --input skills/state-county-rankings/data/county_demographics_acs5_2023.csv \
+  --state Georgia \
+  --metrics median_household_income,poverty_rate \
+  --top-n 5 \
+  --direction asc \
+  --format json \
+  --output data/processed/ga_rankings_income_poverty_asc.json
+```
+
+This returns the five lowest counties (per metric) in machine-readable JSON.
+
+## Quickstart 4: Majority-Minority Change
+
+Goal: compare county racial composition across two Census snapshots.
+
+### Step 1: Run nationwide comparison
+
+```bash
+Rscript skills/majority-minority-change/scripts/analyze_majority_minority_change.R \
+  --input-start skills/majority-minority-change/data/county_race_acs5_2010.csv \
+  --input-end skills/majority-minority-change/data/county_race_acs5_2020.csv \
+  --format csv
+```
+
+Expected output:
+- `data/processed/majority_minority_change_2010_2020.csv`
+
+### Step 2: Run with a state filter
+
+```bash
+Rscript skills/majority-minority-change/scripts/analyze_majority_minority_change.R \
+  --input-start skills/majority-minority-change/data/county_race_acs5_2010.csv \
+  --input-end skills/majority-minority-change/data/county_race_acs5_2020.csv \
+  --state "Georgia" \
+  --format csv \
+  --output data/processed/georgia_majority_minority_change.csv
+```
+
+Use this to focus on one reporting market.
+
+## Quickstart 5: Image Rotation
+
+Goal: rotate local images by 90-degree increments.
+
+### Step 1: Rotate clockwise (default)
+
+```bash
+uv run python skills/image-rotator/scripts/rotate_image.py path/to/image.jpg
+```
+
+This writes `path/to/image_rotated.jpg`.
+
+### Step 2: Rotate counter-clockwise with explicit output
+
+```bash
+uv run python skills/image-rotator/scripts/rotate_image.py \
+  path/to/image.jpg \
+  --direction counter-clockwise \
+  --output data/processed/image_ccw.jpg
+```
+
+### Step 3: Rotate 180 degrees
+
+```bash
+uv run python skills/image-rotator/scripts/rotate_image.py \
+  path/to/image.jpg \
+  --times 2 \
+  --output data/processed/image_180.jpg
+```
+
+## Quickstart 6: Create a New Skill
 
 Goal: scaffold, validate, and package a distributable skill.
 
