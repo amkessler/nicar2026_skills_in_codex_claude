@@ -11,9 +11,9 @@ data analysis to simple utilities to meta-tooling for the skill system itself.
 
 For a step-by-step tutorial with copy/paste commands, see:
 
-- `QUICKSTART_TUTORIALS.md`
-- `SKILLS_TEACHING_NOTES.md` (teaching notes, exercises, and troubleshooting)
-- `BUILD_A_SKILL_FROM_YOUR_CODE.md` (build a skill from existing R/Python scripts)
+- `01_QUICKSTART_TUTORIALS.md`
+- `02_SKILLS_TEACHING_NOTES.md` (teaching notes, exercises, and troubleshooting)
+- `03_BUILD_A_SKILL_FROM_YOUR_CODE.md` (build a skill from existing R/Python scripts)
 
 ## What is a skill?
 

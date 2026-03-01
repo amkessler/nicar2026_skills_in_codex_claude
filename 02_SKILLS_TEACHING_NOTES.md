@@ -1,6 +1,6 @@
 # Skills Teaching Notes
 
-This guide is a beginner-friendly companion to `QUICKSTART_TUTORIALS.md`.
+This guide is a beginner-friendly companion to `01_QUICKSTART_TUTORIALS.md`.
 Use it in class to explain how skills work, when to use each one, and how to avoid common mistakes.
 
 ## 1) Skill Mental Model (1 page)
@@ -139,4 +139,3 @@ For beginners, enforce this checklist:
   - Risky. Always verify from references or script output.
 - "Bigger output is better output."
   - Usually false. Curated, bounded output is better for analysis.
-
