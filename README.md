@@ -12,6 +12,7 @@ data analysis to simple utilities to meta-tooling for the skill system itself.
 For a step-by-step tutorial with copy/paste commands, see:
 
 - `QUICKSTART_TUTORIALS.md`
+- `SKILLS_TEACHING_NOTES.md` (teaching notes, exercises, and troubleshooting)
 
 ## What is a skill?
 
