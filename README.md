@@ -14,6 +14,7 @@ For a step-by-step tutorial with copy/paste commands, see:
 - `01_QUICKSTART_TUTORIALS.md`
 - `02_SKILLS_TEACHING_NOTES.md` (teaching notes, exercises, and troubleshooting)
 - `03_BUILD_A_SKILL_FROM_YOUR_CODE.md` (build a skill from existing R/Python scripts)
+- `04_TIDYCENSUS_DEMOGRAPHICS_SKILL_EXAMPLE.md` (real-world R tidycensus skill example)
 
 ## What is a skill?
 
