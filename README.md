@@ -14,7 +14,7 @@ utilities to meta-tooling for the skill system itself.
 For a step-by-step tutorial with copy/paste commands, see:
 
 - `01_QUICKSTART_TUTORIALS.md`
-- `02_SKILLS_TEACHING_NOTES.md` (session notes, exercises, and troubleshooting)
+- `02_SKILLS_LEARNING_NOTES.md` (session notes, exercises, and troubleshooting)
 - `03_BUILD_A_SKILL_FROM_YOUR_CODE.md` (build a skill from existing R/Python scripts)
 - `04_STATE_COUNTY_RANKINGS_SKILL_EXAMPLE.md` (rank counties within a state from local demographics CSVs)
 - `05_MAJORITY_MINORITY_CHANGE_SKILL_EXAMPLE.md` (analyze threshold crossings between two Census snapshots)
