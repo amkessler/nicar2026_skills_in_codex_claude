@@ -31,15 +31,15 @@ Example prompts:
 If you prefer a global install, copy `.codex/skills/fecfile` into `~/.codex/skills/` on your machine.
 
 Helper script: find filings by committee ID
-- Script: `etl/fec_find_filings.py`
+- Script: `fec_find_filings.py`
 - Uses the OpenFEC API to list filing IDs for a committee (the `file_number` field)
 - API key: set `FEC_API_KEY` or `DATA_GOV_API_KEY`, or pass `--api-key` (defaults to DEMO_KEY)
 - `committee_name` is included by default (it’s part of the standard field set)
 
 Examples:
 ```bash
-uv run etl/fec_find_filings.py C00770941 --limit 5
-uv run etl/fec_find_filings.py C00770941 --form-type F3X --report-year 2024
-uv run etl/fec_find_filings.py C00770941 --format csv --limit 10
-uv run etl/fec_find_filings.py C00770941 --fields committee_name,file_number,form_type,receipt_date
+uv run fec_find_filings.py C00770941 --limit 5
+uv run fec_find_filings.py C00770941 --form-type F3X --report-year 2024
+uv run fec_find_filings.py C00770941 --format csv --limit 10
+uv run fec_find_filings.py C00770941 --fields committee_name,file_number,form_type,receipt_date
 ```

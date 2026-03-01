@@ -8,4 +8,6 @@ dependencies = [
     "jupyterlab>=4.5.5",
     "jupyterlab-templates>=0.5.3",
     "jupytext>=1.19.1",
+    "pillow>=11.3.0",
+    "requests>=2.32.5",
 ]
