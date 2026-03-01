@@ -32,10 +32,12 @@ Use this skill to compare county demographics across two years and flag threshol
    - Default bundled files:
      - start: `skills/majority-minority-change/data/county_race_acs5_2010.csv`
      - end: `skills/majority-minority-change/data/county_race_acs5_2020.csv`
-2. Run script with optional state filter.
+2. Review `skills/majority-minority-change/references/DATA_SCHEMA.md` for exact derived/output field names before downstream filtering or selecting columns.
+   - Expected output naming includes `nonwhite_share_<year_label>` and `delta_nonwhite_share_pp`.
+3. Run script with optional state filter.
    - Example:
      `Rscript skills/majority-minority-change/scripts/analyze_majority_minority_change.R --input-start skills/majority-minority-change/data/county_race_acs5_2010.csv --input-end skills/majority-minority-change/data/county_race_acs5_2020.csv --start-label 2010 --end-label 2020`
-3. Review counties with largest percentage-point shifts and threshold crossings.
+4. Review counties with largest percentage-point shifts and threshold crossings.
 
 ## Output
 

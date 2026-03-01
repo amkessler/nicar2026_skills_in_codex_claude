@@ -21,10 +21,12 @@ Use this skill to rank counties within a state for one or more metrics from a lo
    - `--state` accepts full names or USPS abbreviations (for example, `Georgia` or `GA`).
    - Default bundled input:
      `skills/state-county-rankings/data/county_demographics_acs5_2023.csv`
-2. Ask for metrics (or use defaults) and ranking direction.
-3. Run:
+2. Review `skills/state-county-rankings/references/COLUMN_REQUIREMENTS.md` and use exact output headers before downstream filtering/selecting.
+   - Output columns are `state`, `county`, `metric`, `value`, `rank`, and `direction`.
+3. Ask for metrics (or use defaults) and ranking direction.
+4. Run:
    - `Rscript skills/state-county-rankings/scripts/get_state_county_rankings.R --input skills/state-county-rankings/data/county_demographics_acs5_2023.csv --state "<state>"`
-4. Return top/bottom county rankings and note missing/invalid fields.
+5. Return top/bottom county rankings and note missing/invalid fields.
 
 ## Output
 

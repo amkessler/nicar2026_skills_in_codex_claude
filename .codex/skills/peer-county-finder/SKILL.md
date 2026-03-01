@@ -20,10 +20,12 @@ Use this skill to identify demographically similar counties to a target county.
 1. Confirm target county + state.
    - `--target-state` accepts full names or USPS abbreviations (for example, `Wisconsin` or `WI`).
 2. Confirm feature columns and top-N count.
-3. Run similarity script.
+3. Review `skills/peer-county-finder/references/METHOD.md` and use exact output headers for downstream filtering/selecting.
+   - Output starts with `similarity_rank`, `state`, `county`, and `distance`, followed by selected feature columns.
+4. Run similarity script.
    - Example:
      `Rscript skills/peer-county-finder/scripts/find_peer_counties.R --input skills/peer-county-finder/data/county_demographics_acs5_2023.csv --target-state "<state>" --target-county "<county>"`
-4. Return top peers and explain distance metric.
+5. Return top peers and explain distance metric.
 
 ## Method
 
