@@ -30,6 +30,10 @@ Practical rule:
 | "What is the weather in Denver this week?" | `weather-forecast` | Resolve coordinates, then forecast |
 | "Rotate this image 90 degrees" | `image-rotator` | Run rotate script with default args |
 | "Help me build a new skill for city budgets" | `skill-creator` | Run `init_skill.py` scaffold |
+| "Pull key demographics for Allegheny County, PA" | `census-demographics` | Run demographics script with `--state` and `--county` |
+| "Rank counties in Ohio by poverty rate" | `state-county-rankings` | Run rankings script on local CSV with metric list |
+| "Which counties crossed majority-minority thresholds?" | `majority-minority-change` | Compare start/end files and compute crossings |
+| "Find counties similar to Milwaukee County" | `peer-county-finder` | Run peer finder with chosen feature columns |
 
 ## 3) Starter Prompts Students Can Copy
 
@@ -49,6 +53,26 @@ Practical rule:
 ### Skill Creation
 - "Create a new skill called `city-budget` under `skills/`."
 - "Validate and package `skills/city-budget` into `dist/`."
+
+### Census Demographics
+- "Get key ACS demographics for Pennsylvania."
+- "Pull demographics for Allegheny County, Pennsylvania."
+- "Return JSON demographics for Cook County, Illinois."
+
+### State County Rankings
+- "Rank Ohio counties by median household income and poverty rate."
+- "Show the top 15 North Carolina counties by median gross rent."
+- "Give me the bottom 10 California counties by total population."
+
+### Majority-Minority Change
+- "Compare 2010 vs 2020 county files and find majority-minority crossings."
+- "Which Georgia counties crossed into majority-minority status?"
+- "Show largest non-white share increases in Texas counties."
+
+### Peer County Finder
+- "Find peer counties for Milwaukee County, Wisconsin."
+- "Get 10 counties most similar to Maricopa County, AZ."
+- "Rerun peers for Cook County, IL using income, poverty, and rent only."
 
 ## 4) Prompt Quality: Bad vs Good
 
@@ -89,9 +113,11 @@ Why this matters:
 |---|---|---|
 | `uv: command not found` | uv not installed | Install uv and rerun `uv sync` |
 | FEC request fails or rate-limits | Missing API key | Set `FEC_API_KEY` or `DATA_GOV_API_KEY` |
+| Census script fails with credential error | Missing Census API key | Set `CENSUS_API_KEY` in the environment |
 | FEC output too large | Pulled full filing too early | Use `--summary-only`, then `--schedule`, then `--stream` |
 | City not found by coordinates script | Only top 1000 US cities in local DB | Use direct lat/lon with forecast script |
 | Image rotate fails with Pillow error | Dependencies not installed | Run `uv sync` |
+| Ranking/change/peer scripts fail on columns | Input file schema mismatch | Check required columns in each skill `references/` doc |
 | Skill validation fails | Missing/invalid frontmatter | Fix `name` and `description` in `SKILL.md` |
 
 ## 7) Mini Exercises (10-15 minutes each)
