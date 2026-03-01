@@ -7,6 +7,12 @@ fetching 7-day forecasts, `image-rotator` for rotating images, and `skill-creato
 new skills. Together they demonstrate the range of what skills can do — from domain-specific
 data analysis to simple utilities to meta-tooling for the skill system itself.
 
+## Student Quickstart
+
+For a step-by-step tutorial with copy/paste commands, see:
+
+- `QUICKSTART_TUTORIALS.md`
+
 ## What is a skill?
 
 When you ask an AI assistant to help with data analysis, it has to figure out on the fly how to
