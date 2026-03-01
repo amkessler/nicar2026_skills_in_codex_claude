@@ -30,3 +30,6 @@ packrat/src/
 .codex/sessions/
 .codex/rules/
 .codex/shell_snapshots/
+/.quarto/
+
+**/*.quarto_ipynb
