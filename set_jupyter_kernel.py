@@ -2,6 +2,7 @@ import subprocess
 import json
 import stat
 import glob
+import shutil
 from pathlib import Path
 
 ## When the project was initially created, it wrote out the
@@ -49,10 +50,19 @@ subprocess.run([
 ], check=True)
 
 ## Remove the python3 kernel that is added by default
-subprocess.run([
+remove_python3 = subprocess.run([
     'uv', 'run', 'jupyter', 'kernelspec', 'remove',
     '--f', 'python3'
-], check=True)
+], capture_output=True, text=True)
+if remove_python3.returncode != 0:
+    combined_output = f"{remove_python3.stdout}\n{remove_python3.stderr}"
+    if "Couldn't find kernel spec(s): python3" not in combined_output:
+        raise subprocess.CalledProcessError(
+            remove_python3.returncode,
+            remove_python3.args,
+            output=remove_python3.stdout,
+            stderr=remove_python3.stderr,
+        )
 
 ## Git hack to make working directory in every notebook at the root of the project.
 ## Overwrite the kernel json, telling the kernel to use the kernel shell script.
@@ -90,17 +100,22 @@ kernel_sh_path.chmod(kernel_sh_path.stat().st_mode | stat.S_IEXEC | stat.S_IRWXU
 ## Copy templates over to venv jupyter location so
 ## jupyterlab_templates can find them
 TEMPLATE_PATHS = glob.glob('analysis/notebook_templates/*')
-## make the notebook_templates folder in .venv
-subprocess.run([
-    'mkdir', f"{VENV_DIR.resolve()}/share/jupyter/notebook_templates"
-])
+template_dest = VENV_DIR.resolve() / "share/jupyter/notebook_templates"
+template_dest.mkdir(parents=True, exist_ok=True)
 for path in TEMPLATE_PATHS:
-    subprocess.run([
-        'cp', '-r', path,
-        f'{VENV_DIR.resolve()}/share/jupyter/notebook_templates'
-    ])
+    source_path = Path(path)
+    destination_path = template_dest / source_path.name
+    if destination_path.exists():
+        if destination_path.is_dir():
+            shutil.rmtree(destination_path)
+        else:
+            destination_path.unlink()
+    if source_path.is_dir():
+        shutil.copytree(source_path, destination_path)
+    else:
+        shutil.copy2(source_path, destination_path)
 ## Enable the jupyterlab_templates server
 subprocess.run([
     'uv', 'run', 'jupyter', 'server', 'extension', 'enable',
     '--py', 'jupyterlab_templates'
-])
+], check=True)

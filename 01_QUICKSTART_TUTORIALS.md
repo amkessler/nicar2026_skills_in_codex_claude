@@ -72,7 +72,7 @@ Goal: geocode a US city, then fetch a 7-day forecast.
 ### Step 1: Get coordinates
 
 ```bash
-uv run python .codex/skills/weather-forecast/scripts/get_coordinates.py "Philadelphia, PA"
+uv run python skills/weather-forecast/scripts/get_coordinates.py "Philadelphia, PA"
 ```
 
 Expected style of output:
@@ -84,7 +84,7 @@ Expected style of output:
 ### Step 2: Fetch forecast table
 
 ```bash
-uv run python .codex/skills/weather-forecast/scripts/get_forecast.py 39.9525839 -75.1652215
+uv run python skills/weather-forecast/scripts/get_forecast.py 39.9525839 -75.1652215
 ```
 
 You should see a table with period, temperature, wind, and forecast description.
@@ -92,7 +92,7 @@ You should see a table with period, temperature, wind, and forecast description.
 ### Step 3: Fetch JSON output (optional)
 
 ```bash
-uv run python .codex/skills/weather-forecast/scripts/get_forecast.py 39.9525839 -75.1652215 --json
+uv run python skills/weather-forecast/scripts/get_forecast.py 39.9525839 -75.1652215 --json
 ```
 
 Use this for charting or downstream analysis.

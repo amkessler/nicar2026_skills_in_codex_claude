@@ -155,8 +155,10 @@ def main():
 
     normalized_state = normalize_state(state)
     if not normalized_state:
-        print(f"Error: Unknown state '{state}'", file=sys.stderr)
-        print("Please use state abbreviation (e.g., PA, NJ) or full name (e.g., Pennsylvania, New Jersey)", file=sys.stderr)
+        print(
+            f"Error: Unknown state '{state}'. Use a USPS abbreviation (e.g., PA, NJ) or full state name.",
+            file=sys.stderr,
+        )
         sys.exit(1)
 
     # Load cities database

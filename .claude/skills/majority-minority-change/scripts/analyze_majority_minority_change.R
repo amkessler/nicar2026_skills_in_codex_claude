@@ -12,47 +12,59 @@ suppressPackageStartupMessages({
 # ------------------------------
 args <- commandArgs(trailingOnly = TRUE)
 
-input_start <- NA_character_
-input_end <- NA_character_
-start_label <- "2010"
-end_label <- "2020"
-state_filter <- NA_character_
-format <- "csv"
-output <- NA_character_
-
-i <- 1
-while (i <= length(args)) {
-  flag <- args[[i]]
-
-  if (!str_starts(flag, "--")) {
-    stop(str_c("Unexpected token: ", flag))
-  }
-  if (i == length(args)) {
-    stop(str_c("Missing value for ", flag))
-  }
-
-  value <- args[[i + 1]]
-
-  if (flag == "--input-start") {
-    input_start <- value
-  } else if (flag == "--input-end") {
-    input_end <- value
-  } else if (flag == "--start-label") {
-    start_label <- value
-  } else if (flag == "--end-label") {
-    end_label <- value
-  } else if (flag == "--state") {
-    state_filter <- value
-  } else if (flag == "--format") {
-    format <- value
-  } else if (flag == "--output") {
-    output <- value
-  } else {
-    stop(str_c("Unknown flag: ", flag))
-  }
-
-  i <- i + 2
+if (length(args) %% 2 != 0) {
+  stop("Arguments must be provided as --flag value pairs")
 }
+
+if (length(args) > 0) {
+  arg_tbl <- tibble::tibble(
+    flag = args[seq(1, length(args), by = 2)],
+    value = args[seq(2, length(args), by = 2)]
+  ) %>%
+    mutate(
+      flag = str_squish(flag),
+      value = str_squish(value)
+    )
+} else {
+  arg_tbl <- tibble::tibble(flag = character(), value = character())
+}
+
+if (any(!str_starts(arg_tbl$flag, "--"))) {
+  bad_flag <- arg_tbl$flag[!str_starts(arg_tbl$flag, "--")][[1]]
+  stop(str_c("Unexpected token: ", bad_flag))
+}
+
+allowed_flags <- c(
+  "--input-start",
+  "--input-end",
+  "--start-label",
+  "--end-label",
+  "--state",
+  "--format",
+  "--output"
+)
+unknown_flags <- setdiff(unique(arg_tbl$flag), allowed_flags)
+if (length(unknown_flags) > 0) {
+  stop(str_c("Unknown flag: ", unknown_flags[[1]]))
+}
+
+get_arg_value <- function(flag_name, default = NA_character_) {
+  values <- arg_tbl %>%
+    filter(.data$flag == .env$flag_name) %>%
+    pull(value)
+  if (length(values) == 0) {
+    return(default)
+  }
+  values[[length(values)]]
+}
+
+input_start <- get_arg_value("--input-start")
+input_end <- get_arg_value("--input-end")
+start_label <- get_arg_value("--start-label", "2010")
+end_label <- get_arg_value("--end-label", "2020")
+state_filter <- get_arg_value("--state")
+format <- get_arg_value("--format", "csv")
+output <- get_arg_value("--output")
 
 input_start <- input_start %>% str_squish() %>% na_if("")
 input_end <- input_end %>% str_squish() %>% na_if("")
@@ -143,20 +155,18 @@ if (length(missing_start) > 0 || length(missing_end) > 0) {
   ))
 }
 
-join_keys <- character()
-if ("county_fips" %in% names(start_raw) && "county_fips" %in% names(end_raw)) {
-  join_keys <- c(join_keys, "county_fips")
-}
-if ("state" %in% names(start_raw) && "state" %in% names(end_raw)) {
-  join_keys <- c(join_keys, "state")
-}
-if ("county" %in% names(start_raw) && "county" %in% names(end_raw)) {
-  join_keys <- c(join_keys, "county")
-}
-
-if (!("county_fips" %in% join_keys) && !all(c("state", "county") %in% join_keys)) {
+common_cols <- intersect(names(start_raw), names(end_raw))
+has_county_fips <- "county_fips" %in% common_cols
+has_state_county <- all(c("state", "county") %in% common_cols)
+if (has_county_fips) {
+  # Prefer stable FIPS IDs to avoid dropping valid rows on name/encoding changes.
+  join_keys <- "county_fips"
+} else if (has_state_county) {
+  join_keys <- c("state", "county")
+} else {
   stop("Inputs must share county_fips OR both state and county columns")
 }
+end_label_cols <- setdiff(intersect(c("state", "county"), names(end_raw)), join_keys)
 
 # ------------------------------
 # 4) Prepare each year and join
@@ -180,7 +190,7 @@ end_df <- end_raw %>%
     non_hispanic_white = as.numeric(non_hispanic_white),
     nonwhite_share = if_else(total_population > 0, 1 - (non_hispanic_white / total_population), NA_real_)
   ) %>%
-  select(all_of(join_keys), total_population, non_hispanic_white, nonwhite_share) %>%
+  select(all_of(c(join_keys, end_label_cols)), total_population, non_hispanic_white, nonwhite_share) %>%
   rename(
     !!str_c("total_population_", end_label) := total_population,
     !!str_c("non_hispanic_white_", end_label) := non_hispanic_white,
@@ -193,7 +203,10 @@ if (nrow(joined) == 0) {
   stop("No matched rows after join. Check key columns and values.")
 }
 
-if (!is.na(state_filter) && "state" %in% join_keys) {
+if (!is.na(state_filter)) {
+  if (!"state" %in% names(joined)) {
+    stop("Cannot apply --state filter because neither input contains a shared state column")
+  }
   state_filter_norm <- normalize_state_value(state_filter)
   joined <- joined %>%
     filter(normalize_state_value(state) == state_filter_norm)

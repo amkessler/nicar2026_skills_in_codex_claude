@@ -12,6 +12,7 @@ Examples:
 """
 
 import sys
+import re
 from pathlib import Path
 
 
@@ -191,6 +192,19 @@ def title_case_skill_name(skill_name):
     return ' '.join(word.capitalize() for word in skill_name.split('-'))
 
 
+def validate_skill_name(skill_name):
+    """Validate skill name against documented naming constraints."""
+    if not skill_name:
+        return "Skill name cannot be empty."
+    if len(skill_name) > 40:
+        return "Skill name must be 40 characters or fewer."
+    if not re.fullmatch(r"[a-z0-9-]+", skill_name):
+        return "Skill name must use lowercase letters, digits, and hyphens only."
+    if skill_name.startswith("-") or skill_name.endswith("-") or "--" in skill_name:
+        return "Skill name cannot start/end with hyphen or contain consecutive hyphens."
+    return None
+
+
 def init_skill(skill_name, path):
     """
     Initialize a new skill directory with template SKILL.md.
@@ -202,6 +216,11 @@ def init_skill(skill_name, path):
     Returns:
         Path to created skill directory, or None if error
     """
+    name_error = validate_skill_name(skill_name)
+    if name_error:
+        print(f"❌ Error: {name_error}")
+        return None
+
     # Determine skill directory path
     skill_dir = Path(path).resolve() / skill_name
 
@@ -286,6 +305,10 @@ def main():
 
     skill_name = sys.argv[1]
     path = sys.argv[3]
+    name_error = validate_skill_name(skill_name)
+    if name_error:
+        print(f"❌ Error: {name_error}")
+        sys.exit(1)
 
     print(f"🚀 Initializing skill: {skill_name}")
     print(f"   Location: {path}")

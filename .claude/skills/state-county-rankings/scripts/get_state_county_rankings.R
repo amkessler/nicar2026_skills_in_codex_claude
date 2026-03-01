@@ -13,47 +13,59 @@ suppressPackageStartupMessages({
 # ------------------------------
 args <- commandArgs(trailingOnly = TRUE)
 
-input <- NA_character_
-state_query <- NA_character_
-metrics_text <- "total_population,median_household_income,poverty_rate,median_gross_rent"
-top_n <- 10L
-direction <- "desc"
-format <- "csv"
-output <- NA_character_
-
-i <- 1
-while (i <= length(args)) {
-  flag <- args[[i]]
-
-  if (!str_starts(flag, "--")) {
-    stop(str_c("Unexpected token: ", flag))
-  }
-  if (i == length(args)) {
-    stop(str_c("Missing value for ", flag))
-  }
-
-  value <- args[[i + 1]]
-
-  if (flag == "--input") {
-    input <- value
-  } else if (flag == "--state") {
-    state_query <- value
-  } else if (flag == "--metrics") {
-    metrics_text <- value
-  } else if (flag == "--top-n") {
-    top_n <- as.integer(value)
-  } else if (flag == "--direction") {
-    direction <- value
-  } else if (flag == "--format") {
-    format <- value
-  } else if (flag == "--output") {
-    output <- value
-  } else {
-    stop(str_c("Unknown flag: ", flag))
-  }
-
-  i <- i + 2
+if (length(args) %% 2 != 0) {
+  stop("Arguments must be provided as --flag value pairs")
 }
+
+if (length(args) > 0) {
+  arg_tbl <- tibble::tibble(
+    flag = args[seq(1, length(args), by = 2)],
+    value = args[seq(2, length(args), by = 2)]
+  ) %>%
+    mutate(
+      flag = str_squish(flag),
+      value = str_squish(value)
+    )
+} else {
+  arg_tbl <- tibble::tibble(flag = character(), value = character())
+}
+
+if (any(!str_starts(arg_tbl$flag, "--"))) {
+  bad_flag <- arg_tbl$flag[!str_starts(arg_tbl$flag, "--")][[1]]
+  stop(str_c("Unexpected token: ", bad_flag))
+}
+
+allowed_flags <- c(
+  "--input",
+  "--state",
+  "--metrics",
+  "--top-n",
+  "--direction",
+  "--format",
+  "--output"
+)
+unknown_flags <- setdiff(unique(arg_tbl$flag), allowed_flags)
+if (length(unknown_flags) > 0) {
+  stop(str_c("Unknown flag: ", unknown_flags[[1]]))
+}
+
+get_arg_value <- function(flag_name, default = NA_character_) {
+  values <- arg_tbl %>%
+    filter(.data$flag == .env$flag_name) %>%
+    pull(value)
+  if (length(values) == 0) {
+    return(default)
+  }
+  values[[length(values)]]
+}
+
+input <- get_arg_value("--input")
+state_query <- get_arg_value("--state")
+metrics_text <- get_arg_value("--metrics", "total_population,median_household_income,poverty_rate,median_gross_rent")
+top_n <- suppressWarnings(as.integer(get_arg_value("--top-n", "10")))
+direction <- get_arg_value("--direction", "desc")
+format <- get_arg_value("--format", "csv")
+output <- get_arg_value("--output")
 
 input <- input %>% str_squish() %>% na_if("")
 state_query <- state_query %>% str_squish() %>% na_if("")
@@ -178,44 +190,37 @@ if (nrow(filtered) == 0) {
 # ------------------------------
 # 4) Rank counties metric-by-metric
 # ------------------------------
-ranked_list <- list()
+ranked <- filtered %>%
+  transmute(
+    state = as.character(state_value),
+    county = as.character(county),
+    across(all_of(metrics), ~as.numeric(.x))
+  ) %>%
+  pivot_longer(
+    cols = all_of(metrics),
+    names_to = "metric",
+    values_to = "value"
+  ) %>%
+  filter(!is.na(value)) %>%
+  group_by(metric) %>%
+  {
+    if (direction == "desc") {
+      arrange(., desc(value), county, .by_group = TRUE)
+    } else {
+      arrange(., value, county, .by_group = TRUE)
+    }
+  } %>%
+  mutate(
+    rank = row_number(),
+    direction = direction
+  ) %>%
+  filter(rank <= top_n) %>%
+  ungroup() %>%
+  select(state, county, metric, value, rank, direction)
 
-for (metric_name in metrics) {
-  metric_df <- filtered %>%
-    transmute(
-      state = as.character(state_value),
-      county = as.character(county),
-      metric = metric_name,
-      value = as.numeric(.data[[metric_name]])
-    ) %>%
-    filter(!is.na(value))
-
-  if (nrow(metric_df) == 0) {
-    next
-  }
-
-  if (direction == "desc") {
-    metric_df <- metric_df %>% arrange(desc(value), county)
-  } else {
-    metric_df <- metric_df %>% arrange(value, county)
-  }
-
-  metric_df <- metric_df %>%
-    mutate(
-      rank = row_number(),
-      direction = direction
-    ) %>%
-    filter(rank <= top_n)
-
-  ranked_list[[metric_name]] <- metric_df
-}
-
-if (length(ranked_list) == 0) {
+if (nrow(ranked) == 0) {
   stop("No ranked rows produced. Check metric values for missing/non-numeric data.")
 }
-
-ranked <- bind_rows(ranked_list) %>%
-  select(state, county, metric, value, rank, direction)
 
 # ------------------------------
 # 5) Write output
