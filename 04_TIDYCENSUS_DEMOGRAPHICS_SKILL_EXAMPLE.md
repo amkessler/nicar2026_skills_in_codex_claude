@@ -33,7 +33,7 @@ R + packages:
 
 ```bash
 Rscript --version
-Rscript -e 'install.packages(c("tidycensus","dplyr","tidyr","readr","jsonlite","stringr","tibble"))'
+Rscript -e 'install.packages(c("tidycensus","dplyr","tidyr","readr","jsonlite","stringr"))'
 ```
 
 Census API key in your shell:
@@ -74,36 +74,55 @@ suppressPackageStartupMessages({
   library(readr)
   library(jsonlite)
   library(stringr)
-  library(tibble)
 })
 
-parse_cli <- function(tokens) {
-  tibble(token = tokens) %>%
-    mutate(
-      is_flag = str_starts(token, "--"),
-      flag = if_else(is_flag, token, lag(token)),
-      value = if_else(is_flag, NA_character_, token)
-    ) %>%
-    filter(!is.na(value), str_starts(flag, "--")) %>%
-    group_by(flag) %>%
-    slice_tail(n = 1) %>%
-    ungroup() %>%
-    select(flag, value)
+# 1) Parse CLI args (sequential, beginner-friendly)
+args <- commandArgs(trailingOnly = TRUE)
+
+state <- NA_character_
+county <- NA_character_
+year <- 2023L
+format <- "csv"
+output <- NA_character_
+survey <- "acs5"
+
+i <- 1
+while (i <= length(args)) {
+  flag <- args[[i]]
+
+  if (!str_starts(flag, "--")) {
+    stop(str_c("Unexpected token: ", flag))
+  }
+  if (i == length(args)) {
+    stop(str_c("Missing value for ", flag))
+  }
+
+  value <- args[[i + 1]]
+
+  if (flag == "--state") {
+    state <- value
+  } else if (flag == "--county") {
+    county <- value
+  } else if (flag == "--year") {
+    year <- as.integer(value)
+  } else if (flag == "--format") {
+    format <- value
+  } else if (flag == "--output") {
+    output <- value
+  } else if (flag == "--survey") {
+    survey <- value
+  } else {
+    stop(str_c("Unknown flag: ", flag))
+  }
+
+  i <- i + 2
 }
 
-get_opt <- function(cli, flag_name, default = NA_character_) {
-  val <- cli %>% filter(flag == flag_name) %>% pull(value)
-  if (length(val) == 0) default else val[[1]]
-}
-
-cli <- parse_cli(commandArgs(trailingOnly = TRUE))
-
-state <- get_opt(cli, "--state") %>% str_squish() %>% na_if("")
-county <- get_opt(cli, "--county") %>% str_squish() %>% na_if("")
-year <- get_opt(cli, "--year", "2023") %>% as.integer()
-format <- get_opt(cli, "--format", "csv") %>% str_to_lower()
-output <- get_opt(cli, "--output") %>% na_if("")
-survey <- get_opt(cli, "--survey", "acs5") %>% str_to_lower()
+state <- state %>% str_squish() %>% na_if("")
+county <- county %>% str_squish() %>% na_if("")
+format <- format %>% str_to_lower() %>% str_squish()
+output <- output %>% str_squish() %>% na_if("")
+survey <- survey %>% str_to_lower() %>% str_squish()
 
 if (is.na(state)) {
   stop("Usage: Rscript get_demographics.R --state <state> [--county <county>] [--year <year>] [--survey acs5] [--format csv|json] [--output path]")
@@ -120,7 +139,7 @@ if (api_key == "") {
   stop("CENSUS_API_KEY is not set in the environment")
 }
 
-# Core metrics students can explain and reporters commonly use
+# 2) Define metrics
 metrics <- c(
   total_population = "B01001_001",
   median_age = "B01002_001",
@@ -130,6 +149,7 @@ metrics <- c(
   median_gross_rent = "B25064_001"
 )
 
+# 3) Pull ACS data for state or county
 geo <- if_else(is.na(county), "state", "county")
 
 if (geo == "state") {
@@ -153,11 +173,18 @@ if (geo == "state") {
   )
 }
 
-variable_lookup <- setNames(names(metrics), metrics)
+# 4) Reshape output into one row per geography
+variable_lookup <- data.frame(
+  variable_code = unname(metrics),
+  variable_name = names(metrics),
+  stringsAsFactors = FALSE
+)
 
 out <- acs %>%
   select(NAME, variable, estimate, moe) %>%
-  mutate(variable = recode(variable, !!!variable_lookup)) %>%
+  left_join(variable_lookup, by = c("variable" = "variable_code")) %>%
+  mutate(variable = coalesce(variable_name, variable)) %>%
+  select(-variable_name) %>%
   pivot_wider(
     names_from = variable,
     values_from = c(estimate, moe),
@@ -171,6 +198,7 @@ out <- acs %>%
     survey = survey
   )
 
+# 5) Determine output path
 if (is.na(output)) {
   slug <- coalesce(county, state) %>%
     str_to_lower() %>%
@@ -180,6 +208,7 @@ if (is.na(output)) {
   output <- str_c("data/processed/", slug, "_demographics_", year, ".", ext)
 }
 
+# 6) Write result
 if (format == "json") {
   write_json(out, output, pretty = TRUE, auto_unbox = TRUE, na = "null")
 } else {
@@ -242,7 +271,7 @@ Use this skill to fetch key ACS metrics for a state or county.
 ## Requirements
 
 - `CENSUS_API_KEY` must be set in the environment.
-- `tidycensus`, `dplyr`, `tidyr`, `readr`, `jsonlite`, `stringr`, and `tibble` must be installed in R.
+- `tidycensus`, `dplyr`, `tidyr`, `readr`, `jsonlite`, and `stringr` must be installed in R.
 
 ## Output
 

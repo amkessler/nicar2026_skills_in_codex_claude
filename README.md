@@ -15,6 +15,9 @@ For a step-by-step tutorial with copy/paste commands, see:
 - `02_SKILLS_TEACHING_NOTES.md` (teaching notes, exercises, and troubleshooting)
 - `03_BUILD_A_SKILL_FROM_YOUR_CODE.md` (build a skill from existing R/Python scripts)
 - `04_TIDYCENSUS_DEMOGRAPHICS_SKILL_EXAMPLE.md` (real-world R tidycensus skill example)
+- `05_STATE_COUNTY_RANKINGS_SKILL_EXAMPLE.md` (rank counties within a state from local demographics CSVs)
+- `06_MAJORITY_MINORITY_CHANGE_SKILL_EXAMPLE.md` (analyze threshold crossings between two Census snapshots)
+- `07_PEER_COUNTY_FINDER_SKILL_EXAMPLE.md` (find most similar counties from local indicator data)
 
 ## What is a skill?
 
