@@ -17,7 +17,8 @@ Use this skill to rank counties within a state for one or more metrics from a lo
 
 ## Standard Workflow
 
-1. Confirm input CSV path and state value exactly as represented in the dataset.
+1. Confirm input CSV path and state.
+   - `--state` accepts full names or USPS abbreviations (for example, `Georgia` or `GA`).
    - Default bundled input:
      `skills/state-county-rankings/data/county_demographics_acs5_2023.csv`
 2. Ask for metrics (or use defaults) and ranking direction.

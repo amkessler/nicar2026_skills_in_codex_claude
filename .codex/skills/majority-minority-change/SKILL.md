@@ -28,6 +28,7 @@ Use this skill to compare county demographics across two years and flag threshol
 ## Standard Workflow
 
 1. Confirm start/end files and year labels.
+   - `--state` accepts full names or USPS abbreviations (for example, `Georgia` or `GA`).
    - Default bundled files:
      - start: `skills/majority-minority-change/data/county_race_acs5_2010.csv`
      - end: `skills/majority-minority-change/data/county_race_acs5_2020.csv`

@@ -18,6 +18,7 @@ Use this skill to identify demographically similar counties to a target county.
 ## Standard Workflow
 
 1. Confirm target county + state.
+   - `--target-state` accepts full names or USPS abbreviations (for example, `Wisconsin` or `WI`).
 2. Confirm feature columns and top-N count.
 3. Run similarity script.
    - Example:

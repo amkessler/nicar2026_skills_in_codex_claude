@@ -65,6 +65,61 @@ features <- str_squish(features)
 features <- features[features != ""]
 
 # ------------------------------
+# 1b) State normalization helpers
+# ------------------------------
+normalize_state_key <- function(x) {
+  x %>%
+    as.character() %>%
+    str_squish() %>%
+    str_to_upper() %>%
+    str_replace_all("[^A-Z0-9]", "")
+}
+
+state_name_values <- c(
+  state.name,
+  "District of Columbia",
+  "Puerto Rico",
+  "American Samoa",
+  "Guam",
+  "Northern Mariana Islands",
+  "U.S. Virgin Islands",
+  "United States Virgin Islands",
+  "Virgin Islands"
+)
+
+state_abbrev_values <- c(
+  state.abb,
+  "DC",
+  "PR",
+  "AS",
+  "GU",
+  "MP",
+  "VI",
+  "VI",
+  "VI"
+)
+
+state_lookup <- c(
+  setNames(state_abbrev_values, normalize_state_key(state_name_values)),
+  setNames(state_abbrev_values, normalize_state_key(state_abbrev_values))
+)
+
+normalize_state_value <- function(x) {
+  x_chr <- as.character(x)
+  out <- rep(NA_character_, length(x_chr))
+  valid <- !is.na(x_chr)
+
+  if (any(valid)) {
+    keys <- normalize_state_key(x_chr[valid])
+    mapped <- unname(state_lookup[keys])
+    fallback <- x_chr[valid] %>% str_squish() %>% str_to_upper()
+    out[valid] <- ifelse(!is.na(mapped), mapped, fallback)
+  }
+
+  out
+}
+
+# ------------------------------
 # 2) Validate arguments
 # ------------------------------
 if (is.na(input) || is.na(target_state) || is.na(target_county)) {
@@ -96,9 +151,12 @@ if (length(missing_features) > 0) {
   stop(str_c("Missing feature columns: ", str_c(missing_features, collapse = ", ")))
 }
 
+target_state_norm <- normalize_state_value(target_state)
+
 prepared <- raw %>%
   mutate(
     row_id = row_number(),
+    state_norm = normalize_state_value(state),
     across(all_of(features), as.numeric)
   ) %>%
   filter(if_all(all_of(features), ~ !is.na(.x)))
@@ -109,7 +167,7 @@ if (nrow(prepared) == 0) {
 
 target_row <- prepared %>%
   filter(
-    str_to_upper(as.character(state)) == str_to_upper(target_state),
+    state_norm == target_state_norm,
     str_to_upper(as.character(county)) == str_to_upper(target_county)
   ) %>%
   slice_head(n = 1)

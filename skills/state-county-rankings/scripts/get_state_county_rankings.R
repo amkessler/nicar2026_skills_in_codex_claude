@@ -66,6 +66,61 @@ metrics <- str_squish(metrics)
 metrics <- metrics[metrics != ""]
 
 # ------------------------------
+# 1b) State normalization helpers
+# ------------------------------
+normalize_state_key <- function(x) {
+  x %>%
+    as.character() %>%
+    str_squish() %>%
+    str_to_upper() %>%
+    str_replace_all("[^A-Z0-9]", "")
+}
+
+state_name_values <- c(
+  state.name,
+  "District of Columbia",
+  "Puerto Rico",
+  "American Samoa",
+  "Guam",
+  "Northern Mariana Islands",
+  "U.S. Virgin Islands",
+  "United States Virgin Islands",
+  "Virgin Islands"
+)
+
+state_abbrev_values <- c(
+  state.abb,
+  "DC",
+  "PR",
+  "AS",
+  "GU",
+  "MP",
+  "VI",
+  "VI",
+  "VI"
+)
+
+state_lookup <- c(
+  setNames(state_abbrev_values, normalize_state_key(state_name_values)),
+  setNames(state_abbrev_values, normalize_state_key(state_abbrev_values))
+)
+
+normalize_state_value <- function(x) {
+  x_chr <- as.character(x)
+  out <- rep(NA_character_, length(x_chr))
+  valid <- !is.na(x_chr)
+
+  if (any(valid)) {
+    keys <- normalize_state_key(x_chr[valid])
+    mapped <- unname(state_lookup[keys])
+    fallback <- x_chr[valid] %>% str_squish() %>% str_to_upper()
+    out[valid] <- ifelse(!is.na(mapped), mapped, fallback)
+  }
+
+  out
+}
+
+# ------------------------------
 # 2) Validate arguments
 # ------------------------------
 if (is.na(input) || is.na(state_query)) {
@@ -110,9 +165,11 @@ if (length(missing_metrics) > 0) {
   stop(str_c("Missing metric columns: ", str_c(missing_metrics, collapse = ", ")))
 }
 
+state_query_norm <- normalize_state_value(state_query)
+
 filtered <- raw %>%
   mutate(state_value = .data[[state_col]]) %>%
-  filter(str_to_upper(as.character(state_value)) == str_to_upper(state_query))
+  filter(normalize_state_value(state_value) == state_query_norm)
 
 if (nrow(filtered) == 0) {
   stop("No rows matched --state in the selected state column")
