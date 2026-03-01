@@ -34,10 +34,16 @@ File: `skills/majority-minority-change/scripts/analyze_majority_minority_change.
 Key design:
 1. Read start/end CSVs
 2. Validate required columns and shared join keys
+   - If `county_fips` is available in both files, join on `county_fips` only (preferred, more robust to county-name text differences).
+   - Otherwise, fall back to joining on `state` + `county`.
 3. Compute non-white share in each file
 4. Join files and compute percentage-point change
 5. Flag threshold crossings
 6. Export CSV/JSON
+
+State filter behavior:
+- `--state` works with full names or USPS abbreviations.
+- If `--state` is provided, the joined data must include a usable `state` column; otherwise the script exits with a clear error.
 
 Core change logic:
 
