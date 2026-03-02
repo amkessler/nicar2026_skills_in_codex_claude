@@ -85,12 +85,15 @@ same way using the same library. The `weather-forecast` skill bundles two script
 run them in that order, making the two-step geocode-then-forecast workflow reproducible and
 explicit. The `image-rotator` skill bundles `rotate_image.py`, so rather than writing PIL
 rotation code from scratch each time — and potentially getting the `expand=True` flag wrong or
-saving in the wrong format — Claude runs a known-good script. In all three cases, the data or
-output comes from a tested, version-controlled code path rather than improvised code that
-varies session to session.
+saving in the wrong format — Claude runs a known-good script. The Census-focused skills follow
+the same pattern: `state-county-rankings` bundles `get_state_county_rankings.R` for consistent
+metric rankings from local ACS county data, and `majority-minority-change` bundles
+`analyze_majority_minority_change.R` for repeatable threshold-crossing analysis between two
+snapshots. In all five cases, the data or output comes from a tested, version-controlled code
+path rather than improvised code that varies session to session.
 
 **Portability.** Skills committed to `.claude/skills/` and `.codex/skills/` travel with the
-repo. A colleague who clones the project gets all four skills automatically. There's no manual
+repo. A colleague who clones the project gets all six skills automatically. There's no manual
 setup, no "paste this into your system prompt" step. The workflow is self-contained.
 
 **Building your own.** The `skill-creator` skill is itself an example of this pattern applied
