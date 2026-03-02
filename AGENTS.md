@@ -7,8 +7,8 @@ This repo is a Python/Jupyter demo for NICAR 2026 focused on reusable AI skills.
 - `01_quickstart_tutorials.md`: attendee quickstart commands and first-run workflows.
 - `02_skills_learning_notes.md`: session notes, exercises, and troubleshooting.
 - `03_build_a_skill_from_your_code.md`: tutorial for turning existing R/Python scripts into a skill.
-- `04_state_county_rankings_skill_example.md`: concrete state county rankings skill example.
-- `05_majority_minority_change_skill_example.md`: concrete majority-minority change skill example.
+- `04_skill_build_example_state_county_rankings.md`: concrete state county rankings skill example.
+- `05_skill_build_example_majority_minority_change.md`: concrete majority-minority change skill example.
 - `analysis/`: notebook work area; keep reusable templates in `analysis/notebook_templates/`.
 - `data/`: project data buckets (`source/`, `processed/`, `public/`, `documentation/`, `html_reports/`).
 - `skills/`: canonical session copy of all skills for conference content.

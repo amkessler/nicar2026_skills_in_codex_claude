@@ -16,8 +16,8 @@ For a step-by-step tutorial with copy/paste commands, see:
 - `01_quickstart_tutorials.md`
 - `02_skills_learning_notes.md` (session notes, exercises, and troubleshooting)
 - `03_build_a_skill_from_your_code.md` (build a skill from existing R/Python scripts)
-- `04_state_county_rankings_skill_example.md` (rank counties within a state from local demographics CSVs)
-- `05_majority_minority_change_skill_example.md` (analyze threshold crossings between two Census snapshots)
+- `04_skill_build_example_state_county_rankings.md` (rank counties within a state from local demographics CSVs)
+- `05_skill_build_example_majority_minority_change.md` (analyze threshold crossings between two Census snapshots)
 
 ## What is a skill?
 
