@@ -1,12 +1,11 @@
 #!/usr/bin/env Rscript
 
-suppressPackageStartupMessages({
-  library(dplyr)
-  library(tidyr)
-  library(readr)
-  library(stringr)
-  library(jsonlite)
-})
+library(dplyr)
+library(tidyr)
+library(readr)
+library(stringr)
+library(jsonlite)
+
 
 # ------------------------------
 # 1) Parse CLI arguments
@@ -73,7 +72,7 @@ direction <- direction %>% str_to_lower() %>% str_squish()
 format <- format %>% str_to_lower() %>% str_squish()
 output <- output %>% str_squish() %>% na_if("")
 
-metrics <- unlist(str_split(metrics_text, ","), use.names = FALSE)
+metrics <- str_split_1(metrics_text, ",")
 metrics <- str_squish(metrics)
 metrics <- metrics[metrics != ""]
 
@@ -113,8 +112,8 @@ state_abbrev_values <- c(
 )
 
 state_lookup <- c(
-  setNames(state_abbrev_values, normalize_state_key(state_name_values)),
-  setNames(state_abbrev_values, normalize_state_key(state_abbrev_values))
+  rlang::set_names(state_abbrev_values, normalize_state_key(state_name_values)),
+  rlang::set_names(state_abbrev_values, normalize_state_key(state_abbrev_values))
 )
 
 normalize_state_value <- function(x) {
@@ -126,7 +125,7 @@ normalize_state_value <- function(x) {
     keys <- normalize_state_key(x_chr[valid])
     mapped <- unname(state_lookup[keys])
     fallback <- x_chr[valid] %>% str_squish() %>% str_to_upper()
-    out[valid] <- ifelse(!is.na(mapped), mapped, fallback)
+    out[valid] <- if_else(!is.na(mapped), mapped, fallback)
   }
 
   out

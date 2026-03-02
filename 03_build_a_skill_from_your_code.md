@@ -86,12 +86,18 @@ if (length(args) < 2) {
 input_path <- args[1]
 output_path <- args[2]
 
-df <- read.csv(input_path, stringsAsFactors = FALSE)
-agg <- aggregate(amount ~ state, data = df, FUN = sum, na.rm = TRUE)
-agg <- agg[order(-agg$amount), ]
+library(readr)
+library(dplyr)
+library(stringr)
 
-write.csv(agg, output_path, row.names = FALSE)
-cat(sprintf("Wrote %d rows to %s\n", nrow(agg), output_path))
+df <- read_csv(input_path, show_col_types = FALSE)
+agg <- df %>%
+  group_by(state) %>%
+  summarise(amount = sum(amount, na.rm = TRUE), .groups = "drop") %>%
+  arrange(desc(amount))
+
+write_csv(agg, output_path)
+message(str_c("Wrote ", nrow(agg), " rows to ", output_path))
 ```
 
 ## Step 3: Scaffold A New Skill
