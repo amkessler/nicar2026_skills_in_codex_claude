@@ -46,7 +46,7 @@ For the 1000 largest US cities, use the `get_coordinates.py` helper script:
 
 **Step 1: Get coordinates from city name**
 ```bash
-python skills/weather-forecast/scripts/get_coordinates.py "City, State"
+uv run python skills/weather-forecast/scripts/get_coordinates.py "City, State"
 ```
 
 Accepts formats:
@@ -57,7 +57,7 @@ Accepts formats:
 **Step 2: Get forecast using the coordinates**
 ```bash
 # Combined workflow
-python skills/weather-forecast/scripts/get_forecast.py $(python skills/weather-forecast/scripts/get_coordinates.py "Philadelphia, PA")
+uv run python skills/weather-forecast/scripts/get_forecast.py $(uv run python skills/weather-forecast/scripts/get_coordinates.py "Philadelphia, PA")
 ```
 
 ### Option B: Using Coordinates Directly
@@ -72,12 +72,12 @@ For international locations or US cities not in the database:
 
 Execute the script with coordinates:
 ```bash
-python skills/weather-forecast/scripts/get_forecast.py <latitude> <longitude>
+uv run python skills/weather-forecast/scripts/get_forecast.py <latitude> <longitude>
 ```
 
 For JSON output (used for charting):
 ```bash
-python skills/weather-forecast/scripts/get_forecast.py <latitude> <longitude> --json
+uv run python skills/weather-forecast/scripts/get_forecast.py <latitude> <longitude> --json
 ```
 
 ### Step 3: Present Results
@@ -110,17 +110,17 @@ Use appropriate charting libraries or create React/HTML artifacts to display the
 
 ```bash
 # Get coordinates for a US city
-python skills/weather-forecast/scripts/get_coordinates.py "Philadelphia, PA"
+uv run python skills/weather-forecast/scripts/get_coordinates.py "Philadelphia, PA"
 # Output: 39.9525839 -75.1652215
 
 # Get forecast using city name (combined)
-python skills/weather-forecast/scripts/get_forecast.py $(python skills/weather-forecast/scripts/get_coordinates.py "Denver, CO")
+uv run python skills/weather-forecast/scripts/get_forecast.py $(uv run python skills/weather-forecast/scripts/get_coordinates.py "Denver, CO")
 
 # Alternative format with full state name
-python skills/weather-forecast/scripts/get_coordinates.py "Trenton" "New Jersey"
+uv run python skills/weather-forecast/scripts/get_coordinates.py "Trenton" "New Jersey"
 
 # Verbose output shows city confirmation
-python skills/weather-forecast/scripts/get_coordinates.py "Seattle, WA" --verbose
+uv run python skills/weather-forecast/scripts/get_coordinates.py "Seattle, WA" --verbose
 # Output: Seattle, WA: 47.6062095 -122.3320708
 ```
 
@@ -128,13 +128,13 @@ python skills/weather-forecast/scripts/get_coordinates.py "Seattle, WA" --verbos
 
 ```bash
 # Example: Denver, CO (39.7392, -104.9903)
-python skills/weather-forecast/scripts/get_forecast.py 39.7392 -104.9903
+uv run python skills/weather-forecast/scripts/get_forecast.py 39.7392 -104.9903
 
 # Example: Get JSON for charting
-python skills/weather-forecast/scripts/get_forecast.py 39.7392 -104.9903 --json
+uv run python skills/weather-forecast/scripts/get_forecast.py 39.7392 -104.9903 --json
 
 # Example: International location (Tokyo, Japan)
-python skills/weather-forecast/scripts/get_forecast.py 35.6762 139.6503
+uv run python skills/weather-forecast/scripts/get_forecast.py 35.6762 139.6503
 ```
 
 ## Important Notes
