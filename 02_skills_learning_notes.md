@@ -1,6 +1,6 @@
 # Skills Session Notes
 
-This guide is an attendee-friendly companion to `01_QUICKSTART_TUTORIALS.md`.
+This guide is an attendee-friendly companion to `01_quickstart_tutorials.md`.
 Use it in session to explain how skills work, when to use each one, and how to avoid common mistakes.
 
 ## 1) Skill Mental Model

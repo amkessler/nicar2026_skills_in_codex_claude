@@ -4,11 +4,11 @@
 This repo is a Python/Jupyter demo for NICAR 2026 focused on reusable AI skills.
 - `fec_find_filings.py`: CLI to query OpenFEC filings by committee ID.
 - `set_jupyter_kernel.py`: one-time local Jupyter kernel setup for this repo.
-- `01_QUICKSTART_TUTORIALS.md`: attendee quickstart commands and first-run workflows.
-- `02_SKILLS_LEARNING_NOTES.md`: session notes, exercises, and troubleshooting.
-- `03_BUILD_A_SKILL_FROM_YOUR_CODE.md`: tutorial for turning existing R/Python scripts into a skill.
-- `04_STATE_COUNTY_RANKINGS_SKILL_EXAMPLE.md`: concrete state county rankings skill example.
-- `05_MAJORITY_MINORITY_CHANGE_SKILL_EXAMPLE.md`: concrete majority-minority change skill example.
+- `01_quickstart_tutorials.md`: attendee quickstart commands and first-run workflows.
+- `02_skills_learning_notes.md`: session notes, exercises, and troubleshooting.
+- `03_build_a_skill_from_your_code.md`: tutorial for turning existing R/Python scripts into a skill.
+- `04_state_county_rankings_skill_example.md`: concrete state county rankings skill example.
+- `05_majority_minority_change_skill_example.md`: concrete majority-minority change skill example.
 - `analysis/`: notebook work area; keep reusable templates in `analysis/notebook_templates/`.
 - `data/`: project data buckets (`source/`, `processed/`, `public/`, `documentation/`, `html_reports/`).
 - `skills/`: canonical session copy of all skills for conference content.

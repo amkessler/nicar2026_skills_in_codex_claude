@@ -165,11 +165,11 @@ Numbered tutorial docs at the repo root (`01_*.md` – `05_*.md`) are the sessio
 
 | File | Contents |
 |------|----------|
-| `01_QUICKSTART_TUTORIALS.md` | Attendee quickstart commands and first-run workflows |
-| `02_SKILLS_LEARNING_NOTES.md` | Session notes, exercises, and troubleshooting |
-| `03_BUILD_A_SKILL_FROM_YOUR_CODE.md` | How to turn existing R/Python scripts into a skill |
-| `04_STATE_COUNTY_RANKINGS_SKILL_EXAMPLE.md` | Worked state-county-rankings example |
-| `05_MAJORITY_MINORITY_CHANGE_SKILL_EXAMPLE.md` | Worked majority-minority-change example |
+| `01_quickstart_tutorials.md` | Attendee quickstart commands and first-run workflows |
+| `02_skills_learning_notes.md` | Session notes, exercises, and troubleshooting |
+| `03_build_a_skill_from_your_code.md` | How to turn existing R/Python scripts into a skill |
+| `04_state_county_rankings_skill_example.md` | Worked state-county-rankings example |
+| `05_majority_minority_change_skill_example.md` | Worked majority-minority-change example |
 
 `AGENTS.md` at the repo root contains agent/Codex-specific instructions (mirrors key CLAUDE.md
 content for Codex sessions).
