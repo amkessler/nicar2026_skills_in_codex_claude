@@ -26,7 +26,7 @@ The skill includes `scripts/rotate_image.py`, a command-line utility for rotatin
 Rotate an image clockwise by 90 degrees:
 
 ```bash
-python skills/image-rotator/scripts/rotate_image.py input.jpg
+uv run python skills/image-rotator/scripts/rotate_image.py input.jpg
 ```
 
 This creates `input_rotated.jpg` in the same directory.
@@ -35,22 +35,22 @@ This creates `input_rotated.jpg` in the same directory.
 
 **Specify output path:**
 ```bash
-python skills/image-rotator/scripts/rotate_image.py input.jpg --output rotated.jpg
+uv run python skills/image-rotator/scripts/rotate_image.py input.jpg --output rotated.jpg
 ```
 
 **Rotate counter-clockwise:**
 ```bash
-python skills/image-rotator/scripts/rotate_image.py input.jpg --direction counter-clockwise
+uv run python skills/image-rotator/scripts/rotate_image.py input.jpg --direction counter-clockwise
 ```
 
 **Rotate 180 degrees (2x 90-degree rotations):**
 ```bash
-python skills/image-rotator/scripts/rotate_image.py input.jpg --times 2
+uv run python skills/image-rotator/scripts/rotate_image.py input.jpg --times 2
 ```
 
 **Rotate 270 degrees clockwise (or 90 counter-clockwise):**
 ```bash
-python skills/image-rotator/scripts/rotate_image.py input.jpg --times 3
+uv run python skills/image-rotator/scripts/rotate_image.py input.jpg --times 3
 ```
 
 ### Supported Formats
@@ -95,4 +95,3 @@ For batch operations, iterate through multiple images using the same script in a
 ### scripts/
 
 - `rotate_image.py` - Main image rotation utility with CLI interface
-
