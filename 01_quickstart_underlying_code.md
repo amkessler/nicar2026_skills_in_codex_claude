@@ -22,10 +22,11 @@ Optional, but recommended for FEC API limits:
 export FEC_API_KEY="your_key_here"
 ```
 
-If you are using Codex with repo-local skills:
+If you are using Codex with repo-local skills, use either command:
 
 ```bash
 CODEX_HOME="$(pwd)/.codex" codex
+./codex.sh
 ```
 
 ## Quickstart 1: FEC Filing Analysis
