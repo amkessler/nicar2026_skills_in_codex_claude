@@ -26,6 +26,9 @@ If you are using Codex with repo-local skills, use either command:
 
 ```bash
 CODEX_HOME="$(pwd)/.codex" codex
+
+OR
+
 ./codex.sh
 ```
 
