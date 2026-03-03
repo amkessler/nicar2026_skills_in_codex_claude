@@ -13,7 +13,7 @@ utilities to meta-tooling for the skill system itself.
 
 For a step-by-step tutorial with copy/paste commands, see:
 
-- `01_quickstart_tutorials.md`
+- `01_quickstart_underlying_code.md`
 - `02_skills_learning_notes.md` (session notes, exercises, and troubleshooting)
 - `03_build_a_skill_from_your_code.md` (build a skill from existing R/Python scripts)
 - `04_skill_build_example_state_county_rankings.md` (rank counties within a state from local demographics CSVs)

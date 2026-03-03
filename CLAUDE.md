@@ -165,7 +165,7 @@ Numbered tutorial docs at the repo root (`01_*.md` – `05_*.md`) are the sessio
 
 | File | Contents |
 |------|----------|
-| `01_quickstart_tutorials.md` | Attendee quickstart commands and first-run workflows |
+| `01_quickstart_underlying_code.md` | Attendee quickstart commands and first-run workflows |
 | `02_skills_learning_notes.md` | Session notes, exercises, and troubleshooting |
 | `03_build_a_skill_from_your_code.md` | How to turn existing R/Python scripts into a skill |
 | `04_skill_build_example_state_county_rankings.md` | Worked state-county-rankings example |
