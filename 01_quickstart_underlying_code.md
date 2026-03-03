@@ -26,9 +26,10 @@ If you are using Codex with repo-local skills, use either command:
 
 ```bash
 CODEX_HOME="$(pwd)/.codex" codex
+```
+or the tailored shell script included in this repo to start codex:
 
-OR
-
+```bash
 ./codex.sh
 ```
 
