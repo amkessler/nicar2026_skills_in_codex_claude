@@ -1,9 +1,3 @@
----
-editor: 
-  markdown: 
-    wrap: 72
----
-
 # nicar2026_skills_in_codex_claude
 
 This project accompanies the NICAR 2026 session showing how to use AI
@@ -147,7 +141,7 @@ files work in both tools — they just need to be present in the right
 place.
 
 | Tool | Active skills directory | How skills trigger |
-|----------------|-------------------------------|--------------------------|
+|------------------|------------------------------|-------------------------|
 | Claude Code | `.claude/skills/` | Auto-triggers based on `description` frontmatter, or invoke with `/skill-name` |
 | Codex CLI | `.codex/skills/` | Auto-triggers based on `description` frontmatter, or invoke with `$skill-name` |
 
