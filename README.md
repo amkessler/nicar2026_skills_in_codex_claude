@@ -1,4 +1,4 @@
-# nicar2026_skills_in_codex_claude
+# NICAR 2026 Session on using "Skills"
 
 This project accompanies the NICAR 2026 session showing how to use AI
 "skills", the modular, self-contained instruction packages that extend
