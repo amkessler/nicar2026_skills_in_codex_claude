@@ -1,6 +1,4 @@
-# FECFILE Examples (from this chat)
-
-These examples capture the `fecfile` prompts used in this chat and the results returned.
+# FECFILE Skill Examples 
 
 ## Filing summary (summary-only)
 
