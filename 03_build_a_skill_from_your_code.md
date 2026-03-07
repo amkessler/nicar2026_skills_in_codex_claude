@@ -1,6 +1,6 @@
 # Build A Skill From Your Own R/Python Code
 
-This tutorial walks attendees through turning existing code into a reusable skill.
+This tutorial walks you through turning existing code into a reusable skill.
 Use this when you already have working scripts and want the assistant to run them reliably.
 
 ## What You Are Building

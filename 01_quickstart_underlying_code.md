@@ -10,7 +10,7 @@ Run these once from the repo root:
 uv sync
 ```
 
-Optional, but recommended for FEC API limits (if you don't yet have an API key you can request one [here](https://api.open.fec.gov/developers/)):
+Optional, but recommended for FEC API limits (if you don't yet have an API key you can request one [here](https://api.open.fec.gov/developers/), or use `DEMO_KEY` for limited functionality just to try it out):
 
 ``` bash
 export FEC_API_KEY="your_key_here"
@@ -28,6 +28,8 @@ or the tailored shell script included in this repo to start codex:
 ./codex.sh
 ```
 
+For this session we'll go with the second option and run `./codex.sh` from the terminal.
+
 ## Quickstart 1: FEC Filing Analysis
 
 Goal: find a filing ID for a committee, then pull filing data safely.
@@ -43,7 +45,7 @@ Look for the `file_number` column in output. That is the filing ID.
 ### Step 2: Start with summary-only
 
 ``` bash
-uv run skills/fecfile/scripts/fetch_filing.py C00770941 --summary-only
+uv run skills/fecfile/scripts/fetch_filing.py 1873431 --summary-only
 ```
 
 This is the safest first step for any filing size.
@@ -51,7 +53,7 @@ This is the safest first step for any filing size.
 ### Step 3: Pull one schedule
 
 ``` bash
-uv run skills/fecfile/scripts/fetch_filing.py C00770941 --schedule A
+uv run skills/fecfile/scripts/fetch_filing.py 1873431 --schedule A
 ```
 
 Use `--schedule B` for disbursements.
@@ -59,7 +61,7 @@ Use `--schedule B` for disbursements.
 ### Step 4: Stream large filings (optional)
 
 ``` bash
-uv run skills/fecfile/scripts/fetch_filing.py C00770941 --stream --schedule A
+uv run skills/fecfile/scripts/fetch_filing.py 1873431 --stream --schedule A
 ```
 
 This outputs JSONL (one JSON record per line) and avoids loading huge filings into memory.
