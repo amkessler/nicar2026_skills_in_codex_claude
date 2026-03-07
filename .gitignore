@@ -38,6 +38,9 @@ packrat/src/
 .codex/tmp/
 .codex/vendor_imports
 .codex/version.json
+
+# Codex-provided system skills are local runtime assets, not project source
+.codex/skills/.system/
 /.quarto/
 
 **/*.quarto_ipynb
