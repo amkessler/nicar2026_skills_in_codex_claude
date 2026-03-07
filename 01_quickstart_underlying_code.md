@@ -34,13 +34,13 @@ For this session we'll go with the second option and run `./codex.sh` from the t
 
 Goal: find a filing ID for a committee, then pull filing data safely.
 
-### Step 1: Find filings for a committee
+### Step 1: Find filings for a [committee](https://www.fec.gov/data/committee/C00770941/?tab=filings)
 
 ``` bash
 uv run python fec_find_filings.py C00770941 --limit 5
 ```
 
-Look for the `file_number` column in output. That is the filing ID.
+Look for the `file_number` column in output. That is the [filing](https://docquery.fec.gov/cgi-bin/forms/C00770941/1873431/) ID.
 
 ### Step 2: Start with summary-only
 

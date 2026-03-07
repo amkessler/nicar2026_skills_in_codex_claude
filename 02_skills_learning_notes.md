@@ -27,8 +27,8 @@ Practical rule: - Use scripts for repeatable computation. - Use AI reasoning for
 
 ### [FEC](https://github.com/hodgesmr/agent-fecfile)
 
--   "For filing `1873431`, show me the summary totals only."
--   "Analyze filing `1896830` (Utah GOP) and give me the total cash on hand."
+-   "For filing [`1873431`](https://docquery.fec.gov/cgi-bin/forms/C00770941/1873431/), show me the summary totals only."
+-   "Analyze filing [`1896830`](https://docquery.fec.gov/cgi-bin/forms/C00089482/1896830/) ([Utah GOP](https://www.fec.gov/data/committee/C00089482/)) and give me the total cash on hand."
 -   "For filing `1896830`, show top contributors from Schedule A."
 -   "For filing `1896830`, summarize Schedule B spending by purpose."
 
