@@ -10,7 +10,7 @@ Run these once from the repo root:
 uv sync
 ```
 
-Optional, but recommended for FEC API limits:
+Optional, but recommended for FEC API limits (if you don't yet have an API key you can request one [here](https://api.open.fec.gov/developers/)):
 
 ``` bash
 export FEC_API_KEY="your_key_here"
