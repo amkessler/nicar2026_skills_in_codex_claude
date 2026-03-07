@@ -25,7 +25,7 @@ Practical rule: - Use scripts for repeatable computation. - Use AI reasoning for
 
 ## 3) Starter Prompts You Can Copy
 
-### FEC
+### [FEC](https://github.com/hodgesmr/agent-fecfile)
 
 -   "Analyze filing `1896830` and give me the total cash on hand."
 -   "For filing `1896830`, show top contributors from Schedule A."
