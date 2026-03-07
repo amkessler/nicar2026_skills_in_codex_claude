@@ -23,7 +23,7 @@ Practical rule: - Use scripts for repeatable computation. - Use AI reasoning for
 | "Rank counties in Ohio by poverty rate" | `state-county-rankings` | Run rankings script on local CSV with metric list |
 | "Which counties crossed majority-minority thresholds?" | `majority-minority-change` | Compare start/end files and compute crossings |
 
-## 3) Starter Prompts Attendees Can Copy
+## 3) Starter Prompts You Can Copy
 
 ### FEC
 
