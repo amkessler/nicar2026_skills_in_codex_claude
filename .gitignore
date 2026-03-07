@@ -21,15 +21,23 @@ packrat/src/
 .Rhistory
 
 # Codex runtime files symlinked into .codex/ by codex.sh — not for committing
+.codex/.personality_migration
 .codex/auth.json
 .codex/config.toml
 .codex/history.jsonl
+.codex/log/
+.codex/memories
+.codex/rules
+.codex/session_index.jsonl
+.codex/sessions
+.codex/shell_snapshots
+.codex/sqlite
 .codex/state_*.sqlite
 .codex/state_*.sqlite-shm
 .codex/state_*.sqlite-wal
-.codex/sessions/
-.codex/rules/
-.codex/shell_snapshots/
+.codex/tmp/
+.codex/vendor_imports
+.codex/version.json
 /.quarto/
 
 **/*.quarto_ipynb
