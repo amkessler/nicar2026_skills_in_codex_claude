@@ -116,10 +116,10 @@ Requires `FEC_API_KEY` or `DATA_GOV_API_KEY` env var (defaults to `DEMO_KEY` if 
 ### Fetching filing data
 
 ```bash
-uv run skills/fecfile/scripts/fetch_filing.py <FILING_ID> --summary-only
-uv run skills/fecfile/scripts/fetch_filing.py <FILING_ID> --schedule A
-uv run skills/fecfile/scripts/fetch_filing.py <FILING_ID> --schedules A,B
-uv run skills/fecfile/scripts/fetch_filing.py <FILING_ID> --stream --schedule A
+uv run --script skills/fecfile/scripts/fetch_filing.py <FILING_ID> --summary-only
+uv run --script skills/fecfile/scripts/fetch_filing.py <FILING_ID> --schedule A
+uv run --script skills/fecfile/scripts/fetch_filing.py <FILING_ID> --schedules A,B
+uv run --script skills/fecfile/scripts/fetch_filing.py <FILING_ID> --stream --schedule A
 ```
 
 Always check `--summary-only` first before fetching full schedules. Large filings (ActBlue,

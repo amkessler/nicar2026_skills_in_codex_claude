@@ -41,7 +41,7 @@ Look for the `file_number` column in output. That is the [filing](https://docque
 ### Step 2: Start with summary-only
 
 ``` bash
-uv run skills/fecfile/scripts/fetch_filing.py 1873431 --summary-only
+uv run --script skills/fecfile/scripts/fetch_filing.py 1873431 --summary-only
 ```
 
 This is the safest first step for any filing size.
@@ -49,7 +49,7 @@ This is the safest first step for any filing size.
 ### Step 3: Pull one schedule
 
 ``` bash
-uv run skills/fecfile/scripts/fetch_filing.py 1873431 --schedule A
+uv run --script skills/fecfile/scripts/fetch_filing.py 1873431 --schedule A
 ```
 
 Use `--schedule B` for disbursements.
@@ -57,7 +57,7 @@ Use `--schedule B` for disbursements.
 ### Step 4: Stream large filings (optional)
 
 ``` bash
-uv run skills/fecfile/scripts/fetch_filing.py 1873431 --stream --schedule A
+uv run --script skills/fecfile/scripts/fetch_filing.py 1873431 --stream --schedule A
 ```
 
 This outputs JSONL (one JSON record per line) and avoids loading huge filings into memory.

@@ -9,15 +9,15 @@
 Fetch and display FEC filing data.
 
 Usage:
-    uv run fetch_filing.py <filing_id> [options]
+    uv run --script fetch_filing.py <filing_id> [options]
 
 Examples:
-    uv run fetch_filing.py 1896830                    # Full filing
-    uv run fetch_filing.py 1896830 --summary-only     # Summary only (no itemizations)
-    uv run fetch_filing.py 1896830 --schedule A       # Only Schedule A (contributions)
-    uv run fetch_filing.py 1896830 --schedule B       # Only Schedule B (disbursements)
-    uv run fetch_filing.py 1896830 --schedules A,B,C  # Multiple schedules
-    uv run fetch_filing.py 1896830 --stream           # Stream as JSONL (low memory)
+    uv run --script fetch_filing.py 1896830                    # Full filing
+    uv run --script fetch_filing.py 1896830 --summary-only     # Summary only (no itemizations)
+    uv run --script fetch_filing.py 1896830 --schedule A       # Only Schedule A (contributions)
+    uv run --script fetch_filing.py 1896830 --schedule B       # Only Schedule B (disbursements)
+    uv run --script fetch_filing.py 1896830 --schedules A,B,C  # Multiple schedules
+    uv run --script fetch_filing.py 1896830 --stream           # Stream as JSONL (low memory)
 
 Dependencies are automatically installed by uv.
 """

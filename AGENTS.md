@@ -24,7 +24,7 @@ This repo is a Python/Jupyter demo for NICAR 2026 focused on reusable AI skills.
 - `quarto render`: build reports configured in `_quarto.yml` to `data/html_reports/`.
 - `uv run python set_jupyter_kernel.py`: configure the project kernel (run intentionally; it performs setup actions).
 - `codex`: launch Codex from the repo root; Codex discovers repo-local skills from `.agents/skills/`.
-- `uv run skills/fecfile/scripts/fetch_filing.py 1896830 --summary-only`: smoke test the FEC skill script from repo root.
+- `uv run --script skills/fecfile/scripts/fetch_filing.py 1896830 --summary-only`: smoke test the FEC skill script from repo root.
 - `Rscript skills/state-county-rankings/scripts/get_state_county_rankings.R --input skills/state-county-rankings/data/county_demographics_acs5_2023.csv --state GA --top-n 5`: smoke test a bundled R skill script.
 
 ## Coding Style & Naming Conventions
