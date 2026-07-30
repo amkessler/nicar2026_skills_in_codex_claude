@@ -42,7 +42,7 @@ resources (`scripts/`, `references/`, `assets/`). This repo has three skill loca
 
 - `skills/` — session copy used in the NICAR conference session (canonical source)
 - `.claude/skills/` — active skills for Claude Code (auto-loaded when you open the project)
-- `.codex/skills/` — active skills for the Codex CLI
+- `.agents/skills/` — active repo-local skills for the Codex CLI
 
 Six skills are present in all three locations:
 
@@ -54,9 +54,8 @@ Six skills are present in all three locations:
 - `majority-minority-change` — county racial composition change between two Census snapshots
   (R, bundled CSVs, no API key)
 
-Claude Code reads from `.claude/skills/` automatically. For Codex, run `./codex.sh` (wrapper that
-sets `CODEX_HOME` and symlinks global auth) or set `CODEX_HOME` manually to the repo root's
-`.codex/` directory.
+Claude Code reads from `.claude/skills/` automatically. Codex CLI discovers repo-local
+skills from `.agents/skills/` when you launch `codex` from the repo root.
 
 ### SKILL.md structure
 

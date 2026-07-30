@@ -16,19 +16,15 @@ Optional, but recommended for FEC API limits (if you don't yet have an API key y
 export FEC_API_KEY="your_key_here"
 ```
 
-If you are using Codex with repo-local skills, use either command:
+If you are using Codex with repo-local skills, start Codex from the repo root:
 
 ``` bash
-CODEX_HOME="$(pwd)/.codex" codex
+codex
 ```
 
-or the tailored shell script included in this repo to start codex:
+Codex discovers repo-local skills from `.agents/skills/`. If the project skills do not appear in `/skills`, confirm that `.agents/skills/` exists and restart Codex.
 
-``` bash
-./codex.sh
-```
-
-For this session we'll go with the second option and run `./codex.sh` from the terminal.
+For this session we'll run `codex` from the terminal.
 
 ## Quickstart 1: FEC Filing Analysis
 

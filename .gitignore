@@ -20,7 +20,7 @@ packrat/src/
 .RData
 .Rhistory
 
-# Codex runtime files symlinked into .codex/ by codex.sh — not for committing
+# Codex runtime files under .codex/ are local state, not project source
 .codex/.personality_migration
 .codex/auth.json
 .codex/config.toml

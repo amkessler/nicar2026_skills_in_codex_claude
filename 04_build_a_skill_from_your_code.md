@@ -227,13 +227,14 @@ Expected output:
 
 `skills/` is the session/canonical copy. To actively use the skill in both tools, copy to:
 - `.claude/skills/`
-- `.codex/skills/`
+- `.agents/skills/`
 
 Example:
 
 ```bash
 cp -R skills/campaign-cleaner .claude/skills/campaign-cleaner
-cp -R skills/campaign-cleaner .codex/skills/campaign-cleaner
+mkdir -p .agents/skills
+cp -R skills/campaign-cleaner .agents/skills/campaign-cleaner
 ```
 
 ## Step 10: Test In Assistant Chats

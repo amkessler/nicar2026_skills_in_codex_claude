@@ -13,7 +13,7 @@ This repo is a Python/Jupyter demo for NICAR 2026 focused on reusable AI skills.
 - `data/`: project data buckets (`source/`, `processed/`, `public/`, `documentation/`, `html_reports/`).
 - `skills/`: canonical session copy of all skills for conference content.
 - `.claude/skills/`: active skills for Claude Code.
-- `.codex/skills/`: active skills for Codex CLI.
+- `.agents/skills/`: active repo-local skills for Codex CLI.
 
 ## Build, Test, and Development Commands
 - `uv sync`: install/update dependencies from `pyproject.toml` and `uv.lock`.
@@ -22,7 +22,7 @@ This repo is a Python/Jupyter demo for NICAR 2026 focused on reusable AI skills.
 - `uv run jupyter lab`: start local notebooks in the project environment.
 - `quarto render`: build reports configured in `_quarto.yml` to `data/html_reports/`.
 - `uv run python set_jupyter_kernel.py`: configure the project kernel (run intentionally; it performs setup actions).
-- `CODEX_HOME=/path/to/repo/.codex codex`: launch Codex with repo-local active skills.
+- `codex`: launch Codex from the repo root; Codex discovers repo-local skills from `.agents/skills/`.
 - `uv run skills/fecfile/scripts/fetch_filing.py 1896830 --summary-only`: smoke test the FEC skill script from repo root.
 - `Rscript skills/state-county-rankings/scripts/get_state_county_rankings.R --input skills/state-county-rankings/data/county_demographics_acs5_2023.csv --state GA --top-n 5`: smoke test a bundled R skill script.
 
@@ -38,7 +38,7 @@ No formal `tests/` suite is present yet. Use script-level validation:
 - Run `uv run python fec_find_filings.py ...` with small limits (`--limit 1` or `5`).
 - Validate output modes you touch (`table`, `json`, `ndjson`, `csv`).
 - For notebook/report changes, run `quarto render` and confirm output in `data/html_reports/`.
-- For skill changes, verify mirrored updates in both `.claude/skills/` and `.codex/skills/` and run the touched script (`uv run ...` for Python skills, `Rscript ...` for R skills).
+- For skill changes, verify mirrored updates in both `.claude/skills/` and `.agents/skills/` and run the touched script (`uv run ...` for Python skills, `Rscript ...` for R skills).
 - For `weather-forecast`, ensure `--json` output is machine-parseable JSON with no non-JSON preamble.
 - For `skill-creator` packaging changes, ensure zip outputs exclude transient files like `__pycache__/` and `*.pyc`.
 
@@ -53,7 +53,7 @@ No formal `tests/` suite is present yet. Use script-level validation:
 - Keep commit messages imperative and scoped to one change.
 - PRs should include: purpose, key files changed, commands run for verification, and any API/data assumptions.
 - Link related issues/tasks and include rendered output screenshots only when UI/report layout changes.
-- If a skill changes, note which directories were updated (`skills/`, `.claude/skills/`, `.codex/skills/`) and why.
+- If a skill changes, note which directories were updated (`skills/`, `.claude/skills/`, `.agents/skills/`) and why.
 
 ## Security & Configuration Tips
 - Set `FEC_API_KEY` or `DATA_GOV_API_KEY` in local environment only; never commit secrets.
@@ -64,12 +64,12 @@ No formal `tests/` suite is present yet. Use script-level validation:
 ## Skills
 A skill is a set of local instructions to follow that is stored in a `SKILL.md` file. Below is the list of skills that can be used. Each entry includes a name, description, and file path so you can open the source for full instructions when using a specific skill.
 ### Available skills
-- fecfile: Analyze FEC (Federal Election Commission) campaign finance filings. Use when working with FEC filing IDs, campaign finance data, contributions, disbursements, or political committee financial reports. (file: /Users/akessler/GITREPOS/github_kessler/nicar2026_skills_in_codex_claude/.codex/skills/fecfile/SKILL.md)
-- image-rotator: This skill should be used when users need to rotate images by 90 degrees. It handles image rotation tasks for common formats (PNG, JPG, JPEG, GIF, BMP, TIFF) using a reliable Python script that preserves image quality and supports both clockwise and counter-clockwise rotation. (file: /Users/akessler/GITREPOS/github_kessler/nicar2026_skills_in_codex_claude/.codex/skills/image-rotator/SKILL.md)
-- majority-minority-change: This skill should be used when users need to analyze county-level racial composition change between two Census snapshots and identify where places crossed a majority-minority threshold. (file: /Users/akessler/GITREPOS/github_kessler/nicar2026_skills_in_codex_claude/.codex/skills/majority-minority-change/SKILL.md)
-- skill-creator: Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations. (file: /Users/akessler/GITREPOS/github_kessler/nicar2026_skills_in_codex_claude/.codex/skills/skill-creator/SKILL.md)
-- state-county-rankings: This skill should be used when users need ranked county-level demographic metrics within a state from a local CSV file, such as income, population, poverty, or rent. (file: /Users/akessler/GITREPOS/github_kessler/nicar2026_skills_in_codex_claude/.codex/skills/state-county-rankings/SKILL.md)
-- weather-forecast: Fetch 7-day weather forecasts from Open-Meteo API. ALWAYS use get_coordinates.py first when given city names to look up coordinates, then use get_forecast.py with those coordinates. Use for weather forecasts, weather data, or temperature trends. (file: /Users/akessler/GITREPOS/github_kessler/nicar2026_skills_in_codex_claude/.codex/skills/weather-forecast/SKILL.md)
+- fecfile: Analyze FEC (Federal Election Commission) campaign finance filings. Use when working with FEC filing IDs, campaign finance data, contributions, disbursements, or political committee financial reports. (file: .agents/skills/fecfile/SKILL.md)
+- image-rotator: This skill should be used when users need to rotate images by 90 degrees. It handles image rotation tasks for common formats (PNG, JPG, JPEG, GIF, BMP, TIFF) using a reliable Python script that preserves image quality and supports both clockwise and counter-clockwise rotation. (file: .agents/skills/image-rotator/SKILL.md)
+- majority-minority-change: This skill should be used when users need to analyze county-level racial composition change between two Census snapshots and identify where places crossed a majority-minority threshold. (file: .agents/skills/majority-minority-change/SKILL.md)
+- skill-creator: Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations. (file: .agents/skills/skill-creator/SKILL.md)
+- state-county-rankings: This skill should be used when users need ranked county-level demographic metrics within a state from a local CSV file, such as income, population, poverty, or rent. (file: .agents/skills/state-county-rankings/SKILL.md)
+- weather-forecast: Fetch 7-day weather forecasts from Open-Meteo API. ALWAYS use get_coordinates.py first when given city names to look up coordinates, then use get_forecast.py with those coordinates. Use for weather forecasts, weather data, or temperature trends. (file: .agents/skills/weather-forecast/SKILL.md)
 ### How to use skills
 - Discovery: The list above is the skills available in this session (name + description + file path). Skill bodies live on disk at the listed paths.
 - Trigger rules: If the user names a skill (with `$SkillName` or plain text) OR the task clearly matches a skill's description shown above, you must use that skill for that turn. Multiple mentions mean use them all. Do not carry skills across turns unless re-mentioned.

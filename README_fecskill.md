@@ -1,6 +1,6 @@
 # test_agentskills_fec
 
-This repo helps demostrate the `fecfile` agent skill at `.codex/skills/fecfile` so collaborators can use it without a separate install. To enable repo-local skills, set `CODEX_HOME` to the repo root’s `.codex` directory or symlink the skill into `~/.codex/skills`.
+This repo helps demostrate the `fecfile` agent skill so collaborators can use it without a separate install. For Codex CLI, keep repo-local skills under `.agents/skills/` and launch `codex` from the repo root. For a global install, copy or symlink the skill into `~/.agents/skills/`.
 
 The `fecfile` skill analyzes Federal Election Commission (FEC) campaign finance filings. It can fetch filing summaries, parse itemized contributions and disbursements, and produce quick analyses (top spenders, contributions by state, vendor totals, etc.).
 
@@ -28,7 +28,7 @@ Example prompts:
 - "Pull Schedule A and list the top 10 contributions."
 - "Summarize Schedule B spending by purpose."
 
-If you prefer a global install, copy `.codex/skills/fecfile` into `~/.codex/skills/` on your machine.
+If you prefer a global install, copy or symlink `skills/fecfile` into `~/.agents/skills/` on your machine.
 
 Helper script: find filings by committee ID
 - Script: `fec_find_filings.py`

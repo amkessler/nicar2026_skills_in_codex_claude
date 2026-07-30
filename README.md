@@ -40,63 +40,55 @@ Skills aren't just convenient, they address real problems that come up when you 
 
 **Bundled, deterministic scripts.** Skills can include executable scripts alongside their instructions. The `fecfile` [skill](https://github.com/hodgesmr/agent-fecfile) bundles `fetch_filing.py`, which always parses FEC data the same way using the same library. The `weather-forecast` skill bundles two scripts: `get_coordinates.py` (a local database of US city coordinates — no network call needed) and `get_forecast.py` (the Open-Meteo API call). The skill's instructions require Claude to always run them in that order, making the two-step geocode-then-forecast workflow reproducible and explicit. The `image-rotator` skill bundles `rotate_image.py`, so rather than writing PIL rotation code from scratch each time — and potentially getting the `expand=True` flag wrong or saving in the wrong format — Claude runs a known-good script. The Census-focused skills follow the same pattern: `state-county-rankings` bundles `get_state_county_rankings.R` for consistent metric rankings from local ACS county data, and `majority-minority-change` bundles `analyze_majority_minority_change.R` for repeatable threshold-crossing analysis between two snapshots. In all five cases, the data or output comes from a tested, version-controlled code path rather than improvised code that varies session to session.
 
-**Portability.** Skills committed to `.claude/skills/` and `.codex/skills/` travel with the repo. A colleague who clones the project gets all six skills automatically. There's no manual setup, no "paste this into your system prompt" step. The workflow is self-contained.
+**Portability.** Skills committed to the tool-readable skills directories travel with the repo. A colleague who clones the project gets the same skill instructions and bundled scripts without pasting anything into a system prompt. For Codex CLI, repo-local skills now belong under `.agents/skills/`; personal skills that should be available everywhere belong under `~/.agents/skills/`.
 
 **Building your own.** The `skill-creator` skill is itself an example of this pattern applied recursively — it bundles `init_skill.py` (scaffolds a new skill directory with a template `SKILL.md`) and `package_skill.py` (validates and zips a skill for distribution), and its `SKILL.md` walks through a six-step creation process. If you want to build a skill for your own beat — court records, property data, Census API, a local government's open data portal — `skill-creator` gives you the tooling and the process to do it consistently.
 
 ## Active skills
 
-Claude Code and Codex CLI each read skills from their own directory because they are separate tools with separate configuration systems. The skills themselves share the same `SKILL.md` format, so the same skill files work in both tools — they just need to be present in the right place.
+Claude Code and Codex CLI can use the same `SKILL.md` format, but they discover repo-local skills from different locations.
 
 | Tool | Active skills directory | How skills trigger |
 |------------------|-----------------------------|-------------------------|
 | Claude Code | `.claude/skills/` | Auto-triggers based on `description` frontmatter, or invoke with `/skill-name` |
-| Codex CLI | `.codex/skills/` | Auto-triggers based on `description` frontmatter, or invoke with `$skill-name` |
+| Codex CLI | `.agents/skills/` | Auto-triggers based on `description` frontmatter, or invoke with `$skill-name` or `/skills` |
 
-Both directories in this repo contain the same six skills: `fecfile`, `weather-forecast`, `image-rotator`, `skill-creator`, `state-county-rankings`, and `majority-minority-change`.
+The Codex CLI scans for repo-local skills in `.agents/skills/` from your current working directory up to the repository root. Codex also reads personal skills from `~/.agents/skills/`.
 
-The `skills/` directory at the repo root is the **session/canonical copy** — it's the canonical source used in the NICAR session. The `.claude/skills/` and `.codex/skills/` directories are the **active copies** that each tool actually reads.
+The `skills/` directory at the repo root is the **session/canonical copy** — it's the source used in the NICAR session materials. Keep active tool copies or symlinks in sync with that canonical copy when a skill changes.
 
 ### Enabling repo-local skills
 
 **Claude Code** picks up `.claude/skills/` automatically when you open the project — no setup needed.
 
-**Codex** requires a one-time step to tell it where to find the skills. Open your terminal, `cd` into this repo's root directory, and launch Codex like this:
+**Codex CLI** no longer needs the old `CODEX_HOME=$(pwd)/.codex codex` wrapper workflow for repo-local skills. Put the skills under `.agents/skills/`, then launch Codex normally from the repo root:
 
 ``` bash
 cd /path/to/nicar2026_skills_in_codex_claude
-CODEX_HOME=$(pwd)/.codex codex
+codex
 ```
 
-The `$(pwd)` part inserts your current directory path automatically, so you don't have to type the full path yourself. You need to run this from the repo root every time you start a Codex session in this project.
-
-To avoid retyping this each session, you have two options:
-
-**Option 1: direnv (recommended)** — If you have [`direnv`](https://direnv.net) installed, create a `.envrc` file in the repo root containing:
-
-```         
-export CODEX_HOME="$(pwd)/.codex"
-```
-
-Then run `direnv allow` once from the repo root. After that, `CODEX_HOME` is set automatically whenever you `cd` into the project directory, so you can launch Codex with just `codex`.
-
-**Option 2: Wrapper script (no extra tools)** — Create a small script in the repo root:
+If the project skills do not appear in `/skills`, confirm that the skill folders exist under `.agents/skills/` and restart Codex. You can keep `.agents/skills/` as a copy of `skills/`, or use symlinks so the active Codex skills point at the canonical folders:
 
 ``` bash
-#!/bin/bash
-CODEX_HOME="$(dirname "$0")/.codex" codex "$@"
+mkdir -p .agents/skills
+for skill in fecfile weather-forecast image-rotator skill-creator state-county-rankings majority-minority-change; do
+  ln -sfn "../../skills/$skill" ".agents/skills/$skill"
+done
 ```
 
-Save it as `codex.sh` and make it executable with `chmod +x codex.sh`. Then run `./codex.sh` instead of `codex`. This requires no extra tools and works for anyone who clones the repo.
+Codex follows symlinked skill folders when scanning `.agents/skills/`.
 
-If you want the skills available globally in all your Codex sessions (not just this project), you can instead copy or symlink them into your personal Codex skills folder — which Codex always loads regardless of where you run it. For example, to add the fecfile skill globally:
+If you want a skill available globally in all your Codex sessions, copy or symlink it into your personal skills folder instead:
 
 ``` bash
 # Create your global skills folder if it doesn't exist yet
-mkdir -p ~/.codex/skills
+mkdir -p ~/.agents/skills
 
 # Symlink the skill from this repo into your global folder
-ln -s /path/to/nicar2026_skills_in_codex_claude/.codex/skills/fecfile ~/.codex/skills/fecfile
+ln -s /path/to/nicar2026_skills_in_codex_claude/skills/fecfile ~/.agents/skills/fecfile
 ```
 
 Replace `/path/to/nicar2026_skills_in_codex_claude` with the actual path where you cloned this repo. On a Mac you can find it by running `pwd` from inside the repo directory in your terminal.
+
+`CODEX_HOME` still exists, but it controls Codex state such as config, auth, logs, sessions, and runtime package metadata. Use it only when you intentionally need a separate Codex profile or automation home, not as the normal repo-local skills activation step.
