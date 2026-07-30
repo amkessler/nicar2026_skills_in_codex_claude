@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-Skill Packager - Creates a distributable zip file of a skill folder
+Skill Packager - Creates a zip archive of a skill folder
 
 Usage:
-    python skills/skill-creator/scripts/package_skill.py <path/to/skill-folder> [output-directory]
+    python skills/skill-creator/scripts/package_skill.py <path/to/skill-folder> [output-directory] [--target portable|codex|claude]
 
 Example:
     python skills/skill-creator/scripts/package_skill.py skills/public/my-skill
@@ -12,8 +12,9 @@ Example:
 
 import sys
 import zipfile
+import argparse
 from pathlib import Path
-from quick_validate import validate_skill
+from quick_validate import VALID_TARGETS, validate_skill
 
 
 def should_exclude_file(file_path, skill_path):
@@ -29,13 +30,14 @@ def should_exclude_file(file_path, skill_path):
     return False
 
 
-def package_skill(skill_path, output_dir=None):
+def package_skill(skill_path, output_dir=None, target="portable"):
     """
     Package a skill folder into a zip file.
 
     Args:
         skill_path: Path to the skill folder
         output_dir: Optional output directory for the zip file (defaults to current directory)
+        target: Validation target to use before packaging
 
     Returns:
         Path to the created zip file, or None if error
@@ -59,7 +61,7 @@ def package_skill(skill_path, output_dir=None):
 
     # Run validation before packaging
     print("🔍 Validating skill...")
-    valid, message = validate_skill(skill_path)
+    valid, message = validate_skill(skill_path, target=target)
     if not valid:
         print(f"❌ Validation failed: {message}")
         print("   Please fix the validation errors before packaging.")
@@ -98,22 +100,24 @@ def package_skill(skill_path, output_dir=None):
 
 
 def main():
-    if len(sys.argv) < 2:
-        print("Usage: python skills/skill-creator/scripts/package_skill.py <path/to/skill-folder> [output-directory]")
-        print("\nExample:")
-        print("  python skills/skill-creator/scripts/package_skill.py skills/public/my-skill")
-        print("  python skills/skill-creator/scripts/package_skill.py skills/public/my-skill ./dist")
-        sys.exit(1)
+    parser = argparse.ArgumentParser(description="Package a skill folder into a zip archive.")
+    parser.add_argument("skill_path", help="Path to the skill folder")
+    parser.add_argument("output_dir", nargs="?", help="Optional output directory for the zip file")
+    parser.add_argument(
+        "--target",
+        choices=sorted(VALID_TARGETS),
+        default="portable",
+        help="Validation target to use before packaging.",
+    )
+    args = parser.parse_args()
 
-    skill_path = sys.argv[1]
-    output_dir = sys.argv[2] if len(sys.argv) > 2 else None
-
-    print(f"📦 Packaging skill: {skill_path}")
-    if output_dir:
-        print(f"   Output directory: {output_dir}")
+    print(f"📦 Packaging skill: {args.skill_path}")
+    print(f"   Validation target: {args.target}")
+    if args.output_dir:
+        print(f"   Output directory: {args.output_dir}")
     print()
 
-    result = package_skill(skill_path, output_dir)
+    result = package_skill(args.skill_path, args.output_dir, target=args.target)
 
     if result:
         sys.exit(0)

@@ -6,9 +6,10 @@ This repo is a Python/Jupyter demo for NICAR 2026 focused on reusable AI skills.
 - `set_jupyter_kernel.py`: one-time local Jupyter kernel setup for this repo.
 - `01_quickstart_underlying_code.md`: attendee quickstart commands and first-run workflows.
 - `02_skills_learning_notes.md`: session notes, exercises, and troubleshooting.
-- `03_build_a_skill_from_your_code.md`: tutorial for turning existing R/Python scripts into a skill.
-- `04_skill_build_example_state_county_rankings.md`: concrete state county rankings skill example.
-- `05_skill_build_example_majority_minority_change.md`: concrete majority-minority change skill example.
+- `03_fecfile_examples.md`: worked FEC filing prompts and examples.
+- `04_build_a_skill_from_your_code.md`: tutorial for turning existing R/Python scripts into a skill.
+- `05_skill_build_example_state_county_rankings.md`: concrete state county rankings skill example.
+- `06_skill_build_example_majority_minority_change.md`: concrete majority-minority change skill example.
 - `analysis/`: notebook work area; keep reusable templates in `analysis/notebook_templates/`.
 - `data/`: project data buckets (`source/`, `processed/`, `public/`, `documentation/`, `html_reports/`).
 - `skills/`: canonical session copy of all skills for conference content.
@@ -62,29 +63,8 @@ No formal `tests/` suite is present yet. Use script-level validation:
 
 
 ## Skills
-A skill is a set of local instructions to follow that is stored in a `SKILL.md` file. Below is the list of skills that can be used. Each entry includes a name, description, and file path so you can open the source for full instructions when using a specific skill.
-### Available skills
-- fecfile: Analyze FEC (Federal Election Commission) campaign finance filings. Use when working with FEC filing IDs, campaign finance data, contributions, disbursements, or political committee financial reports. (file: .agents/skills/fecfile/SKILL.md)
-- image-rotator: This skill should be used when users need to rotate images by 90 degrees. It handles image rotation tasks for common formats (PNG, JPG, JPEG, GIF, BMP, TIFF) using a reliable Python script that preserves image quality and supports both clockwise and counter-clockwise rotation. (file: .agents/skills/image-rotator/SKILL.md)
-- majority-minority-change: This skill should be used when users need to analyze county-level racial composition change between two Census snapshots and identify where places crossed a majority-minority threshold. (file: .agents/skills/majority-minority-change/SKILL.md)
-- skill-creator: Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations. (file: .agents/skills/skill-creator/SKILL.md)
-- state-county-rankings: This skill should be used when users need ranked county-level demographic metrics within a state from a local CSV file, such as income, population, poverty, or rent. (file: .agents/skills/state-county-rankings/SKILL.md)
-- weather-forecast: Fetch 7-day weather forecasts from Open-Meteo API. ALWAYS use get_coordinates.py first when given city names to look up coordinates, then use get_forecast.py with those coordinates. Use for weather forecasts, weather data, or temperature trends. (file: .agents/skills/weather-forecast/SKILL.md)
-### How to use skills
-- Discovery: The list above is the skills available in this session (name + description + file path). Skill bodies live on disk at the listed paths.
-- Trigger rules: If the user names a skill (with `$SkillName` or plain text) OR the task clearly matches a skill's description shown above, you must use that skill for that turn. Multiple mentions mean use them all. Do not carry skills across turns unless re-mentioned.
-- Missing/blocked: If a named skill isn't in the list or the path can't be read, say so briefly and continue with the best fallback.
-- How to use a skill (progressive disclosure):
-  1) After deciding to use a skill, open its `SKILL.md`. Read only enough to follow the workflow.
-  2) When `SKILL.md` references relative paths (e.g., `scripts/foo.py`), resolve them relative to the skill directory listed above first, and only consider other paths if needed.
-  3) If `SKILL.md` points to extra folders such as `references/`, load only the specific files needed for the request; don't bulk-load everything.
-  4) If `scripts/` exist, prefer running or patching them instead of retyping large code blocks.
-  5) If `assets/` or templates exist, reuse them instead of recreating from scratch.
-- Coordination and sequencing:
-  - If multiple skills apply, choose the minimal set that covers the request and state the order you'll use them.
-  - Announce which skill(s) you're using and why (one short line). If you skip an obvious skill, say why.
-- Context hygiene:
-  - Keep context small: summarize long sections instead of pasting them; only load extra files when needed.
-  - Avoid deep reference-chasing: prefer opening only files directly linked from `SKILL.md` unless you're blocked.
-  - When variants exist (frameworks, providers, domains), pick only the relevant reference file(s) and note that choice.
-- Safety and fallback: If a skill can't be applied cleanly (missing files, unclear instructions), state the issue, pick the next-best approach, and continue.
+Codex discovers repo-local skills from `.agents/skills/`, while Claude Code discovers active project skills from `.claude/skills/`. Do not duplicate the live skill catalog in this file; the current names, descriptions, and workflows live in each skill's own `SKILL.md`.
+
+For skill changes, edit the canonical copy under `skills/` first, then mirror the same files into `.claude/skills/` and `.agents/skills/`. Validate the affected skill and run the touched script where practical.
+
+Use a skill for focused repeatable workflows with instructions, references, and optional scripts. Use `AGENTS.md`/`CLAUDE.md` for always-on repo conventions, hooks/settings for mechanical enforcement, and plugins when a reusable workflow should be installed beyond this repo or bundled with connectors/MCP tools.

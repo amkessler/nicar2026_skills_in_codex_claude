@@ -9,7 +9,7 @@ By the end, you will have:
 1. A new skill folder under `skills/`
 2. A `SKILL.md` with clear trigger conditions and workflow steps
 3. One or more scripts in `scripts/` (Python and/or R)
-4. A packaged zip you can share
+4. A validated local skill, plus a packaging/distribution choice
 
 ## Prerequisites
 
@@ -142,7 +142,7 @@ skills/campaign-cleaner/SKILL.md
 ```
 
 Minimum requirements:
-1. Frontmatter `name` and `description`
+1. Portable frontmatter with `name` and `description`
 2. Clear trigger language in description
 3. Exact run order and command examples
 4. Required arguments and expected outputs
@@ -156,6 +156,14 @@ name: campaign-cleaner
 description: This skill should be used when users need to clean and aggregate campaign finance CSV data using the newsroom's Python and R scripts.
 ---
 ```
+
+Keep the portable workflow in `SKILL.md`. Add surface-specific metadata only when it solves a real problem:
+
+| Surface | Optional additions |
+|------------------|------------------|
+| Claude Code | `disable-model-invocation`, `user-invocable`, `allowed-tools`, `disallowed-tools`, `argument-hint`, `arguments`, or `context` frontmatter |
+| Codex | `agents/openai.yaml` for UI metadata, implicit-invocation policy, and declared tool dependencies |
+| Broader distribution | Plugin package when the workflow should be installed beyond this repo or bundled with connectors/MCP tools |
 
 ### Example workflow section
 
@@ -206,26 +214,19 @@ Rscript skills/campaign-cleaner/scripts/summarize_state_totals.R \
 
 If these fail, fix scripts first. Do not debug SKILL.md until scripts run correctly.
 
-## Step 8: Validate And Package
+## Step 8: Validate
 
-Validate:
-
-```bash
-uv run python skills/skill-creator/scripts/quick_validate.py skills/campaign-cleaner
-```
-
-Package:
+Validate as a portable skill so it remains usable in both Claude Code and Codex:
 
 ```bash
-uv run python skills/skill-creator/scripts/package_skill.py skills/campaign-cleaner ./dist
+uv run python skills/skill-creator/scripts/quick_validate.py skills/campaign-cleaner --target portable
 ```
 
-Expected output:
-- `dist/campaign-cleaner.zip`
+Use `--target claude` or `--target codex` only when you are intentionally building for one surface.
 
-## Step 9: Mirror Into Active Skill Directories
+## Step 9: Activate Locally
 
-`skills/` is the session/canonical copy. To actively use the skill in both tools, copy to:
+`skills/` is the session/canonical copy. To actively use the skill in both tools, copy or symlink it to:
 - `.claude/skills/`
 - `.agents/skills/`
 
@@ -237,7 +238,26 @@ mkdir -p .agents/skills
 cp -R skills/campaign-cleaner .agents/skills/campaign-cleaner
 ```
 
-## Step 10: Test In Assistant Chats
+Codex usually detects skill changes automatically. Restart Codex only if the skill does not appear in `/skills` after the path is correct. Claude Code watches existing skill directories, but a restart is a reasonable fallback after creating new project-level skill folders.
+
+## Step 10: Choose Distribution
+
+For local authoring and this repo, direct skill folders are enough.
+
+Create a zip archive only when someone specifically needs a file artifact:
+
+```bash
+uv run python skills/skill-creator/scripts/package_skill.py skills/campaign-cleaner ./dist
+```
+
+Expected output:
+- `dist/campaign-cleaner.zip`
+
+Prefer a plugin package when the workflow should be installed by other users, shared across teams, bundled with multiple skills, or shipped alongside connectors/MCP tools.
+
+For personal Codex experimentation with curated or remote skills, `$skill-installer` can install skills into a user setup without changing this repo.
+
+## Step 11: Test In Assistant Chats
 
 Try prompts that should trigger the skill:
 
@@ -265,5 +285,6 @@ Before sharing the skill:
 - Inputs/outputs are explicit arguments
 - Errors are readable
 - SKILL.md has deterministic order of operations
-- Validation passes
-- Zip package builds successfully
+- Validation passes for the intended target (`portable`, `claude`, or `codex`)
+- Active copies or symlinks are updated when the repo should use the skill
+- Zip or plugin package is built only when distribution requires it

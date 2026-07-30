@@ -22,7 +22,7 @@ If you are using Codex with repo-local skills, start Codex from the repo root:
 codex
 ```
 
-Codex discovers repo-local skills from `.agents/skills/`. If the project skills do not appear in `/skills`, confirm that `.agents/skills/` exists and restart Codex.
+Codex discovers repo-local skills from `.agents/skills/` and usually detects skill changes automatically. If the project skills do not appear in `/skills`, confirm that `.agents/skills/` exists, wait a moment, and restart Codex only if they still do not appear.
 
 For this session we'll run `codex` from the terminal.
 
@@ -184,7 +184,7 @@ uv run python skills/image-rotator/scripts/rotate_image.py \
 
 ## Quickstart 6: Create a New Skill
 
-Goal: scaffold, validate, and package a distributable skill.
+Goal: scaffold, validate, and activate a local skill. Package it only when you need a zip archive.
 
 ### Step 1: Initialize a skill skeleton
 
@@ -213,16 +213,20 @@ uv run python skills/skill-creator/scripts/quick_validate.py skills/city-budget
 Expected output:
 
 ``` text
-Skill is valid!
+Skill is valid for portable target!
 ```
 
 ### Step 4: Package as a zip file
+
+Zip packaging is optional for this local repo workflow. Use it when you need an archive to share or inspect:
 
 ``` bash
 uv run python skills/skill-creator/scripts/package_skill.py skills/city-budget ./dist
 ```
 
 Expected artifact: - `dist/city-budget.zip`
+
+For a reusable workflow that should be installed beyond one repo, especially one that bundles multiple skills, connectors, or MCP tools, make it a plugin rather than relying on manual zip sharing.
 
 ## Common Problems
 

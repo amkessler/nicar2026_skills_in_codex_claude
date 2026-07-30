@@ -7,7 +7,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 Demo project for NICAR 2026 showing how to use AI "skills" — modular, self-contained instruction packages
 that extend Claude/Codex's capabilities for domain-specific tasks. The repo includes six skills covering
 FEC campaign finance, weather forecasts, image rotation, county-level demographic analysis, and skill creation.
-The `skills/` directory is the canonical session copy; numbered tutorial docs (`01_*.md` – `05_*.md`)
+The `skills/` directory is the canonical session copy; numbered tutorial docs (`01_*.md` - `06_*.md`)
 walk through quickstart workflows, skill-building exercises, and worked Census examples.
 
 ## Environment Setup
@@ -82,22 +82,25 @@ third-person: "This skill should be used when..."
 
 ## Creating a New Skill
 
-Use the `skill-creator` helper scripts:
+Use the `skill-creator` helper scripts from the canonical `skills/` directory unless you are intentionally testing an active Claude Code copy:
 
 ```bash
 # Initialize a new skill directory with template
-uv run .claude/skills/skill-creator/scripts/init_skill.py <skill-name> --path <output-dir>
+uv run python skills/skill-creator/scripts/init_skill.py <skill-name> --path <output-dir>
 
-# Validate and package a skill into a distributable zip
-uv run .claude/skills/skill-creator/scripts/package_skill.py <path/to/skill-folder>
-uv run .claude/skills/skill-creator/scripts/package_skill.py <path/to/skill-folder> ./dist
+# Validate a portable skill for both Claude Code and Codex conventions
+uv run python skills/skill-creator/scripts/quick_validate.py <path/to/skill-folder> --target portable
+
+# Package a skill into a zip archive when an archive is needed
+uv run python skills/skill-creator/scripts/package_skill.py <path/to/skill-folder>
+uv run python skills/skill-creator/scripts/package_skill.py <path/to/skill-folder> ./dist
 ```
 
-See `.claude/skills/skill-creator/SKILL.md` for the full 6-step skill creation workflow.
+Direct skill folders are best for local authoring and repo-scoped workflows. For reusable distribution beyond one repo, or for workflows that bundle connectors/MCP tools, prefer a plugin package. See `skills/skill-creator/SKILL.md` for the full skill creation workflow.
 
 ## FEC Filing Analysis (fecfile skill)
 
-The `fecfile` skill (at `.claude/skills/fecfile/`) uses the `fecfile` Python library
+The `fecfile` skill uses the `fecfile` Python library
 (auto-installed by `uv run`) to analyze FEC campaign finance filings.
 
 ### Finding filing IDs
@@ -113,16 +116,16 @@ Requires `FEC_API_KEY` or `DATA_GOV_API_KEY` env var (defaults to `DEMO_KEY` if 
 ### Fetching filing data
 
 ```bash
-uv run .claude/skills/fecfile/scripts/fetch_filing.py <FILING_ID> --summary-only
-uv run .claude/skills/fecfile/scripts/fetch_filing.py <FILING_ID> --schedule A
-uv run .claude/skills/fecfile/scripts/fetch_filing.py <FILING_ID> --schedules A,B
-uv run .claude/skills/fecfile/scripts/fetch_filing.py <FILING_ID> --stream --schedule A
+uv run skills/fecfile/scripts/fetch_filing.py <FILING_ID> --summary-only
+uv run skills/fecfile/scripts/fetch_filing.py <FILING_ID> --schedule A
+uv run skills/fecfile/scripts/fetch_filing.py <FILING_ID> --schedules A,B
+uv run skills/fecfile/scripts/fetch_filing.py <FILING_ID> --stream --schedule A
 ```
 
 Always check `--summary-only` first before fetching full schedules. Large filings (ActBlue,
 WinRed, presidential campaigns) must use `--stream` or schedule pre-filtering to avoid loading
 hundreds of thousands of rows into context. Field names are documented in
-`.claude/skills/fecfile/references/FORMS.md` and `SCHEDULES.md` — do not guess field names.
+`skills/fecfile/references/FORMS.md` and `SCHEDULES.md` — do not guess field names.
 
 ## County Analysis Skills (R-based)
 
@@ -160,15 +163,16 @@ Key output fields: `nonwhite_share_<year_label>`, `delta_nonwhite_share_pp`,
 
 ## Tutorial Documents
 
-Numbered tutorial docs at the repo root (`01_*.md` – `05_*.md`) are the session materials:
+Numbered tutorial docs at the repo root (`01_*.md` - `06_*.md`) are the session materials:
 
 | File | Contents |
 |------|----------|
 | `01_quickstart_underlying_code.md` | Attendee quickstart commands and first-run workflows |
 | `02_skills_learning_notes.md` | Session notes, exercises, and troubleshooting |
-| `03_build_a_skill_from_your_code.md` | How to turn existing R/Python scripts into a skill |
-| `04_skill_build_example_state_county_rankings.md` | Worked state-county-rankings example |
-| `05_skill_build_example_majority_minority_change.md` | Worked majority-minority-change example |
+| `03_fecfile_examples.md` | Worked FEC filing prompts and examples |
+| `04_build_a_skill_from_your_code.md` | How to turn existing R/Python scripts into a skill |
+| `05_skill_build_example_state_county_rankings.md` | Worked state-county-rankings example |
+| `06_skill_build_example_majority_minority_change.md` | Worked majority-minority-change example |
 
 `AGENTS.md` at the repo root contains agent/Codex-specific instructions (mirrors key CLAUDE.md
 content for Codex sessions).

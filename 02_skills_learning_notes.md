@@ -8,7 +8,7 @@ A skill is a reusable instruction package for the assistant. It helps the assist
 
 Each skill usually has: - `SKILL.md`: purpose, trigger description, workflow rules - `scripts/`: executable helpers for deterministic tasks - `references/`: source docs for fields, schemas, and policies - `assets/`: templates or files used in outputs
 
-How triggering works: - Auto-trigger: assistant uses `description` in `SKILL.md` to decide relevance - Manual trigger: `/skill-name` (Claude) or `$skill-name` (Codex)
+How triggering works: - Auto-trigger: assistant uses `description` in `SKILL.md` to decide relevance - Manual trigger: `/skill-name` (Claude Code) or `$skill-name` (Codex)
 
 Practical rule: - Use scripts for repeatable computation. - Use AI reasoning for interpretation and narrative around script results.
 
@@ -58,6 +58,7 @@ Practical rule: - Use scripts for repeatable computation. - Use AI reasoning for
 
 -   "Create a new skill called `city-budget` under `skills/`."
 -   "Validate and package `skills/city-budget` into `dist/`."
+-   "Should this workflow stay as a repo-local skill, become a personal skill, or be packaged as a plugin?"
 
 ## 4) Prompt Quality: Bad vs Good
 
@@ -87,8 +88,9 @@ Why this matters: - Better prompts specify input, workflow, output format, and l
 ### Skill Creation
 
 -   New directory contains `SKILL.md` plus resource folders.
--   `quick_validate.py` returns `Skill is valid!`.
--   `package_skill.py` produces `dist/<skill-name>.zip`.
+-   `quick_validate.py` returns `Skill is valid for portable target!`.
+-   Active copies or symlinks are present in `.claude/skills/` and `.agents/skills/` when the skill should be used in this repo.
+-   `package_skill.py` produces `dist/<skill-name>.zip` only when an archive is needed.
 
 ## 6) Troubleshooting Matrix
 
@@ -139,9 +141,11 @@ For first-time attendees, enforce this checklist: - Always run summary/overview 
 ## 10) Common First-Time Attendee Misconceptions
 
 -   "A skill is a plugin."
-    -   Not exactly. It is instructions plus optional local resources.
+    -   Not exactly. A skill is instructions plus optional local resources. A plugin is an installable package that can bundle skills, connectors, MCP tools, and metadata.
 -   "If a skill exists, it will always trigger."
     -   No. Trigger depends on the request and skill description.
+-   "Every reusable workflow belongs in a skill."
+    -   No. Use `AGENTS.md`/`CLAUDE.md` for always-on repo rules, hooks/settings for enforcement, subagents for specialized parallel work, and plugins for broader distribution or connected tools.
 -   "The assistant should just know field names."
     -   Risky. Always verify from references or script output.
 -   "Bigger output is better output."

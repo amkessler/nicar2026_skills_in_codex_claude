@@ -10,9 +10,10 @@ For a step-by-step tutorial with copy/paste commands, see:
 
 -   `01_quickstart_underlying_code.md`
 -   `02_skills_learning_notes.md` (session notes, exercises, and troubleshooting)
--   `03_build_a_skill_from_your_code.md` (build a skill from existing R/Python scripts)
--   `04_skill_build_example_state_county_rankings.md` (rank counties within a state from local demographics CSVs)
--   `05_skill_build_example_majority_minority_change.md` (analyze threshold crossings between two Census snapshots)
+-   `03_fecfile_examples.md` (worked FEC filing examples)
+-   `04_build_a_skill_from_your_code.md` (build a skill from existing R/Python scripts)
+-   `05_skill_build_example_state_county_rankings.md` (rank counties within a state from local demographics CSVs)
+-   `06_skill_build_example_majority_minority_change.md` (analyze threshold crossings between two Census snapshots)
 
 ## What is a skill?
 
@@ -42,7 +43,21 @@ Skills aren't just convenient, they address real problems that come up when you 
 
 **Portability.** Skills committed to the tool-readable skills directories travel with the repo. A colleague who clones the project gets the same skill instructions and bundled scripts without pasting anything into a system prompt. For Codex CLI, repo-local skills now belong under `.agents/skills/`; personal skills that should be available everywhere belong under `~/.agents/skills/`.
 
-**Building your own.** The `skill-creator` skill is itself an example of this pattern applied recursively — it bundles `init_skill.py` (scaffolds a new skill directory with a template `SKILL.md`) and `package_skill.py` (validates and zips a skill for distribution), and its `SKILL.md` walks through a six-step creation process. If you want to build a skill for your own beat — court records, property data, Census API, a local government's open data portal — `skill-creator` gives you the tooling and the process to do it consistently.
+**Building your own.** The `skill-creator` skill is itself an example of this pattern applied recursively — it bundles `init_skill.py` (scaffolds a new skill directory with a template `SKILL.md`) and `package_skill.py` (validates and zips a skill when you need an archive), and its `SKILL.md` walks through a six-step creation process. If you want to build a skill for your own beat — court records, property data, Census API, a local government's open data portal — `skill-creator` gives you the tooling and the process to do it consistently.
+
+### When a skill is not the right surface
+
+Modern Claude Code and Codex workflows have more choices than "put everything in a skill":
+
+| Need | Better surface |
+|------------------|------------------|
+| Always-on repo conventions, build commands, and review expectations | `AGENTS.md` for Codex, `CLAUDE.md` for Claude Code |
+| Focused repeatable workflow with instructions, references, and optional scripts | Skill |
+| A reusable installable package, multiple skills, connectors, or MCP tools | Plugin |
+| Mechanical enforcement before/after tool use | Hooks or project settings |
+| Specialized parallel work with preloaded knowledge | Subagents or agent teams |
+
+For this NICAR repo, direct skill folders are still the right teaching surface. If you want to distribute a reusable workflow beyond one repo, or bundle it with connected tools, convert the skill into a plugin instead of relying on manual copy/paste.
 
 ## Active skills
 
@@ -51,9 +66,9 @@ Claude Code and Codex CLI can use the same `SKILL.md` format, but they discover 
 | Tool | Active skills directory | How skills trigger |
 |------------------|-----------------------------|-------------------------|
 | Claude Code | `.claude/skills/` | Auto-triggers based on `description` frontmatter, or invoke with `/skill-name` |
-| Codex CLI | `.agents/skills/` | Auto-triggers based on `description` frontmatter, or invoke with `$skill-name` or `/skills` |
+| Codex CLI | `.agents/skills/` | Auto-triggers based on `description` frontmatter, or invoke with `$skill-name` or view with `/skills` |
 
-The Codex CLI scans for repo-local skills in `.agents/skills/` from your current working directory up to the repository root. Codex also reads personal skills from `~/.agents/skills/`.
+The Codex CLI scans for repo-local skills in `.agents/skills/` from your current working directory up to the repository root. Codex also reads personal skills from `~/.agents/skills/`; admin and bundled system skill locations may also be present in managed environments.
 
 The `skills/` directory at the repo root is the **session/canonical copy** — it's the source used in the NICAR session materials. Keep active tool copies or symlinks in sync with that canonical copy when a skill changes.
 
@@ -68,7 +83,7 @@ cd /path/to/nicar2026_skills_in_codex_claude
 codex
 ```
 
-If the project skills do not appear in `/skills`, confirm that the skill folders exist under `.agents/skills/` and restart Codex. You can keep `.agents/skills/` as a copy of `skills/`, or use symlinks so the active Codex skills point at the canonical folders:
+Codex usually detects skill changes automatically. If the project skills do not appear in `/skills`, confirm that the skill folders exist under `.agents/skills/`, wait a moment, and then restart Codex if they still do not appear. You can keep `.agents/skills/` as a copy of `skills/`, or use symlinks so the active Codex skills point at the canonical folders:
 
 ``` bash
 mkdir -p .agents/skills
@@ -92,3 +107,9 @@ ln -s /path/to/nicar2026_skills_in_codex_claude/skills/fecfile ~/.agents/skills/
 Replace `/path/to/nicar2026_skills_in_codex_claude` with the actual path where you cloned this repo. On a Mac you can find it by running `pwd` from inside the repo directory in your terminal.
 
 `CODEX_HOME` still exists, but it controls Codex state such as config, auth, logs, sessions, and runtime package metadata. Use it only when you intentionally need a separate Codex profile or automation home, not as the normal repo-local skills activation step.
+
+For local Codex experimentation with curated or remote skills, `$skill-installer` can install skills into your personal setup. For team or public distribution, prefer a plugin package.
+
+### Optional Codex metadata
+
+Plain `SKILL.md` files are enough for this repo. Codex can also read optional `agents/openai.yaml` metadata for UI display, implicit-invocation policy, and tool dependencies. Use that only when a skill needs Codex-specific presentation or dependency declarations; keep the portable workflow in `SKILL.md`.
